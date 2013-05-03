@@ -1,0 +1,39 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <ResourceDictionary.ThemeDictionaries>
+        <ResourceDictionary x:Key="Default">
+            
+            <SolidColorBrush x:Key="OrangeColor" Color="#f08307"/>
+            <SolidColorBrush x:Key="DeepBlueColor" Color="#006fa9"/>
+            <SolidColorBrush x:Key="PPTVBlueColor" Color="#6dc3ff"/>
+            <SolidColorBrush x:Key="PPTVGrayColor" Color="#aaadb5"/>
+            <SolidColorBrush x:Key="BackgroundColor" Color="#008cd6"/>
+            
+            <ImageBrush ImageSource="ms-appx:///Images/background.png" x:Key="NormalBackground"/>
+            <ImageBrush ImageSource="ms-appx:///Images/background.png" x:Key="NormalSnapBackground" AlignmentX="Center" AlignmentY="Top" Stretch="UniformToFill"/>
+        </ResourceDictionary>
+        
+        <ResourceDictionary x:Key="HighContrastBlack">
+            <SolidColorBrush x:Key="OrangeColor" Color="White"/>
+            <SolidColorBrush x:Key="DeepBlueColor" Color="Black"/>
+            <SolidColorBrush x:Key="PPTVBlueColor" Color="White"/>
+            <SolidColorBrush x:Key="PPTVGrayColor" Color="White"/>  
+            <SolidColorBrush x:Key="BackgroundColor" Color="Black"/>
+            
+            <SolidColorBrush x:Key="NormalBackground" Color="Black"/>
+            <SolidColorBrush x:Key="NormalSnapBackground" Color="Black"/>
+        </ResourceDictionary>
+        
+        <ResourceDictionary x:Key="HighContrastWhite">
+            <SolidColorBrush x:Key="OrangeColor" Color="Black"/>
+            <SolidColorBrush x:Key="DeepBlueColor" Color="White"/>
+            <SolidColorBrush x:Key="PPTVBlueColor" Color="Black"/>
+            <SolidColorBrush x:Key="PPTVGrayColor" Color="Black"/>
+            <SolidColorBrush x:Key="BackgroundColor" Color="White"/>
+            
+            <SolidColorBrush x:Key="NormalBackground" Color="White"/>
+            <SolidColorBrush x:Key="NormalSnapBackground" Color="White"/>
+        </ResourceDictionary>
+    </ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>

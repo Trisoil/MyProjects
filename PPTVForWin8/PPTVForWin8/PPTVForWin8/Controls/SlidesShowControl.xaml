@@ -1,0 +1,137 @@
+﻿<UserControl
+    x:Class="PPTVForWin8.Controls.SlidesShowControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPTVForWin8.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="768"
+    d:DesignWidth="346">
+    
+    <UserControl.Resources>
+        <Style x:Key="LeftButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="grid1">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image1">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Collapsed</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image2">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="PointerFocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Image x:Name="image1" Source="ms-appx:///Images/slidesLeft.png" Stretch="None"/>
+                            <Image x:Name="image2" Source="ms-appx:///Images/slidesSelectLeft.png" Stretch="None" Visibility="Collapsed"/>
+                            <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+        <Style x:Key="RightButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid x:Name="grid1">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="Pressed"/>
+                                    <VisualState x:Name="Disabled"/>
+                                    <VisualState x:Name="PointerOver">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image1">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Collapsed</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image2">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="PointerFocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Image x:Name="image1" Source="ms-appx:///Images/slidesRight.png" Stretch="None"/>
+                            <Image x:Name="image2" Source="ms-appx:///Images/slidesSelectRight.png" Stretch="None" Visibility="Collapsed"/>
+                            <ContentPresenter HorizontalAlignment="Right" VerticalAlignment="Center"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="FontSize" Value="24"/>
+        </Style>
+    </UserControl.Resources>
+    
+    <Grid Width="768" Height="441">
+        <Grid Width="768" Height="380" Background="Black" Opacity="0.3" VerticalAlignment="Top">
+            <Image Source="ms-appx:///Images/defaultchannel.png" Stretch="None"/>
+        </Grid>
+        <Grid x:Name="slidesShowGrid" Width="768" Height="380" VerticalAlignment="Top">
+            <Grid.Clip>
+                <RectangleGeometry Rect="0 0 768 380"/>
+            </Grid.Clip>
+        </Grid>
+        <Grid Height="8" Background="Black" Margin="0 380 0 0" VerticalAlignment="Top">
+            <Grid x:Name="slideGrid" Height="4" Width="0" HorizontalAlignment="Left" VerticalAlignment="Center" Background="{StaticResource OrangeColor}" >
+                <Grid.RenderTransform>
+                    <TransformGroup>
+                        <TranslateTransform X="0"/>
+                    </TransformGroup>
+                </Grid.RenderTransform>
+            </Grid>
+        </Grid>
+        <Grid Height="55" Margin="0 386 0 0" VerticalAlignment="Top">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="2"/>
+                <ColumnDefinition Width="80"/>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" Background="Black" Opacity="0.4"/>
+            <Button Style="{StaticResource LeftButtonStyle}" Width="80" Click="leftButton_Click"/>
+            <Grid Grid.Column="1"/>
+            <Grid Grid.Column="2" Background="Black" Opacity="0.4"/>
+            <TextBlock x:Name="channelTitleBlock" Grid.Column="2" FontSize="20" FontFamily="Microsoft YaHei UI" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Grid Grid.Column="3"/>
+            <Grid Grid.Column="4" Background="Black" Opacity="0.4"/>
+            <Button Grid.Column="4" Style="{StaticResource RightButtonStyle}" Width="80" Click="rightButton_Click"/>
+        </Grid>
+    </Grid>
+</UserControl>

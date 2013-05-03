@@ -1,0 +1,42 @@
+## 项目类型
+
+LOCAL_TYPE			:= pack
+
+## 该项目默认的配置类型
+
+LOCAL_CONFIG			:= release
+
+## 生成目标名称（完整文件名称要根据配置PACKET_CONFIG、版本PACKET_VERSION增加前缀、后缀）
+
+PACKET_TARGET			:= ppbox
+
+## 该项目依赖的项目
+
+PACKET_DEPENDS			:= $(PACKET_DEPENDS) \
+				/ppbox/ppbox \
+				$(if $(filter -DANDROID,$(PLATFORM_COMPILE_FLAGS)),/plugins/jni) \
+				/ppbox/alive \
+				/ppbox/live_worker \
+				/live/live \
+				/ppbox/vod_worker \
+				/ppbox/peer_worker \
+				/vod \
+				/peer/peer \
+				/tools/test \
+
+## 该项目额外依赖的文件（相对于根目录ROOT_DIRECTORY）
+
+PACKET_DEPEND_FILES		:= $(PACKET_DEPEND_FILES) \
+				/src/tools/test \
+				/include/ppbox/include \
+				/conf/ppbox/ppbox/ppbox.conf \
+				/conf/tools/test/ppbox_test.conf \
+				/include/ppbox/document \
+
+## 该项目其他生成文件（相对于根目录PLATFORM_BUILD_DIRECTORY）
+PACKET_DEPEND_FILES2		:= $(PACKET_DEPEND_FILES2) \
+				$(if $(filter -DANDROID,$(PLATFORM_COMPILE_FLAGS)),/plugins/jni/ppbox_jni.jar) \
+
+## 项目版本定义文件
+
+PACKET_VERSION_DEPEND		:= /ppbox/ppbox

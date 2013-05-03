@@ -1,0 +1,33 @@
+﻿<UserControl
+    x:Class="PPTVForWin8.Controls.PPTVMediaPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPTVForWin8.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="Black">
+
+    <Grid Width="Auto" Height="Auto">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <MediaElement x:Name="xMedia1" Width="Auto" Height="Auto" Grid.Row="0" Grid.Column="0" Visibility="Visible" AutoPlay="True"
+            BufferingProgressChanged="xMedia_BufferingProgressChanged"
+            DownloadProgressChanged="xMedia_DownloadProgressChanged"
+            CurrentStateChanged="xMedia_CurrentStateChanged"
+            MediaEnded="xMedia_MediaEnded" MediaFailed="xMedia_MediaFailed" MediaOpened="xMedia_MediaOpened"
+            >
+        </MediaElement>
+
+        <MediaElement x:Name="xMedia2" Width="Auto" Height="Auto" Grid.Row="0" Grid.Column="0" Visibility="Collapsed" AutoPlay="True"
+            DownloadProgressChanged="xMedia_DownloadProgressChanged"
+            CurrentStateChanged="xMedia_CurrentStateChanged" 
+            MediaEnded="xMedia_MediaEnded" MediaFailed="xMedia_MediaFailed" MediaOpened="xMedia_MediaOpened"
+            >
+        </MediaElement>
+    </Grid>
+</UserControl>

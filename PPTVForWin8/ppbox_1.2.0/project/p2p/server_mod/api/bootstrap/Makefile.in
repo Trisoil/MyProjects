@@ -1,0 +1,67 @@
+## ÏĿÀÐ
+
+PROJECT_TYPE                    := lib
+
+## É³É¿±ê³ƣ¨ÍÕÎ¼þÃ³Æª¸ùÐLOCAL_TYPE¡¢ÅÖLOCAL_CONFIG¡¢°汾PROJECT_VERSIONÔ¼Ó°׺¡¢ºó©
+
+PROJECT_TARGET                  := bootstrap
+
+## ÏĿ°汾ºţ¨ֻҪǰÈλ£¬×ºó»×¶¯É³ɣ©
+
+PROJECT_VERSION                 :=
+
+## ¶¨ÒÏĿ°汾ºŵÄ·Î¼þ
+
+PROJECT_VERSION_HEADER          :=
+
+## ¸ÃîĬÈµÄäÀÐ
+
+LOCAL_CONFIG                  := static debug multi
+
+## ָ¶¨ԴÎ¼þĿ¼£¨¸ÃîԴÎ¼þµÄÜ¿¼£¬Ï¶ÔÚ´Î¼þ¸ùROOT_SOURCE_DIRECTORY£¬ĬÈΪLOCAL_NAME£©
+
+PROJECT_SOURCE_DIRECTORY        := 
+
+## È¹ûĿ¼Ó×Ŀ¼£¬ָ¶¨×Ŀ¼µÄûûÓָ¶¨ʱ£¬½«×¶¯ËË×Ŀ¼£©
+
+PROJECT_SOURCE_SUB_DIRECTORYS   := 
+
+## ָ¶¨ËËԴÂ×Ŀ¼µÄî£¨ĬÈΪ1£©
+
+
+PROJECT_SOURCE_DEPTH            := 2
+
+
+## ָ¶¨ͷÎ¼þĿ¼£¨¸ÃîͷÎ¼þµÄÜ¿¼£¬Ï¶ÔÚ·Î¼þ¸ùROOT_HEADER_DIRECTORY£¬ĬÈΪLOCAL_NAME£©
+
+PROJECT_HEADER_DIRECTORY        := 
+
+## ÏĿԤ±àͷÎ¼þ
+
+PROJECT_COMMON_HEADERS          :=
+
+## Ä²¿°ü¼£¨Ï¶ÔÚ´Î¼þ¸ùROOT_SOURCE_DIRECTORY£©
+
+PROJECT_INTERNAL_INCLUDES       :=server_mod/api/include protocol/include protocol/include/protocol
+
+## ¶î°ü¼£¨¶à£¬Ï¶Ôڰü¿¼ROOT_INCLUDE_DIRECTORY£©
+
+PROJECT_EXTERNAL_INCLUDES       :=
+
+## ¸ÃîÌµã±àѡÏ
+
+PROJECT_COMPILE_FLAGS           := $(PROJECT_COMPILE_FLAGS)
+
+## ¸ÃîÌµãt½Ó¡Ï
+
+PROJECT_LINK_FLAGS              := $(PROJECT_LINK_FLAGS)
+
+## ¸ÃîÒ5µÄäÏĿ
+
+PROJECT_DEPENDS                 := \
+                                $(PROJECT_DEPENDS)
+
+## ¸ÃîÌ¶¨µÄý
+PROJECT_DEPEND_LIBRARYS         := $(PROJECT_DEPEND_LIBRARYS)
+
+include $(RELETIVE_DIR)/../BootStrap.mk

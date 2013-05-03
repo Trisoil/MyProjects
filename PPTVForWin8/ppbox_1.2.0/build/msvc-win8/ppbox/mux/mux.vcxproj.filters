@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\MuxerBase.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\MuxModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\Version.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\asf\AsfMuxer.cpp">
+      <Filter>asf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\asf\AsfTransfer.cpp">
+      <Filter>asf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\flv\FlvAudioTransfer.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\flv\FlvMuxer.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\flv\FlvVideoTransfer.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\filter\KeyFrameFilter.cpp">
+      <Filter>filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\filter\SegmentFilter.cpp">
+      <Filter>filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\mkv\MkvMuxer.cpp">
+      <Filter>mkv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\mkv\MkvTransfer.cpp">
+      <Filter>mkv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\m3u8\M3u8Protocol.cpp">
+      <Filter>m3u8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpAsfMuxer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpAsfTransfer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpMuxer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpTransfer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpTsMuxer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpTsTransfer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\m3u8\M3u8Muxer.cpp">
+      <Filter>m3u8</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\raw\RawMuxer.cpp">
+      <Filter>raw</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\ts\PesTransfer.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\ts\TsMuxer.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\ts\TsTransfer.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\flv\FlvTransfer.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpH264Transfer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpMpeg4GenericTransfer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpMpegAudioTransfer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpRawMuxer.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtp\RtpStreamDesc.cpp">
+      <Filter>rtp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\AudioMergeTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\H264DebugTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\H264PackageJoinTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\H264PackageSplitTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\H264PtsComputeTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\H264StreamJoinTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\H264StreamSplitTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\MpegAudioAdtsDecodeTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\MpegAudioAdtsEncodeTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\transfer\TimeScaleTransfer.cpp">
+      <Filter>transfer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\mms\MmsMuxer.cpp">
+      <Filter>mms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\mms\MmsTransfer.cpp">
+      <Filter>mms</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\filter\AdtsSplitFilter.cpp">
+      <Filter>filter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtm\RtmMuxer.cpp">
+      <Filter>rtm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\mux\rtm\RtmTransfer.cpp">
+      <Filter>rtm</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\Filter.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\MuxBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\MuxerBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\MuxError.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\MuxerTypes.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\MuxModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\Transfer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\Version.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\asf\AsfBuffer.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\asf\AsfMuxer.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\asf\AsfTransfer.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\flv\FlvAudioTransfer.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\flv\FlvMetadata.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\flv\FlvMuxer.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\flv\FlvTransfer.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\flv\FlvVideoTransfer.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\filter\DemuxerFilter.h">
+      <Filter>filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\filter\KeyFrameFilter.h">
+      <Filter>filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\filter\SegmentFilter.h">
+      <Filter>filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\mkv\MkvMuxer.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\mkv\MkvTransfer.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\m3u8\M3u8Muxer.h">
+      <Filter>m3u8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\m3u8\M3u8Protocol.h">
+      <Filter>m3u8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\m3u8\UrlFormator.h">
+      <Filter>m3u8</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpAsfMuxer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpAsfTransfer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpMuxer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpPacket.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpTransfer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpTsMuxer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpTsTransfer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\raw\RawMuxer.h">
+      <Filter>raw</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\ts\PesTransfer.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\ts\TsMuxer.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\ts\TsTransfer.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpH264Transfer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpMpeg4GenericTransfer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpMpegAudioTransfer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpRawMuxer.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtp\RtpStreamDesc.h">
+      <Filter>rtp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\AudioMergeTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\H264DebugTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\H264PackageJoinTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\H264PackageSplitTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\H264PtsComputeTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\H264StreamJoinTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\H264StreamSplitTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\MergeTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\MpegAudioAdtsDecodeTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\MpegAudioAdtsEncodeTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\transfer\TimeScaleTransfer.h">
+      <Filter>transfer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\mms\MmsMuxer.h">
+      <Filter>mms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\mms\MmsTransfer.h">
+      <Filter>mms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\filter\AdtsSplitFilter.h">
+      <Filter>filter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtm\RtmMuxer.h">
+      <Filter>rtm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\mux\rtm\RtmTransfer.h">
+      <Filter>rtm</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="asf">
+      <UniqueIdentifier>{98c32412-bc6e-40b2-a160-c0d1e156266b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ts">
+      <UniqueIdentifier>{47186973-263a-4b0b-adf3-71faf52c715b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flv">
+      <UniqueIdentifier>{51e132f9-3b6a-4295-89b0-0cc9efc8aaf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filter">
+      <UniqueIdentifier>{cc139951-5470-4c21-95dc-e5120820a8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mkv">
+      <UniqueIdentifier>{ec5eee67-25dd-4067-a19b-b87b7ad8c38b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="m3u8">
+      <UniqueIdentifier>{97baa0a6-287c-49b7-b901-6bb42be3afe2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="transfer">
+      <UniqueIdentifier>{2b63322e-124c-4f9e-bfc0-7c2eb0c3faeb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtp">
+      <UniqueIdentifier>{cef4c54f-6e1e-4afb-b160-505cdd4a931d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="raw">
+      <UniqueIdentifier>{101f3291-d199-430b-9f2c-00654712d3d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mms">
+      <UniqueIdentifier>{1b545c94-b534-492b-bb7a-4dad096adb49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="rtm">
+      <UniqueIdentifier>{a42139f1-e74b-43b0-8b79-abdffa6833d9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,41 @@
+ table, th, td
+  {
+	border: 1px solid #bbbbbb;
+ }
+  
+ tr.header
+  {
+	background-color: #9acd32
+ }
+  
+ tr.bad_state
+  {
+	background-color: #ffff00
+ }
+  
+ th, td
+  {
+	text-align:left;
+ }
+
+ div#table-container
+  {
+	margin:5px
+ }
+ 
+ div#server_details
+  {
+	margin:10px
+ }
+ 
+ div#top-link
+ {
+	margin-bottom:5px
+ }
+ 
+ div#bottom-link
+ {
+	margin-top:5px
+ }
+ 
+ 

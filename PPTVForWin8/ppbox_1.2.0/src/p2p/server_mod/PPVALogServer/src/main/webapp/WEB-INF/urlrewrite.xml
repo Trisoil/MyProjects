@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE urlrewrite PUBLIC "-//tuckey.org//DTD UrlRewrite 2.6//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite2.6.dtd">
+<!--
+  Configuration file for UrlRewriteFilter
+  http://tuckey.org/urlrewrite/
+-->
+<urlrewrite>
+
+  <rule>
+    <from>/xi_login.validation(.*)</from>
+    <to>/xihttp_login_repeatcheck.jsp$1</to>
+  </rule>
+  <rule>
+    <from>/login([/]*)$</from>
+    <to>/login.htm</to>
+  </rule>
+  <rule>
+    <from>/home([/]*)$</from>
+    <to>/index.jsp</to>
+  </rule>
+
+  <rule>
+    <from>/chplay2-([0-9]+)-([0-9]+).xml</from>
+    <to>/xihttp_chplay.jsp?cid=$1&amp;chid=$2</to>
+  </rule>
+  <rule>
+    <from>/chplay-([0-9]+)-([0-9]+).xml</from>
+    <to>/xihttp_chplay.jsp?cid=$1&amp;chid=$2&amp;fb=1</to>
+  </rule>  
+
+  <rule>
+    <from>/paylog([/]*)$</from>
+    <to>/member_paylog_list.jsp</to>
+  </rule>
+  <rule>
+    <from>/pay([/]*)$</from>
+    <to>/pay_begin.jsp</to>
+  </rule>
+  <rule>
+    <from>/privilege([/]*)$</from>
+    <to>/vip_privilege.jsp</to>
+  </rule>
+  <rule>
+    <from>/help([/]*)$</from>
+    <to>/vip_help.jsp</to>
+  </rule>
+
+
+</urlrewrite>
+        

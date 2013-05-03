@@ -1,0 +1,5 @@
+trackerag，全称tracker access gateway（tracker网关）。
+到tracker的请求，会请过这里。
+一期只有list请求会经过这里。tracker把list请求变成多份，发给后台的tracker。然后等待tracker的多份回包，合成一个listresponse再返回给客户端。
+
+同一机房内的trakerag是无状态的。但是每个机房trackerag的配置，都是不一样的。应该只配置本机房的tracker。

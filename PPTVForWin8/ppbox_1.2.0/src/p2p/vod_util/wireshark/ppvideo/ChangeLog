@@ -1,0 +1,22 @@
+2008-11-19  XU WEI  <WillXu@pplive.com>
+  * add DataCollection packets
+2008-10-28  XU WEI  <WillXu@pplive.com>
+  * add QueryTestUrlList/QueryKeyWordList packets
+2008-10-14  XU WEI  <WillXu@pplive.com>
+  * add nat type to tracker report
+2008-09-22  XU WEI  <WillXu@pplive.com>
+  * support ppva protocol version 0.0.0.5
+  * add query index server list protocol
+2008-07-14  XU WEI  <WillXu@pplive.com>
+  * support ppva protocol version 0.0.0.4
+  * add content sense protocol and statistic protocol
+2008-07-03  XU WEI  <xuwei.hust@gmail.com>
+  * modified report package
+2008-07-02  XU WEI  <xuwei.hust@gmail.com>
+  * add report packet
+2008-06-13  XU WEI  <xuwei.hust@gmail.com>
+  * add stun detected port
+2008-05-14  XU WEI  <xuwei.hust@gmail.com>
+  * add stun
+2008-03-03  XU WEI  <xuwei.hust@gmail.com>
+  * initial version

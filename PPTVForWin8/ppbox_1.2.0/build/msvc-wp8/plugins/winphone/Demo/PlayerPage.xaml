@@ -1,0 +1,35 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="Demo.PlayerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--ContentPanel - place additional content here-->
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center"  HorizontalAlignment="Center">
+            <Border BorderThickness="2" BorderBrush="Blue">
+                <MediaElement x:Name="video" MediaOpened="video_Opened" VerticalAlignment="Center" HorizontalAlignment="Center" Height="360"/>
+            </Border>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Button Content="播放" Click="playButton_Click" FontSize="16" Padding="5" />
+                <Button Content="暂停" Click="pauseButton_Click" FontSize="16" Padding="5" />
+                <TextBox x:Name="text1" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Yellow" FontSize="16"/>
+                <Slider x:Name="slider" ValueChanged="slider_Changed" Width="200" SmallChange="1" LargeChange="10" Background="#FF8B8F8C" FontSize="16" />
+                <TextBox x:Name="text2" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Yellow" FontSize="16"/>
+                <Button Content="停止" Click="stopButton_Click" FontSize="16" Padding="5" />
+                <Button Content="返回" Click="backButton_Click" FontSize="16" Padding="5" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+
+</phone:PhoneApplicationPage>

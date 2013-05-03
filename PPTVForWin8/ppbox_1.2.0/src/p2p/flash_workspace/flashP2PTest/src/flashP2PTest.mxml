@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600" xmlns:local="*"
+			   creationComplete="onCreationComplete();">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<fx:Script>
+		<![CDATA[
+			import mx.core.UIComponent;
+			
+			var sprite:FlashP2PTestSprite;
+			
+			private function onCreationComplete():void
+			{
+				sprite = new FlashP2PTestSprite(rest, drop);
+				
+				var comp:UIComponent = new UIComponent;
+				comp.addChild(sprite);
+				addChild(comp);
+			}
+			
+			private function toggleHttpOnly():void
+			{
+				sprite.toggleHttpOnly();
+				if(mode.label == "HTTP")
+				{
+					mode.label = "NORMAL";
+				}
+				else
+				{
+					mode.label = "HTTP";
+				}
+			}
+			
+			private function reset():void
+			{
+				sprite.reset();
+			}
+		]]>
+	</fx:Script>
+	<s:HGroup>
+		<mx:Button label="RESET" click="reset()"/>
+		<mx:Button id="mode" label="HTTP" click="toggleHttpOnly()"/>	
+	</s:HGroup>
+	<s:HGroup>
+		<mx:Text id="rest" width="400"/>
+		<mx:Text id="drop"/>
+	</s:HGroup>
+
+</mx:Application>

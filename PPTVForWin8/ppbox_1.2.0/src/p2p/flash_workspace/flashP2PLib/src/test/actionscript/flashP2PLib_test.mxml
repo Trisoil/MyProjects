@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			 xmlns:s="library://ns.adobe.com/flex/spark" 
+			 xmlns:mx="library://ns.adobe.com/flex/mx"
+			 xmlns:flexUnitUIRunner="http://www.adobe.com/2009/flexUnitUIRunner" 
+			 minWidth="955" minHeight="600"
+			 creationComplete="onCreationComplete();">
+	
+	<fx:Script>
+		<![CDATA[
+		import org.flexunit.internals.TextListener;
+		import org.flexunit.internals.TraceListener;
+		import org.flexunit.listeners.CIListener;
+		import org.flexunit.listeners.UIListener;
+		import org.flexunit.runner.FlexUnitCore;
+			
+		import mx.logging.LogEventLevel;
+			
+		import org.as3commons.logging.api.LOGGER_FACTORY;
+		import org.as3commons.logging.setup.SimpleTargetSetup;
+		import org.as3commons.logging.setup.LevelTargetSetup;
+		import org.as3commons.logging.setup.LogSetupLevel;
+		import org.as3commons.logging.setup.target.FirebugTarget;
+		import org.as3commons.logging.setup.target.TraceTarget;
+		import org.as3commons.logging.setup.target.TextFieldTarget;
+		import flash.system.Capabilities;
+		
+		private var core:FlexUnitCore;
+		
+		private function onCreationComplete():void
+		{
+		trace(Capabilities.version);
+		//LOGGER_FACTORY.setup = new SimpleTargetSetup( new TraceTarget );
+		LOGGER_FACTORY.setup = new LevelTargetSetup(new FirebugTarget, LogSetupLevel.INFO);
+		core = new FlexUnitCore();
+		
+		// If you don't need graphical test results, comment out the line 
+		// below and the MXML declaring the TestRunnerBase.
+		core.addListener( new UIListener( uiListener ) );
+
+		// Listener to support continuous integration servers
+		//core.addListener( new CIListener() );
+		
+		//Listener for outputting to the trace console via the Flex logging class, Flex Only
+		//core.addListener( TextListener.getDefaultTextListener( LogEventLevel.DEBUG ) );
+		
+		core.run( FlashP2PAllTest );
+		}
+		]]>
+	</fx:Script>
+	
+	<flexUnitUIRunner:TestRunnerBase id="uiListener" width="100%" height="100%"  />
+</s:Application>

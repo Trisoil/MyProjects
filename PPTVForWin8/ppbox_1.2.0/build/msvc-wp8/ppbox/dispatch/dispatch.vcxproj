@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E8223340-DC53-45E6-AB31-0D6F7CA37C0C}</ProjectGuid>
+    <RootNamespace>filesystem</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/dispatch/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/dispatch/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/dispatch/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/dispatch/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Windows">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\CustomDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\DispatchModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\DispatchThread.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\DropSink.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\merge\MergeDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\mux\MuxDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Session.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SessionGroup.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SessionManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SharedDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SingleDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SinkGroup.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Task.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\TaskDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\CustomDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatchBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatcherBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatchModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatchThread.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DropSink.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Error.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\merge\MergeDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\merge\MergeTask.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\mux\MuxDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\mux\MuxTask.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Request.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Session.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SessionGroup.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SessionManager.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SharedDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SingleDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Sink.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SinkGroup.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Task.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\TaskConfig.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\TaskDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\TaskInfo.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

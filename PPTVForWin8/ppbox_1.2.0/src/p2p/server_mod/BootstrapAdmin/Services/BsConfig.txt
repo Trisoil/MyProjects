@@ -1,0 +1,88 @@
+﻿##################################################
+
+##          PPVA Bootstrap配置文件
+
+##################################################
+
+
+
+# UDP端口
+
+UDP_PORT = 6400
+
+
+
+# UDP收包队列
+
+UDP_RECV_LEN = 2000
+
+
+
+# 定时加载所有配置信息(包括bs.conf)的时间间隔(如果置0, 则使用60, 单位: 秒)
+
+#     如果IF_SYN_MIS = "YES"，则此时间也是与MIS同步的时间
+
+MIS_SYNTIME = 180
+
+
+
+# 是否同步MIS文件(不包括bs.conf)
+
+IF_SYN_MIS = "YES"
+
+#IF_SYN_MIS = "NO"
+
+
+
+# 更新bs.conf的Url地址，如果置空，则使用本地的bs.conf
+
+#     除非把此项置空或注释，否则bs.conf会一直更新
+
+BS_CONF_URL = "http://60.28.216.145:2016/Services/Bsconfig.ashx"
+
+
+
+# 加载服务器信息的文件路径
+
+CONF_DIR = "./config_dir"
+
+
+
+# 与MIS同步文件的路径
+
+MIS_SYNDIR = "./mis_dir"
+
+
+
+# 备份文件保留多久(0为不备份, 单位: 天)
+
+BAK_RETAIN_TIME = 30
+
+
+
+# 存放IP库Url
+
+IP_LIB_URL = "http://60.28.216.145:2016/Services/CooperatorIPs.ashx"
+
+
+# 最低支持版本号
+MINIMAL_PROTOCOL_VERSION = 0
+
+
+# 存放Index Server配置文件的Url
+
+INDEX_URL = "http://60.28.216.145:2016/Services/IndexServers.ashx"
+
+
+
+# 存放Stun Server配置文件的Url
+
+STUN_URL = "http://60.28.216.145:2016/Services/StunServers.ashx"
+
+# 存放ISP相关的配置信息的Url，包括tracker, collection和其他配置
+
+ISP_SERVER_URL = "http://60.28.216.145:2016/Services/TrackerServers.ashx"
+
+# 存放Config String的Url
+
+CONFIG_STRING_URL = "http://60.28.216.145:2016/Services/bs_config_string.txt"

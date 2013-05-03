@@ -1,0 +1,6 @@
+ifneq ($(filter /p2p/%,$(LOCAL_NAME)),)
+	PROJECT_INTERNAL_INCLUDES	:= $(addprefix p2p/,$(PROJECT_INTERNAL_INCLUDES))
+	PROJECT_EXTERNAL_INCLUDES	:= $(addprefix p2p/,$(PROJECT_EXTERNAL_INCLUDES)) p2p
+else
+	GLOBAL_INCLUDE_DIRECTORYS	:= base
+endif

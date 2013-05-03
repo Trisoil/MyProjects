@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是一个数据包的示例
+    做如下约定:
+    宏的定义: 
+        {LOCALUDPPORT}: 本地监听的UDP端口
+        {LOCALIP}: 本地的IP地址
+        {NOW}: 当前的时间
+        {DURING}: 从程序运行到目前的时间周期
+ -->
+ 
+ <!-- 
+    interval: 发送的频率值,指定一共发送多少秒
+    every_interval_send: 指定每个发送周期发送的数据包个数
+	loop_count: 指定发包的循环次数
+  -->
+  
+ <packet name="test packet" interval="1" every_interval_send="1" loop_count="1" local_port="5555" is_continuously_send="1">
+    <server ip="172.16.6.11" port="8887" protocol="udp" />
+    <struct>
+        <!-- common header -->
+        <CheckSum length="4" is_check_sum="1" />
+        <Action length="1">81</Action>
+        <TransactionID length="4" auto_inc="1">1</TransactionID>
+
+        <!-- LivePacket -->
+        <PacketType length="1">128</PacketType>
+        <Reserve length="1">0</Reserve>
+        <ProtocolVersion length="2">13</ProtocolVersion>
+        <ResourceID length="16" random_generate="0">ABCDEFABDCABCDEFABDCABCDEFABDCAB</ResourceID>
+        
+        <!-- Connect packet -->
+        <PeerID length="16" random_generate="0">ABCDEFABDCABCDEFABDCABCDEFABDCAB</PeerID>
+        <BasicInfo length="1" >0</BasicInfo>
+        <SendOffTime length="4" >{NOW}</SendOffTime>
+            <!-- CandidatePeerInfo -->
+            <IP length="4">{LOCALIP}</IP>
+            <UdpPort length="2">{LOCALUDPPORT}</UdpPort>
+            <TcpPort length="2">0</TcpPort>
+            <DetectedIP length="4">0</DetectedIP>
+            <DetectedPort length="2">{LOCALUDPPORT}</DetectedPort>
+            <StunIP length="4">0</StunIP>
+            <StunUdpPort length="2">0</StunUdpPort>
+            <Reserved length="4">0</Reserved>
+        <PeerType length="4" >0</PeerType>
+            <!-- PeerDownloadInfo -->
+            <IsDownloading length="1">0</IsDownloading>
+            <OnlineTime length="4">{DURING}</OnlineTime>
+            <AvgDownload length="2">0</AvgDownload>
+            <NowDownload length="2">0</NowDownload>
+            <AvgUpload length="2">0</AvgUpload>
+            <NowUpload length="2">0</NowUpload>
+            <AvgDownload length="2">0</AvgDownload>
+        <IpPoolSize length="2">0</IpPoolSize>
+    </struct>
+ </packet>
+ 

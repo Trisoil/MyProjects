@@ -1,0 +1,21 @@
+-- 编译步骤
+
+1、将所有文件按目录位置拷贝的mplayer源码目录，覆盖原来已有的文件
+2、./configure --prefix=`pwd`/install
+3、make install
+
+-- Win32版本编译
+
+./configure \
+--target=i586-mingw32msvc \
+--prefix=`pwd`/install \
+--cc=i586-mingw32msvc-gcc \
+--windres=i586-mingw32msvc-windres \
+--ar=i586-mingw32msvc-ar \
+--nm=i586-mingw32msvc-nm \
+--ranlib=i586-mingw32msvc-ranlib \
+--ar=i586-mingw32msvc-ar \
+--as=i586-mingw32msvc-as \
+--enable-runtime-cpudetection \
+--enable-static \
+

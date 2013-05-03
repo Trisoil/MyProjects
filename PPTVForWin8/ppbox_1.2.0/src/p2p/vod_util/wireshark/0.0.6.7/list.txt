@@ -1,0 +1,5 @@
+ppvideo.dll 0.0.6.7 Release
+采用新协议
+兼容新老CheckSum
+0x24协议命名为QueryNotifyList
+RequestSubpiece中添加上优先级

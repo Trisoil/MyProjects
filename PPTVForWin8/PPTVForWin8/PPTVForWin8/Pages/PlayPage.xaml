@@ -1,0 +1,39 @@
+﻿<common:LayoutAwarePage
+    x:Class="PPTVForWin8.Pages.PlayPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPTVForWin8.Pages"
+    xmlns:common="using:PPTVForWin8.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:localControls="using:PPTVForWin8.Controls"
+    mc:Ignorable="d" SizeChanged="LayoutAwarePage_SizeChanged">
+
+    <Grid x:Name="rootGrid" Background="Black" Style="{StaticResource LayoutRootStyle}">
+        
+        <Viewbox x:Name="rootView" Stretch="UniformToFill">
+            <MediaElement x:Name="xMediaPlayer" Width="1366" Height="768" AudioCategory="ForegroundOnlyMedia"/>
+        </Viewbox>
+
+        <Viewbox x:Name="titleView" Stretch="Uniform" VerticalAlignment="Top" Canvas.ZIndex="10" PointerPressed="titleView_PointerPressed">
+            <Grid Width="1366" Height="768">
+                <Grid Visibility="{Binding Visibility, ElementName=xPlayerControlGrid}" Height="70" VerticalAlignment="Top" Background="#30000000">
+                    <Button x:Name="backButton" Margin="50 0 0 0" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource SettingsBackButtonStyle}" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="xChannelTitleTextBlock" Margin="100 0 0 0" FontSize="28" VerticalAlignment="Center" TextTrimming="WordEllipsis"/>
+                </Grid>
+            </Grid>
+        </Viewbox>
+
+        <Viewbox x:Name="controlView" Stretch="Uniform" VerticalAlignment="Bottom" Canvas.ZIndex="10">
+            <Grid x:Name="xPlayerControlGrid" Width="1366" Height="768">
+                <localControls:PlayerController x:Name="xPlayerControler" VerticalAlignment="Bottom"/>
+            </Grid>
+        </Viewbox>
+
+        <Grid x:Name="xInfoGrid" HorizontalAlignment="Center" VerticalAlignment="Center" Height="150" Visibility="Collapsed">
+            <TextBlock x:Name="xInfoTextBlock" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20"/>
+            <ProgressRing x:Name="xProgressRing" Height="60" Width="60" IsActive="True"/>
+        </Grid>
+    </Grid>
+
+</common:LayoutAwarePage>

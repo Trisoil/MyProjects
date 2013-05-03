@@ -1,0 +1,25 @@
+-- 编译步骤
+
+1、将所有文件按目录位置拷贝到vlc源码目录，覆盖原来已有的文件
+2、修改configure.ac modules/access/Modules.am，增加ppbox相关项（这里提供vlc-1.0.6、vlc-2.0.1版本修改的修改结果）
+3、./bootstrap
+4、./configure --prefix=`pwd`/install
+5、make install
+
+-- Win32版本编译（上面的1、2步骤一样执行）
+
+具体参见 http://wiki.videolan.org/Win32Compile
+
+mkdir -p contrib/win32
+cd contrib/win32
+../bootstrap --host=i586-mingw32msvc
+make prebuilt
+cd -
+
+./bootstrap
+mkdir win32 && cd win32
+ln -s ../ppbox .
+../extras/package/win32/configure.sh --host=i586-mingw32msvc CPPFLAGS="-march=pentium4"
+make
+make package-win-common
+

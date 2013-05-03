@@ -1,0 +1,558 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4D1BA7BA-2D74-4073-9EDE-0175DD6E98B4}</ProjectGuid>
+    <RootNamespace>ppbox</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/p2p/peer/;../../../../src/p2p/;../../../../src/p2p/protocol/include/;../../../../src/p2p/log4cplus/;../../../../src/;../../../../include/;../../../../include/p2p/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /D /Y autopeerversion.h ..\..\..\..\src\p2p\peer\</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>autopeerversion.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_USRDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/p2p/peer/;../../../../src/p2p/;../../../../src/p2p/protocol/include/;../../../../src/p2p/log4cplus/;../../../../src/;../../../../include/;../../../../include/p2p/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /D /Y autopeerversion.h ..\..\..\..\src\p2p\peer\</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>autopeerversion.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/p2p/peer/;../../../../src/p2p/;../../../../src/p2p/protocol/include/;../../../../src/p2p/log4cplus/;../../../../src/;../../../../include/;../../../../include/p2p/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /D /Y autopeerversion.h ..\..\..\..\src\p2p\peer\</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>autopeerversion.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_USRDLL;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Common.h</PrecompiledHeaderFile>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/p2p/peer/;../../../../src/p2p/;../../../../src/p2p/protocol/include/;../../../../src/p2p/log4cplus/;../../../../src/;../../../../include/;../../../../include/p2p/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <PreBuildEvent>
+      <Command>xcopy /D /Y autopeerversion.h ..\..\..\..\src\p2p\peer\</Command>
+    </PreBuildEvent>
+    <PreBuildEvent>
+      <Message>autopeerversion.h</Message>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Windows">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\date_time\date_time.vcxproj">
+      <Project>{2ba2ac9e-83d2-4bcc-9199-34411b616e02}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\filesystem\filesystem.vcxproj">
+      <Project>{bc2244fc-b04f-481b-978b-0c263d27990c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\iostreams\iostreams.vcxproj">
+      <Project>{3a3aaf45-c64d-4200-874d-6a37e6686c1e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\program_options\program_options.vcxproj">
+      <Project>{7eaa2c15-742c-4659-bc70-4405e05feb6a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\regex\regex.vcxproj">
+      <Project>{aac0f8af-d553-4aa8-b4cf-b9a41561d67d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\system\system.vcxproj">
+      <Project>{1349efdf-14e6-4c92-9004-facdebe3692b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\boost\thread\thread.vcxproj">
+      <Project>{cf825256-b431-4811-87a8-bee24f049c94}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\cex\cex.vcxproj">
+      <Project>{154cb077-44ce-47bf-a1f1-8e9e2e01f75f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\framework\framework.vcxproj">
+      <Project>{05094621-e271-41ee-aa6b-a22c46da9a0a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\util\util.vcxproj">
+      <Project>{caf28d4b-9efe-4e81-b556-8d1ec1235524}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\winapi\winapi.vcxproj">
+      <Project>{34276ffd-404a-46f9-a4c1-877df3e20f14}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\..\base_1.2.2\build\msvc-wp8\zlib\zlib.vcxproj">
+      <Project>{269547a7-0133-4cbc-8554-797d097cd4a7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\protocol\udpserver_mod\udpserver_mod.vcxproj">
+      <Project>{69294792-ebb0-4599-b21c-bbe36eab6ac3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\tinyxml\tinyxml.vcxproj">
+      <Project>{44da6564-e21a-4a11-9030-c431f971b982}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\autopeerversion.hpp" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\AppBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\CommonThread.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\filesystem_util.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\intrusive_ptr.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\util.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\wsconvert.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\Common.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\count_object_allocate.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\interprocess\SharedMemory.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\io\StdFile.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\macro.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\MainThread.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\measure\ByteSpeedMeter.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\measure\CycleBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\message.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpAcceptor.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpClient.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpClient.hpp" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpClientOverUdpProxy.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpPost.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpRequest.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpResponse.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpServer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\icmp_header.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\ipv4_header.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\PingClient.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\PingClientBase.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\IHttpPostListener.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\Resolver.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\tcp\CrossDomainConfig.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\tcp\TcpConnection.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\tcp\TcpServer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\Uri.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\UrlCodec.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\AppModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\bootstrap\BootStrapGeneralConfig.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\config\Config.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\ConfigurationDownloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\DownloadDriver.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\Downloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\HttpTargetsManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\IConfigurationDownloadListener.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveBlockRequestManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDacStopDataStruct.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDataRateManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDownloadDriver.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveRestTimeTracker.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveStream.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveSwitchController.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\PieceRequestManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchController.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerInterface.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\UdpServersScoreHistory.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\index\IndexManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\notify\NotifyModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Assigner.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\ConnectingPeerBase.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\ConnectionBase.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\DownloadSpeedLimiter.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Exchanger.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\GateWayFinder.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPool.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPoolIndex.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveAssigner.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveConnectionManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveP2PDownloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LivePeerConnection.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceCountManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceRequestManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveUploadManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\NetworkQualityMonitor.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PDownloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2SPConfigs.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnection.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnector.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerHelper.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNConnection.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNPool.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SubPieceRequestManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\TcpUploadManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpBasedUploadConnectionsManagement.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpServerFromBSPool.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadBase.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadCacheModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimiter.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimitTracker.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadStruct.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\VodUploadManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\GzipDecompresser.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpConnection.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloadSpeedLimiter.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDragDownloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\LiveHttpDownloader.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\CommonProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\DirectProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\LiveProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\MessageBufferManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\NullProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\OpenServiceProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\PlayInfo.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyConnection.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeInfo.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\TestCoreProxySender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\CopyRightChecker.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\PlayHistoryManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\PushDownloadTask.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\PushModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\stun\NatCheckClient.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\stun\StunModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerClient.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerGroup.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerStation.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\peer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\random.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\Resource.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\BufferringMonitor.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\BufferringReportCondition.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\CollectionCriteria.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\CollectionSpec.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\Compressor.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\DACStatisticModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\DownloadDriverStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\GZipCompressor.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\HttpDownloaderStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\LiveDownloadDriverStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\P2PDownloaderStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\PeerConnectionStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\ReportCondition.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\SpeedInfoStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionConfigurationFile.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionController.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollector.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectorSettings.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfiguration.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfigurationsParser.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsData.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReporter.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReportingConfiguration.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReportSender.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsRequest.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticStructs.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticUtil.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\UploadStatisticModule.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\BlockNode.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\CfgFile.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\FileResource.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\FileResourceInfo.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\format\MetaFLVParser.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\format\MetaMP4Parser.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\format\Mp4Spliter.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\HeaderSubPiece.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\HmacMd5.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Instance.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\InstanceMemoryConsumer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\IStorage.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveAnnounceMapBuilder.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveBlockNode.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveCacheManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveInstance.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveInstanceMemoryConsumer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LivePointTracker.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LivePosition.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryConsumer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryConsumptionMonitor.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryQuota.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryQuotaAssigner.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryUsageDescription.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\NullResource.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Performance.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Resource.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\SpaceManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Storage.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\StorageThread.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\storage_base.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\SubPieceManager.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\WindowsMessage.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\base\CommonThread.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\count_object_allocate.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\interprocess\SharedMemory.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\MainThread.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\measure\ByteSpeedMeter.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\measure\CycleBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpAcceptor.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpClientOverUdpProxy.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpPost.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpRequest.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpResponse.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpServer.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\icmp\PingClient.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\icmp\PingClientBase.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\Resolver.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\tcp\CrossDomainConfig.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\tcp\TcpConnection.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\UrlCodec.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\AppModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\bootstrap\BootStrapGeneralConfig.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\config\Config.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\ConfigurationDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\DownloadDriver.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\Downloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\HttpTargetsManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveBlockRequestManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDataRateManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDownloadDriver.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveRestTimeTracker.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveStream.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveSwitchController.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\PieceRequestManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchController.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerDownloadControlMode.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerOpenServicePushControlMode.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerOpenServiceVideoControlMode.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\UdpServersScoreHistory.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\index\IndexManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\notify\NotifyModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Assigner.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\ConnectionBase.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\DownloadSpeedLimiter.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Exchanger.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\GateWayFinder.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPool.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPoolIndex.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveAssigner.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveConnectionManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveP2PDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LivePeerConnection.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceCountManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceRequestManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveUploadManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\NetworkQualityMonitor.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2SPConfigs.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnection.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnector.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerHelper.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNConnection.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNPool.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SubPieceRequestManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\TcpUploadManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpBasedUploadConnectionsManagement.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpServerFromBSPool.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadCacheModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimiter.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimitTracker.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\VodUploadManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\GzipDecompresser.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpConnection.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloadSpeedLimiter.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDragDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\LiveHttpDownloader.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\CommonProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\DirectProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\LiveProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\MessageBufferManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\NullProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\OpenServiceProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\PlayInfo.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyConnection.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeInfo.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\TestCoreProxySender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\CopyRightChecker.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\PlayHistoryManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\PushDownloadTask.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\PushModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\stun\NatCheckClient.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\stun\StunModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerClient.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerGroup.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerStation.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\peer.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\BufferringMonitor.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\BufferringReportCondition.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\CollectionCriteria.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\DACStatisticModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\DownloadDriverStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\GZipCompressor.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\HttpDownloaderStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\LiveDownloadDriverStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\P2PDownloaderStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\PeerConnectionStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\SpeedInfoStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionConfigurationFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionController.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollector.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectorSettings.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfiguration.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfigurationsParser.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsData.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReporter.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReportSender.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsRequest.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticStructs.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\UploadStatisticModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\BlockMap.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\BlockNode.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\CfgFile.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\FileResource.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\FileResourceInfo.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\format\MetaFLVParser.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\format\MetaMP4Parser.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\format\Mp4Spliter.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\HeaderSubPiece.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\HmacMd5.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Instance.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\InstanceMemoryConsumer.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveAnnounceMapBuilder.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveBlockNode.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveCacheManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveInstance.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveInstanceMemoryConsumer.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\MemoryQuotaAssigner.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\NullResource.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Performance.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Resource.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\SpaceManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Storage.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\StorageThread.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\SubPieceManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\WindowsMessage.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\p2p\peer\peer.def" />
+    <None Include="..\..\..\..\src\p2p\peer\Peer.map" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

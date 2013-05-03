@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="archive">
+      <UniqueIdentifier>{b46df449-6de2-48e5-a35b-22efdb1f997f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{a7694ce1-c145-47b3-a398-45c27cfbacf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stream">
+      <UniqueIdentifier>{73051918-fc31-40bb-8f1f-1bc919cfafe0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="serialization">
+      <UniqueIdentifier>{08310366-aa16-45de-b815-b7a2f7de42c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\http">
+      <UniqueIdentifier>{986b699a-35db-4921-a54a-f9f279c3b4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="daemon">
+      <UniqueIdentifier>{2ca0e288-44c7-41a5-a445-acd421484c7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\rtsp">
+      <UniqueIdentifier>{394b440d-cb18-405a-9c22-ebe10018781d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\pptv">
+      <UniqueIdentifier>{c97e437e-9dca-479e-a16e-7e86f1f07732}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="event">
+      <UniqueIdentifier>{3f9c0f6b-b881-4061-aa2f-c48b3020ede5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\mmsp">
+      <UniqueIdentifier>{f6b8528d-159a-4ecf-b06d-7470fa504aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol\rtmp">
+      <UniqueIdentifier>{6b4ed25d-9e3f-4e0d-a4dd-97b8b69560f1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\util\daemon\Daemon.cpp">
+      <Filter>daemon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\daemon\detail\ModuleRegistry.cpp">
+      <Filter>daemon</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\event\Observable.cpp">
+      <Filter>event</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpClient.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpHead.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpPacket.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpProxy.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpProxy2.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpServer.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\http\HttpSocket.cpp">
+      <Filter>protocol\http</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\mmsp\MmspMessage.cpp">
+      <Filter>protocol\mmsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\mmsp\MmspServer.cpp">
+      <Filter>protocol\mmsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\mmsp\MmspSocket.cpp">
+      <Filter>protocol\mmsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\pptv\Base64.cpp">
+      <Filter>protocol\pptv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\pptv\TimeKey.cpp">
+      <Filter>protocol\pptv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\pptv\Url.cpp">
+      <Filter>protocol\pptv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtsp\RtspHead.cpp">
+      <Filter>protocol\rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtsp\RtspPacket.cpp">
+      <Filter>protocol\rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtsp\RtspServer.cpp">
+      <Filter>protocol\rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtsp\RtspSocket.cpp">
+      <Filter>protocol\rtsp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\ChunkedSink.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\ChunkedSource.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\FilterSink.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\FilterSource.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\Sink.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\Socket.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\stream\Source.cpp">
+      <Filter>stream</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\Util.cpp" />
+    <ClCompile Include="..\..\..\src\util\Version.cpp" />
+    <ClCompile Include="..\..\..\src\util\protocol\MessageBase.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\MessageSocket.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpMessageParser.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpServer.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpSocket.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpChunkHeader.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpMessageContext.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpChunkParser.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\util\protocol\rtmp\RtmpHandshake.cpp">
+      <Filter>protocol\rtmp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\util\protocol\http\HttpArchive.h">
+      <Filter>protocol\http</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\CustomDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\DispatchModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\DispatchThread.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\DropSink.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Session.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SessionGroup.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SessionManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SharedDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SingleDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\SinkGroup.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Task.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\TaskDispatcher.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\Version.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\mux\MuxDispatcher.cpp">
+      <Filter>mux</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\dispatch\merge\MergeDispatcher.cpp">
+      <Filter>merge</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\CustomDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatchBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatcherBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatchModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DispatchThread.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\DropSink.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Error.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Request.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Session.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SessionGroup.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SessionManager.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SharedDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SingleDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\SinkGroup.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Task.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\TaskConfig.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\TaskDispatcher.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\Version.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\mux\MuxDispatcher.h">
+      <Filter>mux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\mux\MuxTask.h">
+      <Filter>mux</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\merge\MergeDispatcher.h">
+      <Filter>merge</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\dispatch\merge\MergeTask.h">
+      <Filter>merge</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="mux">
+      <UniqueIdentifier>{56c57955-a872-4f00-a304-54253e706d82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="merge">
+      <UniqueIdentifier>{7fbcd739-2ab7-48d5-b1c5-7737a8bccdc3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

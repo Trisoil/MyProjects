@@ -1,0 +1,101 @@
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+        "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+  <bean id="placeholderConfig" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+    <property name="location">
+      <value>classpath:init.properties</value>
+    </property>
+  </bean>
+  <bean id="dataSource1" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName">
+      <value>${datasource.driverClassName}</value>
+    </property>
+    <property name="url">
+      <value>${datasource.url}</value>
+    </property>
+    <property name="username">
+      <value>${datasource.username}</value>
+    </property>
+    <property name="password">
+      <value>${datasource.password}</value>
+    </property>
+    <property name="maxActive">
+      <value>${datasource.maxActive}</value>
+    </property>
+    <property name="maxIdle">
+      <value>${datasource.maxIdle}</value>
+    </property>
+    <property name="maxWait">
+      <value>${datasource.maxWait}</value>
+    </property>
+    <property name="defaultAutoCommit">
+      <value>${datasource.defaultAutoCommit}</value>
+    </property>
+  </bean>
+  <bean id="dataSource2" class="org.apache.commons.dbcp.BasicDataSource" destroy-method="close">
+    <property name="driverClassName">
+      <value>${datasource.driverClassName}</value>
+    </property>
+    <property name="url">
+      <value>${datasource2.url}</value>
+    </property>
+    <property name="username">
+      <value>${datasource2.username}</value>
+    </property>
+    <property name="password">
+      <value>${datasource2.password}</value>
+    </property>
+    <property name="maxActive">
+      <value>${datasource.maxActive}</value>
+    </property>
+    <property name="maxIdle">
+      <value>${datasource.maxIdle}</value>
+    </property>
+    <property name="maxWait">
+      <value>${datasource.maxWait}</value>
+    </property>
+    <property name="defaultAutoCommit">
+      <value>${datasource.defaultAutoCommit}</value>
+    </property>
+  </bean>  
+  <bean id="mailSender" class="tool.mail.MailSender" singleton="false">
+    <property name="mailServerHost">
+      <value>${mail.serverHost}</value>
+    </property>
+    <property name="mailServerAccount">
+      <value>${mail.serverAccount}</value>
+    </property>
+    <property name="mailServerPassword">
+      <value>${mail.serverPassword}</value>
+    </property>
+    <property name="fromMail">
+      <value>${mail.fromMail}</value>
+    </property>
+    <property name="fromUserName">
+      <value>${mail.fromUserName}</value>
+    </property>
+    <property name="replyMail">
+      <value>${mail.replyMail}</value>
+    </property>
+  </bean>
+  <!--<bean id="trafficLoadTasker" class="com.ppt.task.TrafficLoadTask"/>
+  <bean id="trafficLoadTask" class="org.springframework.scheduling.timer.ScheduledTimerTask">
+    <property name="delay">
+      <value>5000</value>
+    </property>
+    <property name="period">
+      <value>10000</value>
+    </property>
+    <property name="timerTask">
+      <ref local="trafficLoadTasker"/>
+    </property>
+  </bean>
+  <bean id="timerFactory" class="org.springframework.scheduling.timer.TimerFactoryBean">
+    <property name="scheduledTimerTasks">
+      <list>
+        <ref local="trafficLoadTask"/>
+      </list>
+    </property>
+  </bean>-->
+  <!--Task-->
+</beans>

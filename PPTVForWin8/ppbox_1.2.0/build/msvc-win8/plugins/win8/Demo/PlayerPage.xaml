@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="Demo.PlayerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Demo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center"  HorizontalAlignment="Center">
+            <Border BorderThickness="2" BorderBrush="Blue">
+                <MediaElement x:Name="video" MediaOpened="video_Opened" VerticalAlignment="Center" HorizontalAlignment="Center" Height="720"/>
+            </Border>
+            <StackPanel Orientation="Horizontal" Margin="10 10 0 0" HorizontalAlignment="Center">
+                <Button Content="播放" Margin="10 0 0 0" Click="playButton_Click" />
+                <Button Content="暂停" Margin="10 0 0 0" Click="pauseButton_Click" />
+                <TextBox x:Name="text1" Margin="10 0 0 0" Height="38" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Yellow"/>
+                <Slider x:Name="slider" ValueChanged="slider_Changed" StepFrequency="10" Margin="10 0 0 0" Width="400" FontFamily="Global User Interface" Height="38" />
+                <TextBox x:Name="text2" Margin="10 0 0 0" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Yellow"/>
+                <Button Content="停止" Margin="10 0 0 0" Click="stopButton_Click" />
+                <Button Content="返回" Margin="10 0 0 0" Click="backButton_Click" />
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

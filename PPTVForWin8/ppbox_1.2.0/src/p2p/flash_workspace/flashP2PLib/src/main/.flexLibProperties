@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="com.pplive.p2p.struct.Constants"/>
+    <classEntry path="com.pplive.p2p.mp4.Mp4Header"/>
+    <classEntry path="com.pplive.p2p.download.IDownloadDriver"/>
+    <classEntry path="com.pplive.p2p.download.IDownloader"/>
+    <classEntry path="com.pplive.p2p.download.HttpDownloader"/>
+    <classEntry path="com.pplive.p2p.download.DownloadDriver"/>
+    <classEntry path="com.pplive.p2p.download.IDownloadTarget"/>
+    <classEntry path="com.pplive.p2p.download.P2PDownloader"/>
+    <classEntry path="com.pplive.p2p.download.ISwitchController"/>
+    <classEntry path="com.pplive.p2p.download.SwitchController"/>
+    <classEntry path="com.pplive.p2p.download.SpeedMeter"/>
+    <classEntry path="com.pplive.p2p.IP2PStream"/>
+    <classEntry path="com.pplive.p2p.P2PMp4Stream"/>
+    <classEntry path="com.pplive.p2p.P2PModule"/>
+    <classEntry path="com.pplive.p2p.BootStrapModule"/>
+    <classEntry path="com.pplive.p2p.struct.PeerInfo"/>
+    <classEntry path="com.pplive.p2p.events.GetPeersEvent"/>
+    <classEntry path="com.pplive.p2p.network.TcpStream"/>
+    <classEntry path="com.pplive.p2p.network.protocol.Packet"/>
+    <classEntry path="com.pplive.p2p.network.protocol.AnnounceRequestPacket"/>
+    <classEntry path="com.pplive.p2p.struct.RID"/>
+    <classEntry path="com.pplive.p2p.network.protocol.AnnounceResponsePacket"/>
+    <classEntry path="com.pplive.p2p.struct.PeerDownloadInfo"/>
+    <classEntry path="com.pplive.p2p.network.protocol.SubPieceRequestPacket"/>
+    <classEntry path="com.pplive.p2p.network.protocol.PeerRequestPacket"/>
+    <classEntry path="com.pplive.p2p.network.protocol.PeerResponsePacket"/>
+    <classEntry path="com.pplive.p2p.network.protocol.SubPiecePacket"/>
+    <classEntry path="com.pplive.p2p.network.protocol.ReportSpeedPacket"/>
+    <classEntry path="com.pplive.p2p.network.ISocket"/>
+    <classEntry path="com.pplive.p2p.network.SocketAdaptor"/>
+    <classEntry path="com.pplive.p2p.struct.TrackerInfo"/>
+    <classEntry path="com.pplive.p2p.IP2PModule"/>
+    <classEntry path="com.pplive.p2p.tracker.TrackerConnection"/>
+    <classEntry path="com.pplive.p2p.tracker.ITrackerModule"/>
+    <classEntry path="com.pplive.p2p.download.IPPool"/>
+    <classEntry path="com.pplive.p2p.network.Endpoint"/>
+    <classEntry path="com.pplive.p2p.download.PeerConnector"/>
+    <classEntry path="com.pplive.p2p.download.IConnectorListener"/>
+    <classEntry path="com.pplive.p2p.download.PeerConnection"/>
+    <classEntry path="com.pplive.p2p.struct.BlockMap"/>
+    <classEntry path="com.pplive.p2p.download.IP2PDownloader"/>
+    <classEntry path="com.pplive.p2p.download.Downloader"/>
+    <classEntry path="com.pplive.p2p.events.GetSeekTimeEvent"/>
+    <classEntry path="com.pplive.play.PlayInfo"/>
+    <classEntry path="com.pplive.play.SegmentInfo"/>
+    <classEntry path="com.pplive.p2p.events.SegmentCompleteEvent"/>
+    <classEntry path="com.pplive.events.PlayStatusEvent"/>
+    <classEntry path="com.pplive.events.DacLogEvent"/>
+    <classEntry path="com.pplive.p2p.kernel.KernelDectecter"/>
+    <classEntry path="com.pplive.p2p.struct.StructUtil"/>
+    <classEntry path="com.pplive.p2p.kernel.StatusReporter"/>
+    <classEntry path="com.pplive.p2p.network.protocol.ReportStatusPacket"/>
+    <classEntry path="com.pplive.p2p.kernel.KernelDescription"/>
+    <classEntry path="com.pplive.events.PlayProgressEvent"/>
+    <classEntry path="com.pplive.p2p.network.ISocketListener"/>
+    <classEntry path="com.pplive.p2p.download.HttpConnection"/>
+    <classEntry path="com.pplive.p2p.network.protocol.StartDownloadPacket"/>
+    <classEntry path="com.pplive.p2p.network.protocol.StopDownloadPacket"/>
+    <classEntry path="com.pplive.play.IPlayManager"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

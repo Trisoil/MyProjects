@@ -1,0 +1,11 @@
+电信IP 122.4.74.41  
+网通IP 119.167.233.41
+端口：2200
+u:root
+p:S1306pp.tv
+###################mysql#################
+u:root
+p:new-password
+##################hphadmmin#############
+root
+Q9aKyAJ3DAveHbUt

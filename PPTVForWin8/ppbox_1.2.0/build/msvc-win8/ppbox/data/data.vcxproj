@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\Buffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\DataStatistic.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\MediaBase.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SingleMedia.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SingleSource.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SinkBase.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SourceBase.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SourceStream.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\DataModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\media\M3u8Media.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\media\M3u8MediaImpl.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentMedia.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentSource.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentStrategy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\sink\FileSink.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\source\FileSource.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\source\HttpSource.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\source\PipeSource.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\BodyStrategy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\FullStrategy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\HeadStrategy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\ListStrategy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\Version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\Buffer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\DataBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\DataStatistic.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\MediaBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\MediaInfo.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\PlayInfo.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SingleMedia.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SingleSource.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SinkBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SinkTypes.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceBase.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceError.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceEvent.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceStream.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceTypes.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\DataModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\media\M3u8Media.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\media\M3u8MediaImpl.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentInfo.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentMedia.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentPosition.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentSource.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentStrategy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentStream.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\sink\FileSink.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\source\FileSource.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\source\HttpSource.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\source\PipeSource.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\BodyStrategy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\FullStrategy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\HeadStrategy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\ListStrategy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Version.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4555c995-0520-4ce5-b370-3c24008f8be4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>data</ProjectName>
+    <RootNamespace>data</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <AppContainerApplication>true</AppContainerApplication>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-win8/;../../../../platform/msvc-win8/c++ex/;../../../../platform/msvc-win8/cex;../../../../platform/msvc-win8/winapi;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/data/Common.h</PrecompiledHeaderFile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeaderFile>ppbox/data/Common.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-win8/;../../../../platform/msvc-win8/c++ex/;../../../../platform/msvc-win8/cex;../../../../platform/msvc-win8/winapi;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|arm'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-win8/;../../../../platform/msvc-win8/c++ex/;../../../../platform/msvc-win8/cex;../../../../platform/msvc-win8/winapi;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>ppbox/data/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|arm'">
+    <ClCompile>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-win8/;../../../../platform/msvc-win8/c++ex/;../../../../platform/msvc-win8/cex;../../../../platform/msvc-win8/winapi;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>ppbox/data/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeaderFile>ppbox/data/Common.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-win8/;../../../../platform/msvc-win8/c++ex/;../../../../platform/msvc-win8/cex;../../../../platform/msvc-win8/winapi;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <CompileAsWinRT>false</CompileAsWinRT>
+      <SDLCheck>false</SDLCheck>
+      <PrecompiledHeaderFile>ppbox/data/Common.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-win8/;../../../../platform/msvc-win8/c++ex/;../../../../platform/msvc-win8/cex;../../../../platform/msvc-win8/winapi;$(ProjectDir);$(GeneratedFilesDir);$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;NDEBUG;_UNICODE;UNICODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

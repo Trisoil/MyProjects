@@ -1,0 +1,73 @@
+在Windows上编译Wireshark源代码
+
+最近需要开发Wireshark插件，分析一套协议，于是首先要解决的问题就是如何在windows环境下编译Wireshark，编译过程中也借鉴了一些网上的资料，但是基本都有问题，在经历无数次的失败之后的摸索，最终在Wireshark编译成功。
+
+
+在编译过程中需要一下软件：Visual Studio，Python，Cygwin以及Wireshark源代码。
+
+1. Visual Studio
+
+我使用的是Visual Studio 2005版本，据说从VC6到VS2008都可以支持。
+
+2. Python
+
+下载安装Python，从2.4 – 2.6应该都是可以的，我使用2.4版本。主要是在编译过程中会使用到Python。
+
+3. Cygwin
+
+去Cygwin上下载最新版本安装，然后开始安装，整个安装过程是在线安装，特别注意的是，以下库必须安装，否则绝对顺利完成编译：
+
+Archive / unzip
+Devel / bison
+Devel / flex
+Interpreters / perl
+Utils / patch
+Web / wget
+4. 下载Wireshark源代码 & 编辑config.nmake
+
+输入这个网址，http://www.wireshark.org/download/src/all-versions/，从上面下载Wireshark源代码，这里，值得一提的是，网上所有编译的Wireshark都是0.99.7版本的，其实这个版本是很有问题的。这里建议编译1.2.7版本，我是在1.2.7版本上面编译成功的。
+
+下载完成之后，在Wireshark目录里面打开config.nmake，需要进行一些设置之后才可以开始编译。
+
+（1）WIRESHARK_LIBS，设置编译wireshark所需的库所在的目录，默认即可。
+（2）PROGRAM_FILES，设置本机程序安装目录，默认即可。
+（3）MSVC_VARIANT，因为我使用VS2005编译，所以这里将值为MSVC2005的那一行前的#去掉，其余MSVC_VARIANT项行首全部加上#注释掉。
+（4）CYGWIN_PATH，将其设置为Cygwin的bin目录，例如D:\Cygwin\bin。
+（5）PYTHON及其后的PATH，将其修改为本机python.exe和其安装目录的位置，例如D:\Python2.4\Python.exe。
+其余的选项都默认即可。
+（6）MSVCR_DLL，如果VS安装在D盘，请在这里相应的地方用绝对路径表示，而不要去修改前面的PROGRAM_FILES，否则会出现意想不到的错误。
+
+5. 编译Wireshark
+
+把svn中的capture_if_details_dlg_win32.c文件放到wireshark的gtk目录下，替换掉原来的。
+
+用VS2005安装的VS2005命令提示进入或者通过CMD进入之后，再去运行VC下面的vcvars32.bat。然后进去Wireshark目录，首先通过下面的命令检验一下：
+
+nmake -f Makefile.nmake verify_tools
+如果正确的话，应该出现以下提示，如果不是缺少库之类的，请安装完成再运行以上命令，直到出现没有错误。
+
+C:\wireshark>nmake -f Makefile.nmake verify_tools
+      Microsoft (R) Program Maintenance Utility   Version 6.00.8168.0
+      Copyright (C) Microsoft Corp 1988-1998. All rights reserved.
+      Checking for required applications:
+        cl: /cygdrive/e/dev/vc6/VC98/BIN/cl
+        link: /cygdrive/e/dev/vc6/VC98/BIN/link
+        nmake: /cygdrive/e/dev/vc6/VC98/BIN/nmake
+        bash: /usr/bin/bash
+        bison: /usr/bin/bison
+        flex: /usr/bin/flex
+        env: /usr/bin/env
+        grep: /usr/bin/grep
+        /usr/bin/find: /usr/bin/find
+        perl: /usr/bin/perl
+        C:/python24/python.exe: /cygdrive/c/python24/python.exe
+        sed: /usr/bin/sed
+        unzip: /usr/bin/unzip
+        wget: /usr/bin/wget
+然后下载编译过程中需要的库文件：
+
+nmake -f Makefile.nmake setup
+这时，会在WIRESHARK_LIBS目录下下载一些库文件并解压完成。最后，执行以下命令就可以开始编译了，整个编译过程时间上比较长，请耐心等待，在系统没有给出明确的提示之前，不要关闭。
+
+nmake -f Makefile.nmake all
+直到这里整个编译过程就结束了，Wireshark编译成功了，我们就可以在上面开始准备编写插件了。

@@ -1,0 +1,56 @@
+﻿<UserControl
+    x:Class="PPTVForWin8.Controls.LiveDetailControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPTVForWin8.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:localControls="using:PPTVForWin8.Controls"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="510">
+        
+    <Border BorderThickness="1" BorderBrush="Black">
+        <Grid Background="#001f38" Opacity="0.98" Width="510">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="140" />
+                <RowDefinition Height="2"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Image Margin="20 0 0 0" Width="64" Height="64" Source="{Binding ChannelInfo.ImageUri}" Stretch="Uniform" HorizontalAlignment="Left"/>
+                <TextBlock Margin="104 10 0 0" FontSize="40" Width="250" Height="50" Text="{Binding ChannelInfo.Title}" TextTrimming="WordEllipsis" HorizontalAlignment="Left"/>
+                <Button Width="126" Height="45" Content="播放" FontSize="23" FontFamily="Yu Gothic" BorderThickness="0" Background="{StaticResource OrangeColor}" Margin="0 0 15 0" HorizontalAlignment="Right" Click="playBtn_Click"/>
+            </Grid>
+            <Image Grid.Row="1" Source="ms-appx:///Images/livedetailsplit.png"/>
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Grid.Row="2" Margin="20,20,0,0">
+                <ToggleButton x:Name="btntoday" IsChecked="True" CommandParameter="today" Click="toggleButton_Click" Style="{StaticResource LiveTabToggleButtonStyle}"/>
+                <ToggleButton x:Name="btntomorrow" Margin="23,0,0,0" CommandParameter="tomorrow" Click="toggleButton_Click" Style="{StaticResource LiveTabToggleButtonStyle}"/>
+                <ToggleButton x:Name="btntomorrow1" Margin="23,0,0,0" CommandParameter="tomorrow1" Click="toggleButton_Click" Style="{StaticResource LiveTabToggleButtonStyle}"/>
+                <ToggleButton x:Name="btntomorrow2" Margin="23,0,0,0" CommandParameter="tomorrow2" Click="toggleButton_Click" Style="{StaticResource LiveTabToggleButtonStyle}"/>
+                <ToggleButton x:Name="btntomorrow3" Margin="23,0,0,0" CommandParameter="tomorrow3" Click="toggleButton_Click" Style="{StaticResource LiveTabToggleButtonStyle}"/>
+            </StackPanel>
+
+            <ListView
+                x:Name="paradeListView"
+                Grid.Row="2"
+                Margin="-4 60 -20 60"
+                SelectionMode="None"
+                IsItemClickEnabled="True"
+                Style="{StaticResource ListViewVerticalStyle}"
+                ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                ItemTemplateSelector="{StaticResource liveParadeTemplateSelector}"
+                ItemContainerStyle="{StaticResource ListViewNoMarginStyle}"
+                ItemClick="paradeListView_ItemClick"
+                >
+            </ListView>
+            <localControls:LoadingTipControl x:Name="loadingTip" Grid.RowSpan="3" />
+            <Grid Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="99" Height="39" Margin="0 0 1 1" Tapped="closedGrid_Tapped">
+                <Image Source="ms-appx:///Images/livedetailclose.png"/>
+                <TextBlock Text="关闭" FontSize="20" VerticalAlignment="Center" HorizontalAlignment="Center" Margin=" 0 5 0 0"/>
+            </Grid>
+        </Grid>
+    </Border>
+    
+</UserControl>

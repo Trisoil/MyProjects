@@ -1,0 +1,15 @@
+################################################
+#  Udp Index Proxy Config
+################################################
+
+
+index_proxy.local_udp_port = 4000
+index_proxy.udp_server_receive_count = 1000
+
+# can not point to self
+index_proxy.core_index_server = 192.168.43.97:4000
+index_proxy.backup_index_server = 60.28.216.149:4000|192.168.43.97:4001
+
+# 
+index_proxy.timeout_interval_in_millisec = 5000
+index_proxy.check_timeout_interval_in_millisec = 3000

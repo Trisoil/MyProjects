@@ -1,0 +1,54 @@
+﻿<UserControl
+    x:Class="PPTVForWin8.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPTVForWin8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="768"
+    d:DesignWidth="346">
+
+    <Grid x:Name="rootGrid" Background="{StaticResource DeepBlueColor}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="40, 32, 17, 13">
+                <Button Click="backButton_Click" Margin="0,3,0,0"  Style="{StaticResource SettingsBackButtonStyle}"/>
+                <TextBlock Margin="10,0,0,0" FontFamily="Segoe UI" FontWeight="SemiLight" FontSize="24.6667" Text="关于我们" Foreground="White"/>
+            </StackPanel>
+        </Grid>
+
+        <ScrollViewer Style="{StaticResource VerticalScrollViewerStyle}" Grid.Row="1">
+            <Grid Margin="40,20,40,39" VerticalAlignment="Top" Grid.RowSpan="3">
+                <StackPanel x:Name="FlyoutContent">
+                    <Image Source="ms-appx:///Images/aboutlogo.png" Margin="-2 0 0 0" Stretch="None" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="120,-20,0,0" TextWrapping="Wrap" Text="网络电视" VerticalAlignment="Top" Style="{StaticResource NomalTextBlock}"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="0 20 0 0" TextWrapping="Wrap" Text="软件版本    1.2.1" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="技术提供    PPlive Corporation" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="官方网址    http://www.PPTV.com" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="客服邮箱    kefu@pptv.com" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="用户QQ群   242147347" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+
+                    <TextBlock HorizontalAlignment="Left" Margin="0 20 0 0" TextWrapping="Wrap" Text="简介:" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="PPTV网络电视是PPlive旗下媒体,一" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="款全球安装量最大的网络电视,可以在" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="线观看&quot;电影 电视剧 动漫 综艺 体育" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="直播 游戏竞技 财经资讯&quot;等丰富视频" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="娱乐节目,是广受网友推崇必备视频软" VerticalAlignment="Center" Style="{StaticResource NomalTextBlock}"/>
+                    <TextBlock HorizontalAlignment="Left" Margin="0 10 0 0" TextWrapping="Wrap" Text="件" VerticalAlignment="Top" Style="{StaticResource NomalTextBlock}"/> 
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+        
+    </Grid>
+</UserControl>

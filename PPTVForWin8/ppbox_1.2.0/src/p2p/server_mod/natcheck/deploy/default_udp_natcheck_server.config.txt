@@ -1,0 +1,22 @@
+##########################################################
+#           NatCheck Server Config File
+##########################################################
+[natcheck]
+
+# The Size of the Queue to Receive UDP Packet
+## 接收UDP报文队列的大小
+
+natcheck.udp_server_receive_count = 2000
+
+# 最低支持版本号
+
+natcheck.min_protocol_version = 0
+
+natcheck.logconf=./natcheck_log.conf
+
+natcheck.master_ip=0.0.0.0
+natcheck.master_port=13478
+natcheck.diff_port_slave_port=13479
+
+natcheck.diff_ip_slave_ip=0.0.0.0
+natcheck.diff_ip_slave_port=13480

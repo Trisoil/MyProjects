@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatePushFile", "CreatePushFile\CreatePushFile.csproj", "{6E71772C-A8E7-45EA-9F37-B8DF3F5B79B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DownloadLatest", "DownloadLatest\DownloadLatest.csproj", "{C26C6EB2-C2A1-4A84-86DF-B2B09689AD7F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6E71772C-A8E7-45EA-9F37-B8DF3F5B79B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E71772C-A8E7-45EA-9F37-B8DF3F5B79B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E71772C-A8E7-45EA-9F37-B8DF3F5B79B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E71772C-A8E7-45EA-9F37-B8DF3F5B79B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C26C6EB2-C2A1-4A84-86DF-B2B09689AD7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C26C6EB2-C2A1-4A84-86DF-B2B09689AD7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C26C6EB2-C2A1-4A84-86DF-B2B09689AD7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C26C6EB2-C2A1-4A84-86DF-B2B09689AD7F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

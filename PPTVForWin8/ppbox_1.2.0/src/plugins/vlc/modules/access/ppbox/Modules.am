@@ -1,0 +1,9 @@
+SOURCES_ppbox = \
+	ppbox.c \
+	$(NULL)
+libppbox_plugin_la_CFLAGS = $(AM_CFLAGS) \
+	-fno-strict-aliasing
+libppbox_plugin_la_LIBADD = $(AM_LIBADD)
+libppbox_plugin_la_DEPENDENCIES =
+
+libvlc_LTLIBRARIES += libppbox_plugin.la

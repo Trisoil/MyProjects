@@ -1,0 +1,6 @@
+//公网和内网的tinydrag
+GET http://tinydrag.synacast.com/7/%C7%A7%C9%BD%C4%BA%D1%A9%B8%DF%C7%E5%28%B5%DA03%BC%AF%29.mp40drag HTTP/1.1\r\nSID:1234567890FEDCBA\r\n 
+
+//内网的play
+http://client-play.pptv.com/chplay3-71780-11550439.xml&param=type%3Dclient%26userType%3D1%26areaType%3D333%26dns%3D3355486400 HTTP/1.1\r\nSID:1234567890FEDCBA\r\n
+

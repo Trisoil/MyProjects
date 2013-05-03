@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{10E3E4E7-CB92-4F7F-AEE0-DDA56F41A340}</ProjectGuid>
+    <RootNamespace>filesystem</RootNamespace>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <PlatformToolset>v110_wp80</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/avformat/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/avformat/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/avformat/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PreprocessorDefinitions>BOOST_USER_CONFIG=&lt;boost_config.h&gt;;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <AdditionalUsingDirectories>$(WindowsSDK_MetadataPath);$(AdditionalUsingDirectories)</AdditionalUsingDirectories>
+      <AdditionalIncludeDirectories>../../../../src/;../../../../include/;../../../../include/base/;../../../../platform/msvc-wp8/;../../../../platform/msvc-wp8/c++ex/;../../../../platform/msvc-wp8/cex;../../../../platform/msvc-wp8/winapi;</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>ppbox/avformat/Common.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="Windows">
+      <IsWinMDFile>true</IsWinMDFile>
+    </Reference>
+    <Reference Include="platform.winmd">
+      <IsWinMDFile>true</IsWinMDFile>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\AvformatModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacCodec.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacConfigHelper.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcCodec.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcConfigHelper.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNaluHelper.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcType.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\Common.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\flv\FlvMetaData.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mkv\MkvAlgorithm.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Merge.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Stream.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Algorithm.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Merge.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\CrcBuffer.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PatPacket.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PesPacket.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PmtPacket.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PsiPacket.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\TsPacket.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\Version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\asf\AsfGuid.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\asf\AsfObjectType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\AvformatModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacAdts.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacCodec.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacConfig.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacConfigHelper.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacGAConfig.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcCodec.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcConfig.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcConfigHelper.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNalu.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNaluBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNaluHelper.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcSeiType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcSliceType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcSpsPpsType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcVuiType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\Codec.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\CodecTypes.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Error.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvDataType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvFormat.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvMetaData.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvTagType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Format.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_Archive.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_Element.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_File.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_Type.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvAlgorithm.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvCluster.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvContentEncoding.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvFormat.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvObjectType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvSegment.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvTrack.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Error.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Merge.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Stream.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Algorithm.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Merge.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsIStream.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsOStream.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsType.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\FormatBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\SampleBuffers.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\CrcBuffer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PatPacket.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PesPacket.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PmtPacket.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PsiPacket.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\TsFormat.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\TsPacket.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Version.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsPhone\v$(TargetPlatformVersion)\Microsoft.Cpp.WindowsPhone.$(TargetPlatformVersion).targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,101 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                      http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.pplive.base</groupId>
+  <artifactId>as3ppbase</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>swc</packaging>
+
+  <name>as3ppbase-library</name>
+
+  <build>
+    <sourceDirectory>src/main/actionscript</sourceDirectory>
+	<testSourceDirectory>src/test/actionscript</testSourceDirectory>
+	
+    <plugins>
+      <plugin>
+        <groupId>org.sonatype.flexmojos</groupId>
+        <artifactId>flexmojos-maven-plugin</artifactId>
+        <version>4.0-beta-3</version>
+        <extensions>true</extensions>
+		<configuration>
+          <coverage>true</coverage>
+		  <coverageStrategy>link-report</coverageStrategy>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.adobe.flex.framework</groupId>
+      <artifactId>flex-framework</artifactId>
+      <version>4.5.0.17855</version>
+      <type>pom</type>
+    </dependency>
+	
+	<dependency>
+	  <groupId>de.polygonal</groupId>
+	  <artifactId>ds</artifactId>
+	  <version>1.32.034</version>
+	  <type>swc</type>
+	</dependency>
+	
+	<dependency>
+	  <groupId>hamcrest-as3</groupId>
+	  <artifactId>hamcrest-as3</artifactId>
+	  <version>1.1.0</version>
+	  <type>swc</type>
+	</dependency>
+	
+	<dependency>
+      <groupId>com.adobe.flexunit</groupId>
+      <artifactId>flexunit</artifactId>
+      <version>4.0-rc-1</version>
+      <type>swc</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <distributionManagement>
+    <snapshotRepository>
+	  <id>snapshots</id>
+	  <url>http://127.0.0.1:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+  
+  <repositories>
+        <repository>
+            <id>flex-mojos-repository</id>
+            <url>http://repository.sonatype.org/content/groups/flexgroup</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+		
+		<repository>
+            <id>thirdparty</id>
+            <url>http://localhost:8081/nexus/content/repositories/thirdparty</url>
+        </repository>
+  </repositories>
+  
+  <pluginRepositories>
+        <pluginRepository>
+            <id>flexmojos-plugin</id>
+            <url>http://repository.sonatype.org/content/groups/flexgroup</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
+</project>

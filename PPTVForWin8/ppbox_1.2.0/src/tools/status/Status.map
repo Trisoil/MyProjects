@@ -1,0 +1,8 @@
+{
+	global: 
+		PPBOX_StatusStart;
+		PPBOX_StatusStop;
+		PPBOX_StatusGetInfo;
+		
+	local: *;
+};

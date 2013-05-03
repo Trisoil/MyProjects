@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" 
+			   xmlns:s="library://ns.adobe.com/flex/spark" 
+			   xmlns:mx="library://ns.adobe.com/flex/mx" minWidth="955" minHeight="600"
+			   xmlns:flexUnitUIRunner="http://www.adobe.com/2009/flexUnitUIRunner"
+			   creationComplete="runMe()">
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	
+	<fx:Script>
+		<![CDATA[			
+			import org.flexunit.assertThat;
+			import org.flexunit.asserts.*;
+			import org.flexunit.internals.TextListener;
+			import org.flexunit.listeners.UIListener;
+			import org.flexunit.runner.FlexUnitCore;
+			import org.flexunit.runner.Request;
+			import org.flexunit.runner.notification.async.XMLListener;
+			import org.flexunit.listeners.CIListener;
+			
+			import mx.logging.LogEventLevel;
+			
+			private var core:FlexUnitCore;
+			
+			public function runMe():void {
+				
+				core = new FlexUnitCore();
+				
+				/* 				assertEquals( 1, 2 ); 
+				*/				//Listeners for CI systems or Flash Builder Plugins 
+				core.addListener( new CIListener());
+				//core.addListener( new XMLListener( "FlexUnit4Test" ) );
+				
+				//Listener for outputting to the trace console via the Flex logging class, Flex Only
+				//core.addListener( TextListener.getDefaultTextListener( LogEventLevel.DEBUG ) );
+				
+				//Listener for outputting to the trace console via the trace method, ActionScript or Flex
+				//core.addListener( new TraceListener() );
+				
+				//Listener for the UI
+				core.addListener( new UIListener( uiListener ));
+				
+				//This run statements executes the unit tests for the FlexUnit4 framework 
+				//the Hamcrest matchers and some of the tests shown in the FlexUnit in 360 seconds blog post
+				//core.run( FlexUnit4Suite, HamcrestSuite, FlexUnitIn360 );
+				core.run( AllAS3PPBaseTest);				
+			}
+		]]>
+	</fx:Script>
+	
+	<flexUnitUIRunner:TestRunnerBase id="uiListener" 
+									 width="100%" height="100%" />
+</s:Application>

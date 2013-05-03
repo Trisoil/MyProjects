@@ -1,0 +1,1066 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="base">
+      <UniqueIdentifier>{90b72e0d-a831-40af-81b5-be3100bfb766}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="interprocess">
+      <UniqueIdentifier>{4ec9156c-1a40-47b1-bf7b-5c763d36d7f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="io">
+      <UniqueIdentifier>{1fafbc09-53fd-4c6e-9909-33de17659ff9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="measure">
+      <UniqueIdentifier>{568e5e56-4f9e-4081-b2db-2a984050b4c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network">
+      <UniqueIdentifier>{47c63fdc-7e5e-41b4-93f2-11e4eb6ea27b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\icmp">
+      <UniqueIdentifier>{eb6bb44d-f2ab-4e47-bb60-7f8c47c3dba8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\tcp">
+      <UniqueIdentifier>{ff0c3d30-ba83-4c0f-b3bd-00af7a3c7cb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp">
+      <UniqueIdentifier>{dbe51fd8-5ff1-416a-9904-0f27fcef7dd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\bootstrap">
+      <UniqueIdentifier>{d14c95cf-0cc1-4594-9a6a-9950a7316407}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\download">
+      <UniqueIdentifier>{335cdfe3-3a3f-4f0d-a774-7b29f9fcae30}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\index">
+      <UniqueIdentifier>{c5b4400b-2fb7-42ac-baa0-cff6e522a731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\notify">
+      <UniqueIdentifier>{419c3cd8-43f9-4a54-9f16-22f8a5dfd52f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\p2p">
+      <UniqueIdentifier>{ad29e5f4-0b7c-47b6-8761-a7443a45b1a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\p2s">
+      <UniqueIdentifier>{3a3da5c7-8997-40d2-9857-efe396f110d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\proxy">
+      <UniqueIdentifier>{70f5fe03-41ad-4b05-8935-d193cd0d5e35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\push">
+      <UniqueIdentifier>{5558d375-8798-4d2b-9483-278e55bc2a45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\stun">
+      <UniqueIdentifier>{8a4c25c0-1d42-45e1-8d53-2a4560d5717a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\tracker">
+      <UniqueIdentifier>{91f104de-bcbe-4156-bf8e-4bb315330179}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="statistic">
+      <UniqueIdentifier>{dce65c47-522c-442d-b601-f2742e7845f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="storage">
+      <UniqueIdentifier>{42f1d6a8-7fb1-4b07-b4d8-cf6ba1f15e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="storage\format">
+      <UniqueIdentifier>{cc20a767-b8a2-4735-98d0-e756fd50fc4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="network\upnp">
+      <UniqueIdentifier>{192f49ba-238b-4290-96b9-908040ae641c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="p2sp\config">
+      <UniqueIdentifier>{7898f46a-bc80-4e7b-a5cc-f709888480b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\autopeerversion.hpp" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\Common.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\count_object_allocate.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\macro.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\MainThread.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\message.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\peer.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\random.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\Resource.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\WindowsMessage.h" />
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\AppBuffer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\CommonThread.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\filesystem_util.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\intrusive_ptr.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\util.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\base\wsconvert.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\interprocess\SharedMemory.h">
+      <Filter>interprocess</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\io\StdFile.h">
+      <Filter>io</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\measure\ByteSpeedMeter.h">
+      <Filter>measure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\measure\CycleBuffer.h">
+      <Filter>measure</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpAcceptor.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpClient.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpClient.hpp">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpClientOverUdpProxy.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpPost.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpRequest.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpResponse.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\HttpServer.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\IHttpPostListener.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\Resolver.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\Uri.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\UrlCodec.h">
+      <Filter>network</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\icmp_header.h">
+      <Filter>network\icmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\ipv4_header.h">
+      <Filter>network\icmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\PingClient.h">
+      <Filter>network\icmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\icmp\PingClientBase.h">
+      <Filter>network\icmp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\tcp\CrossDomainConfig.h">
+      <Filter>network\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\tcp\TcpConnection.h">
+      <Filter>network\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\network\tcp\TcpServer.h">
+      <Filter>network\tcp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\AppModule.h">
+      <Filter>p2sp</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\bootstrap\BootStrapGeneralConfig.h">
+      <Filter>p2sp\bootstrap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\config\Config.h">
+      <Filter>p2sp\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\ConfigurationDownloader.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\DownloadDriver.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\Downloader.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\HttpTargetsManager.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\IConfigurationDownloadListener.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveBlockRequestManager.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDacStopDataStruct.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDataRateManager.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDownloadDriver.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveRestTimeTracker.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveStream.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveSwitchController.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\PieceRequestManager.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchController.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerInterface.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\download\UdpServersScoreHistory.h">
+      <Filter>p2sp\download</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\index\IndexManager.h">
+      <Filter>p2sp\index</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\notify\NotifyModule.h">
+      <Filter>p2sp\notify</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Assigner.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\ConnectingPeerBase.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\ConnectionBase.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\DownloadSpeedLimiter.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Exchanger.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\GateWayFinder.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPool.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPoolIndex.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveAssigner.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveConnectionManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveP2PDownloader.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LivePeerConnection.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceCountManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceRequestManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveUploadManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\NetworkQualityMonitor.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PDownloader.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PModule.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2SPConfigs.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnection.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnector.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerHelper.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNConnection.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNPool.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SubPieceRequestManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\TcpUploadManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpBasedUploadConnectionsManagement.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpServerFromBSPool.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadBase.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadCacheModule.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadModule.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimiter.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimitTracker.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadStruct.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2p\VodUploadManager.h">
+      <Filter>p2sp\p2p</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\GzipDecompresser.h">
+      <Filter>p2sp\p2s</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpConnection.h">
+      <Filter>p2sp\p2s</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloader.h">
+      <Filter>p2sp\p2s</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloadSpeedLimiter.h">
+      <Filter>p2sp\p2s</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDragDownloader.h">
+      <Filter>p2sp\p2s</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\p2s\LiveHttpDownloader.h">
+      <Filter>p2sp\p2s</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\CommonProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\DirectProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\LiveProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\MessageBufferManager.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\NullProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\OpenServiceProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\PlayInfo.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyConnection.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyModule.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeInfo.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\proxy\TestCoreProxySender.h">
+      <Filter>p2sp\proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\CopyRightChecker.h">
+      <Filter>p2sp\push</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\PlayHistoryManager.h">
+      <Filter>p2sp\push</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\PushDownloadTask.h">
+      <Filter>p2sp\push</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\push\PushModule.h">
+      <Filter>p2sp\push</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\stun\NatCheckClient.h">
+      <Filter>p2sp\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\stun\StunModule.h">
+      <Filter>p2sp\stun</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerClient.h">
+      <Filter>p2sp\tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerGroup.h">
+      <Filter>p2sp\tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerManager.h">
+      <Filter>p2sp\tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerModule.h">
+      <Filter>p2sp\tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerStation.h">
+      <Filter>p2sp\tracker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\BufferringMonitor.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\BufferringReportCondition.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\CollectionCriteria.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\CollectionSpec.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\Compressor.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\DACStatisticModule.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\DownloadDriverStatistic.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\GZipCompressor.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\HttpDownloaderStatistic.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\LiveDownloadDriverStatistic.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\P2PDownloaderStatistic.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\PeerConnectionStatistic.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\ReportCondition.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\SpeedInfoStatistic.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticModule.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionConfigurationFile.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionController.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollector.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectorSettings.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfiguration.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfigurationsParser.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsData.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReporter.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReportingConfiguration.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReportSender.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticsRequest.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticStructs.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\StatisticUtil.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\statistic\UploadStatisticModule.h">
+      <Filter>statistic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\BlockNode.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\CfgFile.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\FileResource.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\FileResourceInfo.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\HeaderSubPiece.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\HmacMd5.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Instance.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\InstanceMemoryConsumer.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\IStorage.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveAnnounceMapBuilder.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveBlockNode.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveCacheManager.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveInstance.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LiveInstanceMemoryConsumer.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LivePointTracker.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\LivePosition.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryConsumer.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryConsumptionMonitor.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryQuota.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryQuotaAssigner.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\MemoryUsageDescription.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\NullResource.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Performance.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Resource.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\SpaceManager.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\Storage.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\storage_base.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\StorageThread.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\SubPieceManager.h">
+      <Filter>storage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\format\MetaFLVParser.h">
+      <Filter>storage\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\format\MetaMP4Parser.h">
+      <Filter>storage\format</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\p2p\peer\storage\format\Mp4Spliter.h">
+      <Filter>storage\format</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\count_object_allocate.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\MainThread.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\peer.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\WindowsMessage.cpp" />
+    <ClCompile Include="..\..\..\..\src\p2p\peer\base\CommonThread.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\interprocess\SharedMemory.cpp">
+      <Filter>interprocess</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\measure\ByteSpeedMeter.cpp">
+      <Filter>measure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\measure\CycleBuffer.cpp">
+      <Filter>measure</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpAcceptor.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpClientOverUdpProxy.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpPost.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpRequest.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpResponse.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\HttpServer.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\Resolver.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\UrlCodec.cpp">
+      <Filter>network</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\icmp\PingClient.cpp">
+      <Filter>network\icmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\icmp\PingClientBase.cpp">
+      <Filter>network\icmp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\tcp\CrossDomainConfig.cpp">
+      <Filter>network\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\network\tcp\TcpConnection.cpp">
+      <Filter>network\tcp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\AppModule.cpp">
+      <Filter>p2sp</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\bootstrap\BootStrapGeneralConfig.cpp">
+      <Filter>p2sp\bootstrap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\config\Config.cpp">
+      <Filter>p2sp\config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\ConfigurationDownloader.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\DownloadDriver.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\Downloader.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\HttpTargetsManager.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveBlockRequestManager.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDataRateManager.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveDownloadDriver.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveRestTimeTracker.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveStream.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\LiveSwitchController.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\PieceRequestManager.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchController.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerDownloadControlMode.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerOpenServicePushControlMode.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\SwitchControllerOpenServiceVideoControlMode.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\download\UdpServersScoreHistory.cpp">
+      <Filter>p2sp\download</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\index\IndexManager.cpp">
+      <Filter>p2sp\index</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\notify\NotifyModule.cpp">
+      <Filter>p2sp\notify</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Assigner.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\ConnectionBase.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\DownloadSpeedLimiter.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\Exchanger.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\GateWayFinder.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPool.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\IpPoolIndex.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveAssigner.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveConnectionManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveP2PDownloader.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LivePeerConnection.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceCountManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveSubPieceRequestManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\LiveUploadManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\NetworkQualityMonitor.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PDownloader.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2PModule.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\P2SPConfigs.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnection.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerConnector.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\PeerHelper.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNConnection.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SNPool.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\SubPieceRequestManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\TcpUploadManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpBasedUploadConnectionsManagement.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UdpServerFromBSPool.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadCacheModule.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadModule.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimiter.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\UploadSpeedLimitTracker.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2p\VodUploadManager.cpp">
+      <Filter>p2sp\p2p</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\GzipDecompresser.cpp">
+      <Filter>p2sp\p2s</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpConnection.cpp">
+      <Filter>p2sp\p2s</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloader.cpp">
+      <Filter>p2sp\p2s</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDownloadSpeedLimiter.cpp">
+      <Filter>p2sp\p2s</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\HttpDragDownloader.cpp">
+      <Filter>p2sp\p2s</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\p2s\LiveHttpDownloader.cpp">
+      <Filter>p2sp\p2s</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\CommonProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\DirectProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\LiveProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\MessageBufferManager.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\NullProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\OpenServiceProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\PlayInfo.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyConnection.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\ProxyModule.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeInfo.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\RangeProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\proxy\TestCoreProxySender.cpp">
+      <Filter>p2sp\proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\CopyRightChecker.cpp">
+      <Filter>p2sp\push</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\PlayHistoryManager.cpp">
+      <Filter>p2sp\push</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\PushDownloadTask.cpp">
+      <Filter>p2sp\push</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\push\PushModule.cpp">
+      <Filter>p2sp\push</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\stun\NatCheckClient.cpp">
+      <Filter>p2sp\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\stun\StunModule.cpp">
+      <Filter>p2sp\stun</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerClient.cpp">
+      <Filter>p2sp\tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerGroup.cpp">
+      <Filter>p2sp\tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerManager.cpp">
+      <Filter>p2sp\tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerModule.cpp">
+      <Filter>p2sp\tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\p2sp\tracker\TrackerStation.cpp">
+      <Filter>p2sp\tracker</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\BufferringMonitor.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\BufferringReportCondition.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\CollectionCriteria.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\DACStatisticModule.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\DownloadDriverStatistic.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\GZipCompressor.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\HttpDownloaderStatistic.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\LiveDownloadDriverStatistic.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\P2PDownloaderStatistic.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\PeerConnectionStatistic.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\SpeedInfoStatistic.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticModule.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionConfigurationFile.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectionController.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollector.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsCollectorSettings.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfiguration.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsConfigurationsParser.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsData.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReporter.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsReportSender.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticsRequest.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\StatisticStructs.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\statistic\UploadStatisticModule.cpp">
+      <Filter>statistic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\BlockMap.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\BlockNode.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\CfgFile.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\FileResource.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\FileResourceInfo.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\HeaderSubPiece.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\HmacMd5.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Instance.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\InstanceMemoryConsumer.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveAnnounceMapBuilder.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveBlockNode.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveCacheManager.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveInstance.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\LiveInstanceMemoryConsumer.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\MemoryQuotaAssigner.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\NullResource.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Performance.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Resource.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\SpaceManager.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\Storage.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\StorageThread.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\SubPieceManager.cpp">
+      <Filter>storage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\format\MetaFLVParser.cpp">
+      <Filter>storage\format</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\format\MetaMP4Parser.cpp">
+      <Filter>storage\format</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\p2p\peer\storage\format\Mp4Spliter.cpp">
+      <Filter>storage\format</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\p2p\peer\peer.def" />
+    <None Include="..\..\..\..\src\p2p\peer\Peer.map" />
+  </ItemGroup>
+</Project>

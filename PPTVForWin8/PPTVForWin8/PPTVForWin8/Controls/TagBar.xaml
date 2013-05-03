@@ -1,0 +1,121 @@
+﻿<UserControl
+    x:Class="PPTVForWin8.Controls.TagBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PPTVForWin8.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="1366"
+    Height="130">
+
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="83"/>
+            <ColumnDefinition Width="77"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="335"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="11"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="11"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="11"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="11" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="1" Grid.Row="1" Margin="0 2 0 0" TextWrapping="Wrap" Text="类型：" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" d:LayoutOverrides="Margin"/>
+        <TextBlock Grid.Column="1" Grid.Row="3" Margin="0 2 0 0" TextWrapping="Wrap" Text="地区：" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" d:LayoutOverrides="Margin"/>
+        <TextBlock Grid.Column="1" Grid.Row="5" Margin="0 2 0 0" TextWrapping="Wrap" Text="年代：" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="20" d:LayoutOverrides="Margin"/>
+
+        <ScrollViewer x:Name="catalogScrollViewer" Grid.Column="2" Grid.Row="1" Margin="30,-2,90,0" Style="{StaticResource HorizontalScrollViewerStyle}" VerticalAlignment="Center" HorizontalScrollBarVisibility="Hidden" d:LayoutOverrides="Margin">
+            <ListBox 
+                x:Name="catalogListView"   
+                Background="Transparent"
+                Style="{StaticResource SingleWordListBoxStyle}"
+                ItemsPanel="{StaticResource HorizontalItemsPanelTemplate}"
+                ItemContainerStyle="{StaticResource SingleWordListBoxItemStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                IsTabStop="False">
+            </ListBox>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="areaScrollViewer" Grid.Column="2" Grid.Row="3" Margin="30,-2,90,0" Style="{StaticResource HorizontalScrollViewerStyle}" VerticalAlignment="Center"  HorizontalScrollBarVisibility="Hidden" d:LayoutOverrides="Margin">
+            <ListBox 
+                x:Name="areaListView"   
+                Background="Transparent"
+                Style="{StaticResource SingleWordListBoxStyle}"
+                ItemsPanel="{StaticResource HorizontalItemsPanelTemplate}"
+                ItemContainerStyle="{StaticResource SingleWordListBoxItemStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                IsTabStop="False">
+            </ListBox>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="yearScrollViewer" Grid.Column="2" Grid.Row="5" Margin="30,-2,90,0" Style="{StaticResource HorizontalScrollViewerStyle}" VerticalAlignment="Center" HorizontalScrollBarVisibility="Hidden" d:LayoutOverrides="Margin" >
+            <ListBox 
+                x:Name="yearListView"   
+                Background="Transparent"
+                Style="{StaticResource SingleWordListBoxStyle}"
+                ItemsPanel="{StaticResource HorizontalItemsPanelTemplate}"
+                ItemContainerStyle="{StaticResource SingleWordListBoxItemStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                IsTabStop="False">
+            </ListBox>
+        </ScrollViewer>
+
+        <Image Grid.Row="1" Margin="0 0 10 0" Source="ms-appx:///Images/catalog.png" Stretch="None" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="24"/>
+        <Image Grid.Row="3" Margin="0 0 10 0" Source="ms-appx:///Images/area.png" Stretch="None" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="24"/>
+        <Image Grid.Row="5" Margin="0 0 10 0" Source="ms-appx:///Images/year.png" Stretch="None" HorizontalAlignment="Right" VerticalAlignment="Center" Height="24" Width="24"/>
+        <Image Grid.Column="1" Grid.Row="1" Source="ms-appx:///Images/TagLeftArrow.png" Stretch="None" HorizontalAlignment="Right" Width="10" VerticalAlignment="Center" Tapped="filterLeft_Tapped" Tag="catalog"/>
+        <Image Grid.Column="1" Grid.Row="3" Source="ms-appx:///Images/TagLeftArrow.png" Stretch="None" HorizontalAlignment="Right" Width="10" VerticalAlignment="Center" Tapped="filterLeft_Tapped" Tag="area"/>
+        <Image Grid.Column="1" Grid.Row="5" Source="ms-appx:///Images/TagLeftArrow.png" Stretch="None" HorizontalAlignment="Right" Width="10" VerticalAlignment="Center" Tapped="filterLeft_Tapped" Tag="year"/>
+        <Image Grid.Column="2" Margin="0,0,50,0" Grid.Row="5" Source="ms-appx:///Images/TagRightArrow.png" Stretch="None" HorizontalAlignment="Right" Width="10" VerticalAlignment="Center" Tapped="filterRight_Tapped" Tag="year"/>
+        <Image Grid.Column="2" Margin="0,0,50,0" Grid.Row="3" Source="ms-appx:///Images/TagRightArrow.png" Stretch="None" HorizontalAlignment="Right" Width="10" VerticalAlignment="Center" Tapped="filterRight_Tapped" Tag="area"/>
+        <Image Grid.Column="2" Margin="0,0,50,0" Grid.Row="1" Source="ms-appx:///Images/TagRightArrow.png" Stretch="None" HorizontalAlignment="Right" Width="10" VerticalAlignment="Center" Tapped="filterRight_Tapped" Tag="catalog"/>
+
+        <Grid Grid.Row="1" Grid.RowSpan="5" Grid.Column="2" Width="4" Margin="0 5 22 5" HorizontalAlignment="Right" Background="{StaticResource PPTVBlueColor}" />
+        
+        <ScrollViewer Grid.Column="3" Grid.Row="1" Margin="5 -2 0 0" Style="{StaticResource HorizontalScrollViewerStyle}" HorizontalScrollBarVisibility="Hidden" d:LayoutOverrides="Margin">
+            <ListBox 
+                x:Name="timeSortListView"   
+                Background="Transparent"
+                Style="{StaticResource SingleWordListBoxStyle}"
+                ItemsPanel="{StaticResource HorizontalItemsPanelTemplate}"
+                ItemContainerStyle="{StaticResource SingleWordListBoxItemStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                SelectionChanged="timeSortListView_SelectionChanged"
+                IsTabStop="False">
+            </ListBox>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Column="3" Grid.Row="3" Margin="5 -2 0 0" Style="{StaticResource HorizontalScrollViewerStyle}" HorizontalScrollBarVisibility="Hidden" d:LayoutOverrides="Margin">
+            <ListBox 
+                x:Name="programSortListView"   
+                Background="Transparent"
+                Style="{StaticResource SingleWordListBoxStyle}"
+                ItemsPanel="{StaticResource HorizontalItemsPanelTemplate}"
+                ItemContainerStyle="{StaticResource SingleWordListBoxItemStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                SelectionChanged="programSortListView_SelectionChanged"
+                IsTabStop="False">
+            </ListBox>
+        </ScrollViewer>
+
+        <ScrollViewer Grid.Column="3" Grid.Row="5" Margin="5 -2 0 0" Style="{StaticResource HorizontalScrollViewerStyle}" HorizontalScrollBarVisibility="Hidden" d:LayoutOverrides="Margin">
+            <ListBox 
+                x:Name="bitrateSortListView"   
+                Background="Transparent"
+                Style="{StaticResource SingleWordListBoxStyle}"
+                ItemsPanel="{StaticResource HorizontalItemsPanelTemplate}"
+                ItemContainerStyle="{StaticResource SingleWordListBoxItemStyle}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                SelectionChanged="bitrateSortListView_SelectionChanged"
+                IsTabStop="False">
+            </ListBox>
+        </ScrollViewer>
+
+    </Grid>
+</UserControl>

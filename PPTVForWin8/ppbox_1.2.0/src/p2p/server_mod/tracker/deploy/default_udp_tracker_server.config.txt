@@ -1,0 +1,109 @@
+####################################################
+##         Tracker Server Configuration File      ##
+####################################################
+
+[tracker]
+# port
+tracker.udp_port = 18000
+#地域转换配置文件
+tracker.iplocation=../ip_distribution.dat
+
+####################################################
+# Dump的间隔时间 (写PeerCount)
+tracker.dump_interval_in_seconds = 5
+
+# Resource/Peer Count文件 (默认tracker_statistic)
+#tracker.dump_file_prefix = tracker_statistic
+
+# 打印统计日志间隔时间
+tracker.statistic_log_interval_in_hours = 24
+
+
+####################################################
+# timer
+# 返回发给Peer的Peer发送KeepALive的间隔时间
+tracker.keep_alive_interval_in_seconds = 120
+
+# Peer存活超时的时间
+tracker.keep_alive_exceeded_in_seconds = 360
+
+# 检查超时Peer的间隔时间
+tracker.check_alive_interval_in_seconds = 5
+
+####################################################
+# number
+# Tracker收到同一个peer包的最小间隔(MS)
+tracker.min_keep_alive_interval_in_milliseconds = 100
+
+# udp收包栈的大小
+tracker.udp_server_receive_count = 1000
+
+# List的返回最大的Peer个数
+tracker.max_list_peer_count = 50
+tracker.ad_optimize=true
+tracker.adv_peer_percent=5
+tracker.trace_ip=203.110.175.46
+#内存hash桶的大小
+tracker.res_hash_map_size=300001
+#list的时候，按地域返回的peer的百分比
+tracker.list_location_percent=50
+#list peer返回时的带宽衰减比例
+tracker.dec_bandwidth_percent=99
+#小剩余带宽判断的阀值
+tracker.bandwidth_limit_speed=50
+#rid下随机队列的最大限度
+tracker.max_randomlist_size = 2000
+#rid下每个location的peer的最大值
+tracker.max_same_location_size=500
+
+####################################################
+# 每次检查超时的PEER限制的最大删除PEER个数（删除了这么多个PEER就退出本次检查）
+tracker.max_remove_unlive_peer_per_times = 100
+
+# 每次检查超时的PEER限制的最长检查时间 （秒）
+tracker.max_remove_unlive_peer_time_elapsed = 600
+
+####################################################
+# 是否检查在线资源并输出数据文件
+tracker.check_resources = true
+
+# 每隔多长时间复制一次资源数据文件 (最小300秒)
+tracker.copy_resource_interval_in_seconds = 10
+
+# 复制目的文件(完整路径) [空路径表示不进行拷贝]
+tracker.copy_resource_destination = D:\hello.txt
+
+# 复制在线Peer数大于多少的资源ID以及人数 (最小为5)
+tracker.copy_resource_min_peer_count = 5
+
+#####################################################
+# Sample Resources
+tracker.sample_resources_dump = false
+tracker.sample_resources = 681614E7D22AEB632729CE5651BF51B7;6F5D05F79E2315A4BCDDE935A9A8EF8B;50395A5FF0911112F1EBA30243FDBBB5;C8D2198ED6979112AA84F366AEDE3683;41119E16E38B959454E6639A10FE7B9E;489F0CCE3E88B62227455649133876DF;C930BA3F3653CFEE5522FD8C0BFC38F0;6F5D05F79E2315A4BCDDE935A9A8EF8B;489F0CCE3E88B62227455649133876DF
+# 抽样时间间隔
+tracker.sample_interval_in_seconds = 1800
+
+
+tracker.calc_priority = true
+#预加载文件
+tracker.loadfile = tracker_dump.log
+#日志配置文件
+tracker.logconf=tracker_log.conf
+priority.bandwidth = 10,10|50,20|100,30|200,40|300,50|0,60
+
+# 0: 不同ISP, 同省不同市
+# 1: 不同ISP, 同省同市
+# 2: 不同ISP, 不同省
+# 3: 相同ISP, 同省不同市
+# 4: 相同ISP, 同省同市
+# 5: 相同ISP, 不同省
+priority.isp = 0|0|0|65|75|35
+
+#是否绑定CPU
+tracker.is_bind=true
+
+#如果需要绑定CPU，是否绑定到特定的CPU
+tracker.is_special=false
+
+#如果绑定到特定的CPU，需要制定cpu_id
+tracker.cpu_id=0

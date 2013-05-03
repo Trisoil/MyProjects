@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="PPVALog"
+  id="myeclipse.1302680744757"
+  context-root="/PPVALog"
+  j2ee-spec="5.0"
+  archive="PPVALog.war">
+  <attributes>
+    <attribute name="webrootdir" value="/web" />
+  </attributes>
+</project-module>
+

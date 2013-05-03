@@ -1,0 +1,7 @@
+###################################################
+#  index_server_data_migration Config
+###################################################
+database_out = root:@192.168.43.110:3306|IndexServer_0801
+database_statistic = root:@192.168.43.110:3306|StatisticServer_0801
+httpserver_table_file = httpserver_table.csv
+resource_table_file = resource_table.csv

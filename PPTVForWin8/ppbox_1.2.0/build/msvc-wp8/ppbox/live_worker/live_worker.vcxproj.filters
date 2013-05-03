@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\LiveManager.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\LiveModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\LiveModuleProxy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\LiveProxy.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\Main.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\SSNManageModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\live_worker\Version.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\LiveInterface.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\LiveManager.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\LiveModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\LiveModuleProxy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\LiveProxy.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\SSNManageModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\live_worker\Version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\src\ppbox\live_worker\LiveWorker.map" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" version="3">
+  <includeClasses>
+    <classEntry path="com.pplive.util.URI"/>
+    <classEntry path="com.pplive.util.StringConvert"/>
+    <classEntry path="com.pplive.test.EventMock"/>
+    <classEntry path="com.pplive.net.UrlLoaderWithRetry"/>
+    <classEntry path="com.pplive.net.LoadFailedEvent"/>
+    <classEntry path="com.pplive.util.EventUtil"/>
+    <classEntry path="com.pplive.profile.FunctionProfiler"/>
+    <classEntry path="com.pplive.util.MathUtil"/>
+    <classEntry path="org.as3commons.concurrency.thread.IThread"/>
+    <classEntry path="org.as3commons.concurrency.thread.FramePseudoThread"/>
+    <classEntry path="com.pplive.util.BitStream"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

@@ -1,0 +1,17 @@
+    此文档在win7及VS2008下有效，在64位系统下wireshark步骤基本与在32位下编译步骤一致，基本步骤可以参考“在Windows上编译Wireshark源代码”文档，需要修改
+的地方如下：
+    1.config.nmake中设置 WIRESHARK_TARGET_PLATFORM=win64
+    2.修改wireshark源代码包中tools文件夹下win32-setup.sh文件，首先将文件名改为win64-setup.sh，之后在该文件中，设置
+      DOWNLOAD_TAG=${DOWNLOAD_TAG:-"2010-02-24-1.2"}
+      WIRESHARK_TARGET_PLATFORM=${WIRESHARK_TARGET_PLATFORM:-"win64"}
+      DOWNLOAD_PREFIX="http://anonsvn.wireshark.org/wireshark-$WIRESHARK_TARGET_PLATFORM-libs/tags/$DOWNLOAD_TAG/packages/"
+    3.执行nmake -f Makefile.nmake setup 命令之后，会在目标目录中新增wireshark-win64-libs-1.2文件夹，在执行下一步命令之前，需要首先下载
+      vcredist_x64.exe文件放置在新增文件夹中。
+    4.如果是VS2008，需要确保在安装VS2008的时候安装了64位支持文件，执行Microsoft Visual Studio 9.0\VC\bin\x86_amd64目录下vcvarsx86_amd64.bat文件从而
+      注册环境变量。
+    5.最后执行nmake -f Makefile.nmake all命令，编译通过
+    
+    
+    注意事项：如果在按64位编译方法编译之前使用32位编译过源代码，需要首先执行nmake -f Makefile.nmake distclean命令再按64位方法重新编译。另外每次重启
+    系统VS都会重置系统变量，需要重新执行vcvarsx86_amd64.bat文件，否则会出现file_util.obj : fatal error LNK1112: module machine type 'X86' conflicts 
+    with target machine type 'x64'错误。

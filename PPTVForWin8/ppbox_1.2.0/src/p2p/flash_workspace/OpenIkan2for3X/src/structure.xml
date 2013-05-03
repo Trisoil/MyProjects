@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<structure>	
+	
+	<controlUI x="0" y="378">
+		
+		<progressUI x="0" y="0">ProgressMc</progressUI>
+		<!--<liveprogressUI x="0" y="0">LiveProgressMc</liveprogressUI>-->
+		
+		<leftUI x="0" y="12">
+			<playpauseUI x="0" y="2" sep="0">PlayPauseMc</playpauseUI>
+			<timeUI x="0" y="2" sep="1">TimeMc</timeUI>
+		</leftUI>
+		
+		<rightUI x="0" y="12">
+			<soundUI x="0" y="2" sep="0">SoundMc</soundUI>
+			<fullScreenUI x="0" y="2" sep="1">FullScreenMc</fullScreenUI>
+		</rightUI>
+		
+	</controlUI>
+	<topUI x="0" y="0">TopMc</topUI>
+	<bigPlayUI x="0" y="0">BigPlayMc</bigPlayUI>
+	
+	<loadingUI x="0" y="0">LoadingMc</loadingUI>
+	
+	<startFreshUI x="0" y="0">StartFreshMc</startFreshUI>
+	
+	<fullCloseUI x="0" y="0">FullCloseMc</fullCloseUI>
+	
+	<errorUI x="0" y="0">ErrorMc</errorUI>
+	
+	<playerTipUI x="0" y="0">PlayerTipMc</playerTipUI>
+	
+</structure>

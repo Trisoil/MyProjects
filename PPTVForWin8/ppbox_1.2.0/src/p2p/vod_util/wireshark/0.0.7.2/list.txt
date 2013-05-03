@@ -1,0 +1,5 @@
+ppvideo.dll 0.0.7.2 Release
+
+修改connect协议
+去掉直播公共头中的packet_type字段
+StunInvoke中的peer type显示为connect type

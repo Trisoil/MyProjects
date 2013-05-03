@@ -1,0 +1,15 @@
+{
+	global: 
+		LiveStartup;
+		LiveCleanup;
+		LiveStartChannel;
+		LiveStopChannel;
+		LiveGetChannelStatus;
+		LiveGetChannelParameter;
+		LiveSetChannelParameter;
+		LiveSetChannelPlayerStatus;
+		LiveSetChannelCallback;
+		LiveSetChannelUPNP;
+
+	local: *;
+};

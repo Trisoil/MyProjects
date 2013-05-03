@@ -1,0 +1,45 @@
+[ 021BJB1311-91 ] tracker.tcpdump.0816 -: !v
+vi upload_dist.pl
+[ 021BJB1311-92 ] tracker.tcpdump.0816 -: ./upload_dist.pl tcpdump/result
+tcpdump/result/105dump.18000.pcap.upload
+zero limit: 2072, total: 773647
+max is 6, pguid 690b557959572f47a19fde0e8edd8e4; avg is 0.146887653751675
+tcpdump/result/105dump.18001.pcap.upload
+zero limit: 2067, total: 755295
+max is 32.4, pguid 17cb75971f29354987a75fcc3dab083; avg is 0.156673732759526
+tcpdump/result/105dump.18002.pcap.upload
+zero limit: 2105, total: 697983
+max is 198.407998267328, pguid e0fc97f00e0013a9f306b8886411000; avg is
+0.151420413980746
+tcpdump/result/105dump.18003.pcap.upload
+zero limit: 2821, total: 791870
+max is 10.2, pguid 2a893de578a97841badace8e2202426; avg is 0.159578086082829
+tcpdump/result/105dump.18004.pcap.upload
+zero limit: 2027, total: 774200
+max is 12.0333333333333, pguid 028b481d9ffea9428e11c4b0c1731a9; avg is
+0.147654322099892
+tcpdump/result/105dump.18005.pcap.upload
+zero limit: 2595, total: 716944
+max is 11.8333333333333, pguid 17cb75971f29354987a75fcc3dab083; avg is
+0.153957044704392
+tcpdump/result/105dump.18006.pcap.upload
+zero limit: 2165, total: 688719
+max is 7.15, pguid 09ae55dedf77c04f8421a7dd89793e9; avg is 0.14639421738574
+tcpdump/result/105dump.18007.pcap.upload
+zero limit: 1592, total: 549824
+max is 43, pguid e58e37b68cf3fa48a4e777ac188e49a; avg is 0.166107653150652
+tcpdump/result/105dump.18008.pcap.upload
+zero limit: 3180, total: 782735
+max is 71.4, pguid 17cb75971f29354987a75fcc3dab083; avg is 0.151040450189701
+tcpdump/result/105dump.18009.pcap.upload
+zero limit: 2452, total: 717853
+max is 13.3333333333333, pguid f81e42bde4fdcb4da080ba36948d3b2; avg is
+0.153533199403684
+tcpdump/result/105dump.18010.pcap.upload
+zero limit: 2446, total: 695610
+max is 10.3, pguid e750b3d1b7032845a90a6a4bc10dccb; avg is 0.148442184176537
+tcpdump/result/105dump.18011.pcap.upload
+zero limit: 2952, total: 821473
+max is 12.3333333333333, pguid 6a3f8ce7eeee5441ae4ae3398b8852a; avg is
+0.164840050790418
+

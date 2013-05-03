@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="strategy">
+      <UniqueIdentifier>{eb090ff7-fd8e-4fc6-915f-8b0d5db3b423}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="source">
+      <UniqueIdentifier>{990d3d5d-4059-48ce-866d-6419fd435774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sink">
+      <UniqueIdentifier>{9eda8358-cef4-4b80-89c1-a713cf882505}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="segment">
+      <UniqueIdentifier>{5d536364-66fa-427a-bf3b-5649c9441058}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{614a2fa0-a90e-4770-904f-b46ba188e48a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="media">
+      <UniqueIdentifier>{0285d77e-d83e-4f7d-ae93-a1e4fee1d557}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\source\FileSource.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\source\HttpSource.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\source\PipeSource.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\BodyStrategy.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\FullStrategy.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\HeadStrategy.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\strategy\ListStrategy.cpp">
+      <Filter>strategy</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\sink\FileSink.cpp">
+      <Filter>sink</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\DataModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\Version.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentBuffer.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentMedia.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentSource.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\segment\SegmentStrategy.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\Buffer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\DataStatistic.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\MediaBase.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SingleMedia.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SingleSource.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SinkBase.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SourceBase.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\base\SourceStream.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\media\M3u8Media.cpp">
+      <Filter>media</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\data\media\M3u8MediaImpl.cpp">
+      <Filter>media</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\source\FileSource.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\source\HttpSource.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\source\PipeSource.h">
+      <Filter>source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\BodyStrategy.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\FullStrategy.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\HeadStrategy.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\strategy\ListStrategy.h">
+      <Filter>strategy</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\sink\FileSink.h">
+      <Filter>sink</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\DataModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\Version.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentBuffer.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentInfo.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentMedia.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentPosition.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentSource.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentStrategy.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\segment\SegmentStream.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\Buffer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\DataBase.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\DataStatistic.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\MediaBase.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\MediaInfo.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\PlayInfo.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SingleMedia.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SingleSource.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SinkBase.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SinkTypes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceBase.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceError.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceEvent.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceStream.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\base\SourceTypes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\media\M3u8Media.h">
+      <Filter>media</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\data\media\M3u8MediaImpl.h">
+      <Filter>media</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

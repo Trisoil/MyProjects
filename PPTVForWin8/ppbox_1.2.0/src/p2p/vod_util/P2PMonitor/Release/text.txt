@@ -1,0 +1,151 @@
+开始检测，检测时间：14:53:43
+1. Check ip138
+您的IP地址是：[203.110.175.46]
+
+**********************************************************************
+2. Checkip
+   		用户来源IP:203.110.175.46
+   		来源IP服务的ID:28
+
+**********************************************************************
+3. Open Tinydrag Test Url
+成功取得tinydrag
+
+**********************************************************************
+4. Ping
+
+Pinging webcdn.pptv.com.cachecn.com [180.153.106.101] with 32 bytes of data:
+
+Reply from 180.153.106.101: bytes=32 time=2ms TTL=53
+Reply from 180.153.106.101: bytes=32 time=3ms TTL=53
+Reply from 180.153.106.101: bytes=32 time=3ms TTL=53
+Reply from 180.153.106.101: bytes=32 time=3ms TTL=53
+
+Ping statistics for 180.153.106.101:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 3ms, Average = 2ms
+
+Pinging webcdn.pptv.com.cachecn.com [180.153.106.102] with 32 bytes of data:
+
+Reply from 180.153.106.102: bytes=32 time=3ms TTL=52
+Reply from 180.153.106.102: bytes=32 time=5ms TTL=52
+Reply from 180.153.106.102: bytes=32 time=3ms TTL=52
+Reply from 180.153.106.102: bytes=32 time=2ms TTL=52
+
+Ping statistics for 180.153.106.102:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 5ms, Average = 3ms
+
+Pinging webcdn.pptv.com.cachecn.com [180.153.106.102] with 32 bytes of data:
+
+Reply from 180.153.106.102: bytes=32 time=4ms TTL=52
+Reply from 180.153.106.102: bytes=32 time=3ms TTL=52
+Reply from 180.153.106.102: bytes=32 time=5ms TTL=52
+Reply from 180.153.106.102: bytes=32 time=2ms TTL=52
+
+Ping statistics for 180.153.106.102:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 2ms, Maximum = 5ms, Average = 3ms
+
+**********************************************************************
+5. Ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter 本地连接:
+
+        Connection-specific DNS Suffix  . : synacast.local
+        IP Address. . . . . . . . . . . . : 192.168.43.4
+        Subnet Mask . . . . . . . . . . . : 255.255.255.0
+        Default Gateway . . . . . . . . . : 192.168.43.1
+
+**********************************************************************
+6. Test 9000 Port
+peer在监听9000端口
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23031        ESTABLISHED     5640
+  TCP    127.0.0.1:9000         127.0.0.1:23032        TIME_WAIT       0
+  TCP    127.0.0.1:23031        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     63,784 K
+PPAP.exe                    5640 Console                 0     38,072 K
+
+**********************************************************************
+8. Test 8888 Port
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23031        ESTABLISHED     5640
+  TCP    127.0.0.1:9000         127.0.0.1:23032        TIME_WAIT       0
+  TCP    127.0.0.1:23031        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     18,244 K
+PPAP.exe                    5640 Console                 0     38,212 K
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23034        ESTABLISHED     5640
+  TCP    127.0.0.1:23034        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     36,084 K
+PPAP.exe                    5640 Console                 0     36,796 K
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23062        ESTABLISHED     5640
+  TCP    127.0.0.1:23034        127.0.0.1:9000         TIME_WAIT       0
+  TCP    127.0.0.1:23062        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     45,060 K
+PPAP.exe                    5640 Console                 0     31,748 K
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23062        ESTABLISHED     5640
+  TCP    127.0.0.1:23062        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     45,132 K
+PPAP.exe                    5640 Console                 0     41,452 K
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23062        ESTABLISHED     5640
+  TCP    127.0.0.1:23062        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     50,748 K
+PPAP.exe                    5640 Console                 0     41,728 K
+
+**********************************************************************
+9. 分析下载速度
+状态机为3000的总时间为: 2秒
+状态机为3000时http的平均速度为: 208KB/s
+状态机为2300的总时间为: 3秒
+状态机为2300时http的平均速度为: 204KB/s
+状态机为2300时p2p平均节点数为: 0
+状态机为3200的总时间为: 191秒
+状态机为3200时p2p的平均速度为: 197KB/s
+状态机为3200时p2p的最大速度为: 261
+状态机为3200时p2p平均节点数为: 25
+状态机为2200的总时间为: 0秒
+
+**********************************************************************
+10. TestBS
+向bs查询到100个tracker
+
+**********************************************************************
+11. TestTracker
+向tracker查询到50个peer
+
+**********************************************************************
+7. Test 9000 Port
+  TCP    127.0.0.1:9000         0.0.0.0:0              LISTENING       5640
+  TCP    127.0.0.1:9000         127.0.0.1:23062        ESTABLISHED     5640
+  TCP    127.0.0.1:23062        127.0.0.1:9000         ESTABLISHED     2516
+PPLive.exe                  2516 Console                 0     51,360 K
+PPAP.exe                    5640 Console                 0     37,680 K

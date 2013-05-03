@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="mp4">
+      <UniqueIdentifier>{ad395cf3-1bef-4c7a-8ab9-a6a5c778d0b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asf">
+      <UniqueIdentifier>{e26f1c4a-c9ff-4966-80f2-c8a4dc210243}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flv">
+      <UniqueIdentifier>{6c1f5f63-78e7-4809-ac5b-80410712cfb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{c343baf0-f255-4cad-8f0b-c804243f4168}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="segment">
+      <UniqueIdentifier>{0a96a10d-6108-43b5-822f-5770e3a63f72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ts">
+      <UniqueIdentifier>{d44aae75-b3f4-458e-a675-6ba1d093eaca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mkv">
+      <UniqueIdentifier>{56495108-6670-45a3-ae7d-03868b909d39}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\mp4\Mp4Demuxer.cpp">
+      <Filter>mp4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\asf\AsfDemuxer.cpp">
+      <Filter>asf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\flv\FlvDemuxer.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\DemuxModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\RecordDemuxer.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\Version.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\base\CustomDemuxer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\base\Demuxer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\base\DemuxStatistic.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\base\SingleDemuxer.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\segment\DemuxStrategy.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\segment\SegmentDemuxer.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\segment\SourceTreeItem.cpp">
+      <Filter>segment</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\ts\TsDemuxer.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\mkv\MkvDemuxer.cpp">
+      <Filter>mkv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\demux\mkv\MkvParse.cpp">
+      <Filter>mkv</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\mp4\Mp4Demuxer.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\mp4\Mp4StdByteStream.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\mp4\Mp4Track.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\asf\AsfDemuxer.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\asf\AsfStream.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\flv\FlvDemuxer.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\flv\FlvStream.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\DemuxModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\EmptyDemuxer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\RecordDemuxer.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\Version.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\CustomDemuxer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\DemuxBase.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\Demuxer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\DemuxerBase.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\DemuxError.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\DemuxerTypes.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\DemuxEvent.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\DemuxStatistic.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\SingleDemuxer.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\SourceError.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\base\TimestampHelper.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\segment\DemuxerInfo.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\segment\DemuxStrategy.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\segment\SegmentDemuxer.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\segment\SourceTreeItem.h">
+      <Filter>segment</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\ts\PesParse.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\ts\TsDemuxer.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\ts\TsStream.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\mkv\MkvDemuxer.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\mkv\MkvParse.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\demux\mkv\MkvStream.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

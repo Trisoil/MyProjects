@@ -1,0 +1,5 @@
+[config]
+hl=220.165.14.10@119.167.233.56@218.61.193.4@220.170.193.112@119.167.233.50
+usepush=true
+dc_servers=ppvalog.synacast.com
+uploadpolicy=1

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "udp_index_proxy", "udp_index_proxy.vcproj", "{2FAA7280-75E9-430B-9B67-361B3B3289D1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release Log|Win32 = Release Log|Win32
+		Release|Win32 = Release|Win32
+		ReleaseLog|Win32 = ReleaseLog|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.Debug|Win32.Build.0 = Debug|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.Release Log|Win32.ActiveCfg = Release Log|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.Release Log|Win32.Build.0 = Release Log|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.Release|Win32.ActiveCfg = Release|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.Release|Win32.Build.0 = Release|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.ReleaseLog|Win32.ActiveCfg = ReleaseLog|Win32
+		{2FAA7280-75E9-430B-9B67-361B3B3289D1}.ReleaseLog|Win32.Build.0 = ReleaseLog|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

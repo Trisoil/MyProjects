@@ -1,0 +1,3 @@
+ppvideo.dll 0.0.7.8 Release
+
+添加QueryPushTaskPacketV2(0x1C)协议和QueryTrackerForListingPacket(0x40)协议

@@ -1,0 +1,15 @@
+##########################################################
+#           Stun Server Config File
+##########################################################
+[stun]
+# The Local UDP Port to Listen to
+stun.udp_port = 7000
+
+# The Size of the Queue to Receive UDP Packet
+stun.udp_server_receive_count = 2000
+
+# The Time for the Peer to ReSend a Keep-Alive Packet (s)
+## PeerÏòStunServer·¢ËÍKeep Alive±¨ÎÄµÄÊ±¼ä¼ä¸ô µ¥Î»s
+stun.udp_keep_alive_time = 10
+
+stun.min_protocol_version = 0   

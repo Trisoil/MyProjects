@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\Common.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\AvformatModule.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\Version.cpp" />
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacCodec.cpp">
+      <Filter>codec\aac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacConfigHelper.cpp">
+      <Filter>codec\aac</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcCodec.cpp">
+      <Filter>codec\avc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcConfigHelper.cpp">
+      <Filter>codec\avc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNaluHelper.cpp">
+      <Filter>codec\avc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcType.cpp">
+      <Filter>codec\avc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\flv\FlvMetaData.cpp">
+      <Filter>flv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mkv\MkvAlgorithm.cpp">
+      <Filter>mkv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Merge.cpp">
+      <Filter>mp4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Stream.cpp">
+      <Filter>mp4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Algorithm.cpp">
+      <Filter>mp4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Merge.cpp">
+      <Filter>mp4</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\CrcBuffer.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PatPacket.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PesPacket.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PmtPacket.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\PsiPacket.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\src\ppbox\avformat\ts\TsPacket.cpp">
+      <Filter>ts</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Common.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\AvformatModule.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Define.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Error.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Format.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Name.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\Version.h" />
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\asf\AsfGuid.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\asf\AsfObjectType.h">
+      <Filter>asf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\Codec.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\CodecTypes.h">
+      <Filter>codec</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacAdts.h">
+      <Filter>codec\aac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacCodec.h">
+      <Filter>codec\aac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacConfig.h">
+      <Filter>codec\aac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacConfigHelper.h">
+      <Filter>codec\aac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\aac\AacGAConfig.h">
+      <Filter>codec\aac</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcCodec.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcConfig.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcConfigHelper.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNalu.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNaluBuffer.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcNaluHelper.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcSeiType.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcSliceType.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcSpsPpsType.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcType.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\codec\avc\AvcVuiType.h">
+      <Filter>codec\avc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvDataType.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvFormat.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvMetaData.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\flv\FlvTagType.h">
+      <Filter>flv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvAlgorithm.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvCluster.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvContentEncoding.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvFormat.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvObjectType.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvSegment.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\MkvTrack.h">
+      <Filter>mkv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_Archive.h">
+      <Filter>mkv\ebml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_Element.h">
+      <Filter>mkv\ebml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_File.h">
+      <Filter>mkv\ebml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mkv\ebml\EBML_Type.h">
+      <Filter>mkv\ebml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Error.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Merge.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Ap4Stream.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Algorithm.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\mp4\Mp4Merge.h">
+      <Filter>mp4</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsBuffer.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsIStream.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsOStream.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\BitsType.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\FormatBuffer.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\stream\SampleBuffers.h">
+      <Filter>stream</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\CrcBuffer.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PatPacket.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PesPacket.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PmtPacket.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\PsiPacket.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\TsFormat.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\src\ppbox\avformat\ts\TsPacket.h">
+      <Filter>ts</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="codec">
+      <UniqueIdentifier>{8c2f9105-8af9-430d-b69a-0cdc80673df4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec\avc">
+      <UniqueIdentifier>{c1f6ae8e-03af-4cc1-ae79-c80390808b65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="codec\aac">
+      <UniqueIdentifier>{ca13b7ce-a46b-4495-b409-bc605d39155f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mp4">
+      <UniqueIdentifier>{abe168b1-2c12-4a0a-b076-f48ed4740f0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="flv">
+      <UniqueIdentifier>{d5f8ff43-f803-4d73-a6fc-753af21480d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="asf">
+      <UniqueIdentifier>{8ce5f53f-5041-41cc-9c71-4f8079dad775}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mkv">
+      <UniqueIdentifier>{80da7d5b-8ff7-4b9d-b87e-da4ea316b2b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stream">
+      <UniqueIdentifier>{a53e5b38-ff17-472a-868e-814bc7491cfd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ts">
+      <UniqueIdentifier>{6dfc4260-b4ad-4772-8a33-8aab3e907709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mkv\ebml">
+      <UniqueIdentifier>{f85a0895-2e72-47c0-a233-753a7ee5db03}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

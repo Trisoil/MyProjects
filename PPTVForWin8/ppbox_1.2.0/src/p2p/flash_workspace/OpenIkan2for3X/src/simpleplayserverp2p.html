@@ -1,0 +1,39 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>simplePlayer</title>
+</head>
+<body bgcolor="#ffffff">
+	<script>
+	var IkanPlayer = {
+		ready: function(){
+			console.log('ready');
+			(document['player'] || window['player']).addList({cur:0, items:[{pl:"1d7c1WCosNLUzsri2WCYptHv546xpld5eIm2no6xmld3cIm4oI6hnVd3bIm3rJmhinR4XKW5kJuok5+la6Szq5qfmGtsZ5io"}]});
+		}
+	};
+	</script>
+	<object id="player" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" width="560" height="420" id="simplePlayer" align="middle">
+	<!--param name="allowScriptAccess" value="always" /-->
+	<param name="allowFullScreen" value="true" />
+	<param name="movie" value="player4player2.swf" />
+	<param name="quality" value="high" />
+	<param name="bgcolor" value="#000000" />	
+	<!--param name="flashvars" value="vw=560&vh=420&xmlurl=structure.xml&pl=pptv://0a2dm6uao6almpzHraGcmQ==&ap=1&maxno=9999&rn=9&co=1&chid=0&ph=172.16.4.72" /-->
+	<param name="flashvars" value="vw=560&vh=420&xmlurl=structure.xml&pl=pptv://0a2dmamep6CgnpzHraGgnw==&ap=1&maxno=9999&rn=9&co=1&chid=0&ph=172.16.4.72" />
+	<!--embed src="player4player2.swf" flashvars="vw=560&vh=420&xmlurl=structure.xml&pl=pptv://0a2dm6uao6almpzHraGcmQ==&ap=1&maxno=9999&rn=9&co=1&chid=0&ph=172.16.4.72" quality="high" bgcolor="#000000" width="560" height="420" name="simplePlayer" align="middle" allowScriptAccess="always" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" /-->
+	<embed name="player" src="player4player2.swf" flashvars="vw=560&vh=420&xmlurl=structure.xml&pl=pptv://0a2dmamep6CgnpzHraGgnw==&ap=1&maxno=9999&rn=9&co=1&chid=0&ph=172.16.4.72" quality="high" bgcolor="#000000" width="560" height="420" name="simplePlayer" align="middle" allowFullScreen="true" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object>
+	<!--
+		播放器的初始化宽�?vwidth=560 (设置播放器的默认宽度)
+		播放器的初始化高�?vheight=420 (设置播放器的默认高度)
+		皮肤文件的配置XML xmlurl=structure.xml (可以根据XML的结构来配置皮肤的位�?(下面会详细介�?)
+		播放�?playlink=xxxxxxxxxxxxx (视频播放串其实由(pptv�?))
+		是否自动播放 ap=0 (0|1 0为点击播�?自动的情况下无截�?
+		有插段数 maxno=9999 (段数�?999为全无插)
+		主机地址 ph=web-play.pptv.com (play服务主机地址)
+		播放后推荐的数量 rn=9 （默认为9 如果不需要播放后推荐�?�?
+		是否加密RID�?co=0 （默认为1 如果是未加密串为0 如果有playlink参数 那么改成host||xxx.mp4的形�?�?jump.g1d.net||非常音乐-20110125-因为爱情.mp4�?
+		
+-->
+</body>
+</html>

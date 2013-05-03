@@ -1,0 +1,103 @@
+1. 添加一个新的协议分类
+	目前有index，tracker，peer，stun，notify，stat，data，live_peer几类，以直播的peer为例：
+	1) 首先定义该协议的ID，static int proto_ppvideo_live_peer = -1;
+	
+	2) 需要在proto_register_ppvideo函数中添加
+		proto_ppvideo_live_peer = proto_register_protocol(
+			"PPVideo Live Peer", //协议名称
+			"PPVideo Live Peer", //协议名称简称
+			"ppv_live_peer"); //filter中使用的协议名称
+		proto_register_protocol的返回值是协议ID
+		
+	3) 然后在需要在proto_register_ppvideo函数中添加
+		proto_register_field_array(
+			proto_ppvideo_live_peer, //header field
+			hf_ppvideo, 			//protocol fields
+			array_length(hf_ppvideo));//last fields
+			
+	4) 添加该分类的解析代码
+		void dissect_ppvideo_live_peer(tvbuff_t *tvb, packet_info *pinfo, proto_tree *tree, guint* offset, guint8 action) 
+		{
+			proto_item *ppvideo_peer_item = NULL;
+			proto_tree *ppvideo_peer_tree = NULL;
+			if (tree)
+			{
+				ppvideo_peer_item = proto_tree_add_item(
+										tree, 					//添加到哪棵树
+										proto_ppvideo_live_peer, //属于哪个分类
+										tvb, 					//数据存储区
+										*offset, 				//此信息在数据中的起始地址
+										-1, 					//此信息在数据中的长度，-1代表缓冲区内的全部数据
+										FALSE);					//字节库，“TRUE”表示“little endian”,“FALSE”表示“big endian” 
+				ppvideo_peer_tree = proto_item_add_subtree(
+										ppvideo_peer_item, //
+										ett_ppvideo_peer); // ett_ppvideo_peer 是这样定义的static gint ett_ppvideo_peer = -1;
+			}
+			if (ppvideo_peer_tree && is_peer_action(action))
+			{
+				// live peer common header
+				set_ppvideo_protocol_column(pinfo, "PPV-Live-Peer", action, -1);
+		
+				proto_tree_add_item(ppvideo_peer_tree, hf_ppvideo_packet_type, tvb, *offset, 1, TRUE); *offset += 1;
+				proto_tree_add_item(ppvideo_peer_tree, hf_ppvideo_reversed, tvb, *offset, 1, TRUE); *offset += 1;
+				proto_tree_add_item(ppvideo_peer_tree, hf_ppvideo_protocal_version, tvb, *offset, 2, TRUE); *offset += 2;
+				proto_tree_add_item(ppvideo_peer_tree, hf_ppvideo_ResourceID, tvb, *offset, 16, TRUE); *offset += 16;
+				
+				switch(action)
+				{
+					case xx:
+					case xx:
+					case xx:
+				}
+			}
+		}
+		
+	5) 在dissect_ppvideo函数中，添加调用解析新分类的代码
+		if (action > 0xC0 && action < 0xD0) //live peer
+		{
+			dissect_ppvideo_live_peer(tvb, pinfo, tree, &offset, action);
+		}
+		
+	
+2. 添加一个协议（以connect协议为例）
+	1) 首先为这个协议号定义一个好记的名字，比如#define AID_CONNECT 0x52
+	
+	2) 把该协议添加到ppvideo_protocol_names结构体中，以以下这种格式{ AID_CONNECT,  "Connect" }，其中Connect是该协议在Wireshark中显示出来的名字
+	
+	3) 然后在该协议所属分类中添加解析代码
+		添加一项：proto_tree_add_item(ppvideo_peer_tree, hf_ppvideo_BasicInfo, tvb, *offset, 1, TRUE); *offset += 1;
+		如果要添加一个子树，用proto_tree_add_item和proto_item_add_subtree
+	
+	
+3. 把缓冲区的数据读到变量中
+	guint8类型的  value = tvb_get_guint8(tvb, offset) 
+	guint16类型的 value = tvb_get_letohs(tvb, offset)
+	guint32类型的 value = tvb_get_letohl(tvb, offset)
+	
+4. 变量的定义格式（定义在hf_ppvideo中）
+	&hf_ppvideo_HttpServers,
+	{
+		"Http Servers           ", "ppvideo.httpservers",// 显示的名字   唯一即可
+		FT_NONE, BASE_NONE,
+		//FT_UINT8(16 32), BASE_DEC(HEX),
+		//FT_STRING, BASE_NONE,
+		//FT_GUID, BASE_NONE,
+		//FT_IPv4, BASE_NONE,
+		//FT_BYTES, BASE_HEX,
+		NULL, 0x0, NULL, HFILL
+		//VALS(ppvideo_protocol_names), 0x0, NULL, HFILL  （static const value_string ppvideo_protocol_names[]）
+	}
+	
+5. check sum
+	对于不符合check sum的协议不进行解析，有时测试时需要忽略check sum的值，这是需要注释掉dissect_ppvideo_heuristic函数中调用check sum的代码check_sum(tvb)
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

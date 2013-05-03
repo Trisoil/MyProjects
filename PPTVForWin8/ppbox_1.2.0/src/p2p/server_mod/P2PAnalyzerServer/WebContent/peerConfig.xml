@@ -1,0 +1,7 @@
+<StatisticsConfigurations expiresInMinutes='1440'>
+    <StatisticsConfiguration id="vod-bufferring-basic" reportingProbability='2'>
+        <CollectionCriteria type='VOD-Bufferring'/>
+        <CollectionLength>15</CollectionLength>
+        <MaxReportingOccurrence>1</MaxReportingOccurrence>
+    </StatisticsConfiguration>
+</StatisticsConfigurations>

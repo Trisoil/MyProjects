@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p2p_decode", "p2p_decode.vcproj", "{6B9F7820-8DDE-462B-9A9A-63AB5F337D40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B9F7820-8DDE-462B-9A9A-63AB5F337D40}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6B9F7820-8DDE-462B-9A9A-63AB5F337D40}.Debug|Win32.Build.0 = Debug|Win32
+		{6B9F7820-8DDE-462B-9A9A-63AB5F337D40}.Release|Win32.ActiveCfg = Release|Win32
+		{6B9F7820-8DDE-462B-9A9A-63AB5F337D40}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

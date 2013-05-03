@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是一个数据包的示例
+    做如下约定:
+    宏的定义: 
+        {LOCALUDPPORT}: 本地监听的UDP端口
+        {LOCALIP}: 本地的IP地址
+        {NOW}: 当前的时间
+        {DURING}: 从程序运行到目前的时间周期
+ -->
+ 
+ <!-- 
+    interval: 发送的频率值,指定一共发送多少秒
+    every_interval_send: 指定每个发送周期发送的数据包个数
+	loop_count: 指定发包的循环次数
+  -->
+  
+ <packet name="test packet" interval="5" every_interval_send="50" loop_count="1000000" local_port="5555" is_continuously_send="1">
+    <server ip="192.168.43.51" port="8888" protocol="udp" />
+    <struct>
+        <!-- common header -->
+        <CheckSum length="4" is_check_sum="1" />
+        <Action length="1">84</Action>
+        <TransactionID length="4" auto_inc="1">1</TransactionID>
+
+        <!-- LivePacket -->
+        <PacketType length="1">128</PacketType>
+        <Reserve length="1">0</Reserve>
+        <ProtocolVersion length="2">13</ProtocolVersion>
+        <ResourceID length="16" random_generate="0">ABCDEFABDCABCDEFABDCABCDEFABDCAB</ResourceID>
+        
+        <!-- request subpiece packet -->
+        <PieceCount length="1">1</PieceCount>
+        <PieceID length="4">{NOW}</PieceID>
+        <SubPieceID length="2" auto_inc="1" reset_every_internal="1">0</SubPieceID>
+    </struct>
+ </packet>
+ 

@@ -1,0 +1,3 @@
+mvn install:install-file  -Dfile=urlrewrite-3.0.4.jar -DgroupId=urlrewrite -DartifactId=urlrewrite -Dversion=3.0.4 -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file  -Dfile=anychart.jar -DgroupId=anychart -DartifactId=anychart -Dversion=1.0 -Dpackaging=jar -DgeneratePom=true
+mvn install:install-file  -Dfile=java_memcached-release_1.6.jar -DgroupId=java_memcached-release -DartifactId=java_memcached -Dversion=1.6 -Dpackaging=jar -DgeneratePom=true

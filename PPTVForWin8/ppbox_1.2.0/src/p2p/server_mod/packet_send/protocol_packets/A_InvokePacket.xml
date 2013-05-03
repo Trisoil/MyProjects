@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是一个数据包的示例
+    做如下约定:
+    宏的定义: 
+        {LOCALUDPPORT}: 本地监听的UDP端口
+        {LOCALIP}: 本地的IP地址
+        {NOW}: 当前的时间
+        {DURING}: 从程序运行到目前的时间周期
+ -->
+ 
+ <!-- 
+    interval: 发送的频率值,指定一共发送多少秒
+    every_interval_send: 指定每个发送周期发送的数据包个数
+		loop_count: 指定发包的循环次数
+  -->
+  
+ <packet name="StunInvokePacket" interval="1" every_interval_send="1000" loop_count="1000" local_port={LocalPort} is_continuously_send="1">
+    <server ip="192.168.30.181" port="80" protocol="udp" />
+    <struct>
+        <!-- common header -->
+        <CheckSum length="4" is_check_sum="1" >1</CheckSum>
+        <Action length="1">115</Action>
+        <TransactionID length="4" auto_inc="1">12</TransactionID>
+
+        <!-- ServerPacket -->
+        <IsRequest length="1">1</IsRequest>
+		<PeerVersion length="2">263</PeerVersion>
+		<Reserve length="2">0</Reserve>
+		
+		<!--InvokePacket-->
+			<ResourceId length="16">aaaaaaaabbbbbbbb</ResourceId>
+			<PeerGUID length="16">aaaaaaaabbbbbbbb</PeerGUID>
+			<SendOffTime length="4">123456</SendOffTime>
+			<!-- CandidatePeerInfoHis -->
+				<IP length="4">{LOCALIP}</IP>
+				<UDPPort length="2">{LOCALUDPPORT}</UDPPort>
+				<PeerVersion length="2">266</PeerVersion>
+				<DetectedIP length="4">{LOCALIP}</DetectedIP>
+				<DetectedPort length="2">{LOCALUDPPORT}</DetectedPort>
+				<StunIP length="4">0</StunIP>
+				<StunUdpPort length="2">0</StunUdpPort>
+				<PeerNatType length="1">0</PeerNatType>
+				<UploadPriority length="1">250</UploadPriority>
+				<IdleTimeInMins length="1">0</IdleTimeInMins>
+				<TrackerPriority length="1">0</TrackerPriority>
+			<ConnectType length="1">0</ConnectType>
+			<!-- CandidatePeerInfoMine -->
+				<IP length="4">{LOCALIP}</IP>
+				<UDPPort length="2">{LOCALUDPPORT}</UDPPort>
+				<PeerVersion length="2">266</PeerVersion>
+				<DetectedIP length="4">2886782486</DetectedIP>
+				<DetectedPort length="2">{LOCALUDPPORT}</DetectedPort>
+				<StunIP length="4">0</StunIP>
+				<StunUdpPort length="2">0</StunUdpPort>
+				<PeerNatType length="1">0</PeerNatType>
+				<UploadPriority length="1">250</UploadPriority>
+				<IdleTimeInMins length="1">0</IdleTimeInMins>
+				<TrackerPriority length="1">0</TrackerPriority>
+			<!--PeerDownloadInfo -->
+				<IsDownloading length="1">1</IsDownloading>
+				<OnlineTime length="4">1000</OnlineTime>
+				<AvgDownloadSpeed length="2">0</AvgDownloadSpeed>
+				<NowDownloadSpeed length="2">0</NowDownloadSpeed>
+				<AvgUploadSpeed length="2">0</AvgUploadSpeed>
+				<NowUploadSpeed length="2">0</NowUploadSpeed>
+		<IsPoolSize length="2">0</IsPoolSize>
+    </struct>
+ </packet>
+ 

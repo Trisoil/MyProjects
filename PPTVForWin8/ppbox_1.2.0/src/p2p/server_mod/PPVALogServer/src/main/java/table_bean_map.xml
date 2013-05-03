@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root splitspec="" dburl="localhost:3306" dbname="pplive_speed" dbusername="root" dbpassword="123456" beanpackage="com.speed">
+  <table tableName="sys_log" beanName="com.speed.bean.SysLog" uniqueColumn="ID">
+    <column columnName="ID" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="ID" autoincr="1"></column>
+    <column columnName="UserName" propertyName="userName" sqlDataType="java.lang.String" defaultValue="" comment="用户名" autoincr="0"></column>
+    <column columnName="Operate" propertyName="operate" sqlDataType="java.lang.String" defaultValue="" comment="操作名称" autoincr="0"></column>
+    <column columnName="Content" propertyName="content" sqlDataType="java.lang.String" defaultValue="" comment="内容(执行的SQL语句等)" autoincr="0"></column>
+    <column columnName="IP" propertyName="iP" sqlDataType="java.lang.String" defaultValue="" comment="IP地址" autoincr="0"></column>
+    <column columnName="CreateTime" propertyName="createTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="创建时间" autoincr="0"></column>
+  </table>
+  <table tableName="sys_module" beanName="com.speed.bean.SysModule" uniqueColumn="ID">
+    <column columnName="ID" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="" autoincr="1"></column>
+    <column columnName="ModuleID" propertyName="moduleID" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="ModuleName" propertyName="moduleName" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="ParentID" propertyName="parentID" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Link" propertyName="link" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="LinkClass" propertyName="linkClass" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Status" propertyName="status" sqlDataType="java.lang.Integer" defaultValue="0" comment="" autoincr="0"></column>
+    <column columnName="Memo" propertyName="memo" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="CreateTime" propertyName="createTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="" autoincr="0"></column>
+  </table>
+  <table tableName="sys_role" beanName="com.speed.bean.SysRole" uniqueColumn="ID">
+    <column columnName="ID" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="" autoincr="1"></column>
+    <column columnName="RoleName" propertyName="roleName" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Permission" propertyName="permission" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="CreateTime" propertyName="createTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="" autoincr="0"></column>
+  </table>
+  <table tableName="sys_user" beanName="com.speed.bean.SysUser" uniqueColumn="ID">
+    <column columnName="ID" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="" autoincr="1"></column>
+    <column columnName="UserName" propertyName="userName" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Password" propertyName="password" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="RoleID" propertyName="roleID" sqlDataType="java.lang.Integer" defaultValue="0" comment="" autoincr="0"></column>
+    <column columnName="Permission" propertyName="permission" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Memo" propertyName="memo" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="CreateTime" propertyName="createTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="" autoincr="0"></column>
+  </table>
+  <table tableName="speed_list" beanName="com.speed.bean.Speed" uniqueColumn="ID">
+    <column columnName="ID" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="ID" autoincr="1"></column>
+    <column columnName="SpeedKey" propertyName="speedKey" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="CreateTime" propertyName="createTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="创建时间" autoincr="0"></column>
+    <column columnName="ResultID" propertyName="resultID" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="ResultValue" propertyName="resultValue" sqlDataType="java.lang.Integer" defaultValue="0" comment="" autoincr="0"></column>
+    <column columnName="CompleteTime" propertyName="completeTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Note" propertyName="note" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="UserIp" propertyName="userIp" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Operator" propertyName="operator" sqlDataType="java.lang.String" defaultValue="" comment="操作人" autoincr="0"></column>
+  </table>
+  <table tableName="speed_result" beanName="com.speed.bean.SpeedResult" uniqueColumn="ID">
+    <column columnName="ID" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="ID" autoincr="1"></column>
+    <column columnName="SpeedKey" propertyName="speedKey" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="ResultID" propertyName="resultID" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="ResultValue" propertyName="resultValue" sqlDataType="java.lang.Integer" defaultValue="0" comment="" autoincr="0"></column>
+    <column columnName="CompleteTime" propertyName="completeTime" sqlDataType="java.sql.Timestamp" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="Note" propertyName="note" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="UserIp" propertyName="userIp" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+  </table>
+  <table tableName="ppva_log" beanName="com.PPVALog.bean.LogItem" uniqueColumn="id">
+    <column columnName="id" propertyName="id" sqlDataType="java.lang.Integer" defaultValue="" comment="" autoincr="1"></column>
+    <column columnName="address" propertyName="address" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="peer_version" propertyName="peer_version" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="peer_guid" propertyName="peer_guid" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="time" propertyName="time" sqlDataType="java.sql.Timestamp" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="log_file_md5" propertyName="log_file_md5" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="resource_id" propertyName="resource_id" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="resource_name" propertyName="resource_name" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+    <column columnName="statistics_id" propertyName="statistics_id" sqlDataType="java.lang.String" defaultValue="" comment="" autoincr="0"></column>
+  </table>
+</root>
+

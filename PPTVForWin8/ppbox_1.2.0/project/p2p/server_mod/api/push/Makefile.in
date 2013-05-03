@@ -1,0 +1,82 @@
+## ЮĿ`э
+
+PROJECT_TYPE                    :=bin
+
+## ʺԉĿҪĻԆèΪֻτݾĻԆҪٹߝ`эLOCAL_TYPEbƤ׃LOCAL_CONFIGbѦѾPROJECT_VERSIONնݓǰ׺b۳׺é
+
+PROJECT_TARGET                  := tool_push
+
+## ЮĿѦѾۅèֻҪǰɽλìخ۳һλؔ֯ʺԉé
+
+PROJECT_VERSION                 :=
+
+## ֨ӥЮĿѦѾۅքͷτݾ
+
+PROJECT_VERSION_HEADER          :=
+
+## كЮĿĬɏքƤ׃`э
+
+LOCAL_CONFIG                  := static debug multi
+
+## ָ֨ԴτݾĿ¼èكЮĿԴτݾք؜Ŀ¼ìРהԚԴτݾٹĿ¼ROOT_SOURCE_DIRECTORYìĬɏΪLOCAL_NAMEé
+
+PROJECT_SOURCE_DIRECTORY        := 
+
+## ɧڻԴëĿ¼ԐؓĿ¼ìָ֨ؓĿ¼քĻԆèûԐָ֨ʱìݫ̷ؔ֯̑ؓĿ¼é
+
+PROJECT_SOURCE_SUB_DIRECTORYS   := 
+
+## ̷ָ֨̑ԴëؓĿ¼քʮ׈èĬɏΪ1é
+
+
+PROJECT_SOURCE_DEPTH            := 2
+
+
+## ָ֨ͷτݾĿ¼èكЮĿͷτݾք؜Ŀ¼ìРהԚͷτݾٹĿ¼ROOT_HEADER_DIRECTORYìĬɏΪLOCAL_NAMEé
+
+PROJECT_HEADER_DIRECTORY        := 
+
+## ЮĿԤҠӫͷτݾ
+
+PROJECT_COMMON_HEADERS          :=
+
+## ŚҿѼڬĿ¼èРהԚԴτݾٹĿ¼ROOT_SOURCE_DIRECTORYé
+
+PROJECT_INTERNAL_INCLUDES       :=server_mod/api/include  protocol/include protocol/include/protocol
+
+
+## ׮΢ѼڬĿ¼èנٶìРהԚѼڬٹĿ¼ROOT_INCLUDE_DIRECTORYé
+
+PROJECT_EXTERNAL_INCLUDES       :=
+
+## كЮĿ֣͘քҠӫѡЮ
+
+
+PROJECT_COMPILE_FLAGS           := $(PROJECT_COMPILE_FLAGS)
+
+## كЮĿ֣͘քtޓѡЮ
+
+PROJECT_LINK_FLAGS              := -static -m32
+
+## كЮĿӀ5քǤ̻ЮĿ
+
+PROJECT_DEPENDS                 := \
+                                $(PROJECT_DEPENDS)
+
+## كЮĿ֨͘քӽԃࠢ
+
+#PROJECT_DEPEND_LIBRARYS         := $(PROJECT_DEPEND_LIBRARYS)
+PROJECT_DEPENDS                 := \
+                                /base/util \
+                                /base/framework \
+                                /base/log4cplus \
+                                /base/boost/thread \
+                                /base/boost/system \
+                                /base/boost/filesystem \
+                                /base/boost/date_time \
+                                /base/boost/regex \
+                                /protocol/udpserver_mod \
+
+PROJECT_DEPEND_LIBRARYS         := $(PROJECT_DEPEND_LIBRARYS) pthread dl rt uuid
+
+include $(RELETIVE_DIR)/../BootStrap.mk

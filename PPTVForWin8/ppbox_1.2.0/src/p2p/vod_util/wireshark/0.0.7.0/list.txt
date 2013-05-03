@@ -1,0 +1,4 @@
+ppvideo.dll 0.0.7.0 Release
+添加QueryLiveTrackerList协议
+
+修改RequestLiveSubPiecePacket(0xC2)协议

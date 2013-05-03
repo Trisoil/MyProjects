@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 这是一个数据包的示例
+    做如下约定:
+    宏的定义: 
+        {LOCALUDPPORT}: 本地监听的UDP端口
+        {LOCALIP}: 本地的IP地址
+        {NOW}: 当前的时间
+        {DURING}: 从程序运行到目前的时间周期
+ -->
+ 
+ <!-- 
+    interval: 发送的频率值,指定一共发送多少秒
+    every_interval_send: 指定每个发送周期发送的数据包个数
+		loop_count: 指定发包的循环次数
+  -->
+  
+ <packet name="test packet" interval="1" every_interval_send="1" loop_count="1" local_port={LocalPort} is_continuously_send="1">
+    <server ip="192.168.30.181" port="80" protocol="udp" />
+    <struct>
+        <!-- common header -->
+        <CheckSum length="4" is_check_sum="1" />
+        <Action length="1">92</Action>
+        <TransactionID length="4" auto_inc="1">13</TransactionID>
+
+		<!-- LivePacket -->
+        <ProtocolVersion length="2">263</ProtocolVersion>
+    </struct>
+ </packet>
+ 
