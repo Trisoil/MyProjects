@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Setting Name="BackJobAct" Value="true"></Setting>
+  <!-- 是否加载昨天的节目单数据-->
+  <Setting Name="StaticFilePath" Value="D:/Test"></Setting>
+  <!-- 后台静态文件生成绝对目录-->
+</Settings>

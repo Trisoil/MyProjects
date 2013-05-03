@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quartz xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				version="1.0"
+				overwrite-existing-jobs="false">
+  <job>
+    <job-detail>
+      <name>monitorjob</name>
+      <group>monitorgroup</group>
+      <job-type>Synacast.ProcessManageMonitor.Core.Job.MonitorJob, Synacast.ProcessManageMonitor.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>monitorcronName</name>
+        <group>monitorcronGroup</group>
+        <job-name>monitorjob</job-name>
+        <job-group>monitorgroup</job-group>
+        <cron-expression>0 0/1 * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  
+</quartz >

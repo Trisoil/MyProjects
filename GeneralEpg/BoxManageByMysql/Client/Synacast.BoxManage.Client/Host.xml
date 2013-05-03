@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Hosts>
+  <Host>
+    <Name>epg.inner.pptv.com</Name>
+    <BD>false</BD>
+  </Host>
+  <Host>
+    <Name>so.inner.pptv.com</Name>
+    <BD>false</BD>
+  </Host>
+  <Host>
+    <Name>cover.inner.pptv.com</Name>
+    <BD>false</BD>
+  </Host>
+  <!--<Host>
+    <Name>5</Name>  --><!-- H 香港--><!--
+    <BD>false</BD>
+  </Host>
+  <Host>
+    <Name>1002</Name>  --><!-- M 美国--><!--
+    <BD>false</BD>
+  </Host>
+  <Host>
+    <Name>1</Name>   --><!-- O 北京--><!--
+    <BD>false</BD>
+  </Host>
+  <Host>
+    <Name>2</Name>   --><!-- P 上海--><!--
+    <BD>false</BD>
+  </Host>
+  <Host>
+    <Name>9999</Name>   --><!-- E 海外其它--><!--
+    <BD>false</BD>
+  </Host>-->
+</Hosts>

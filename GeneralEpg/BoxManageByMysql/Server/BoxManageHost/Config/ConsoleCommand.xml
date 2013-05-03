@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Commands>
+  <Command Key="refresh" Type="Synacast.BoxManage.Core.ConsoleCommand.RefreshCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="listextension" Type="Synacast.BoxManage.Core.ConsoleCommand.ListExtensionCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="all" Type="Synacast.BoxManage.Core.ConsoleCommand.AllListCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="update" Type="Synacast.BoxManage.Core.ConsoleCommand.UpdateListCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="setting" Type="Synacast.BoxManage.Core.ConsoleCommand.SettingCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="lucene" Type="Synacast.BoxManage.Core.ConsoleCommand.LuceneCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="lucenesetting" Type="Synacast.BoxManage.Core.ConsoleCommand.LuceneSettingCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="platform" Type="Synacast.BoxManage.Core.ConsoleCommand.PlatFormCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="netnode" Type="Synacast.BoxManage.Core.ConsoleCommand.NetNodeCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="hotword" Type="Synacast.BoxManage.Core.ConsoleCommand.HotWordCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="addhotword" Type="Synacast.BoxManage.Core.ConsoleCommand.AddHotWordCommand,Synacast.BoxManage.Core"></Command>
+  <Command Key="fbarea" Type="Synacast.BoxManage.Core.ConsoleCommand.ForbiddenAreaCommand,Synacast.BoxManage.Core"></Command>
+</Commands>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <service name="Synacast.BoxManage.List.Impl.Details.Details,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Lists.List,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Vod.Search.VodSearch,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Vod.Search.VodTagSerach,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Tags.Tags,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Update.Update,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Nav.NavList,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Live.LiveList,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Live.Nav.LiveNav,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Live.Search.LiveSearcher,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Feedback.FeedbackList,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Vod.Treeleft.Treeleft,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Vod.Lists.ListByTag,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Vod.Relevance.VodRelevance,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Cover.ConverImpl,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.Internal.Impl.List,Synacast.BoxManage.Internal.Impl"></service>
+</Services>

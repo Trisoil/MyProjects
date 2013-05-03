@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Assemblies>
+  <GroupAssemblies Type="">
+    <assembly name="Synacast.BoxManage.Tests"></assembly>
+  </GroupAssemblies>
+</Assemblies>

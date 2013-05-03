@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quartz xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				version="1.0"
+				overwrite-existing-jobs="false">
+  <job>
+    <job-detail>
+      <name>alllistjob</name>
+      <group>alllistgroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.AllListJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>alllistcronName</name>
+        <group>alllistcronGroup</group>
+        <job-name>alllistjob</job-name>
+        <job-group>alllistgroup</job-group>
+        <cron-expression>0 20 0 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <job>
+    <job-detail>
+      <name>updatelistjob</name>
+      <group>updategroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.UpdateListJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>updatelistcronName</name>
+        <group>updatelistcronGroup</group>
+        <job-name>updatelistjob</job-name>
+        <job-group>updategroup</job-group>
+        <cron-expression>0 10 0 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <job>
+    <job-detail>
+      <name>listcachejob</name>
+      <group>listcachegroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.ListCacheJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>listcachecronName</name>
+        <group>listcachecronGroup</group>
+        <job-name>listcachejob</job-name>
+        <job-group>listcachegroup</job-group>
+        <cron-expression>0 0 0/1 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <!--<job>
+    <job-detail>
+      <name>listcacheextensionjob</name>
+      <group>listcacheextensiongroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.ListExtensionJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>listcacheextensioncronName</name>
+        <group>listcacheextensioncronGroup</group>
+        <job-name>listcacheextensionjob</job-name>
+        <job-group>listcacheextensiongroup</job-group>
+        <cron-expression>0 10 0/1 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <job>
+    <job-detail>
+      <name>monitorlistjob</name>
+      <group>monitorlistgroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.MonitorListJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>monitorlistcronName</name>
+        <group>monitolistcronGroup</group>
+        <job-name>monitorlistjob</job-name>
+        <job-group>monitorlistgroup</job-group>
+        <cron-expression>0 20 0/1 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>-->
+
+  <job>
+    <job-detail>
+      <name>livelistcachejob</name>
+      <group>livelistcachegroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.LiveListCacheJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>livelistcachecronName</name>
+        <group>livelistcachecronGroup</group>
+        <job-name>livelistcachejob</job-name>
+        <job-group>livelistcachegroup</job-group>
+        <cron-expression>30 0/5 * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <job>
+    <job-detail>
+      <name>coverjob</name>
+      <group>covergroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.CoverJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>covercronName</name>
+        <group>covercronGroup</group>
+        <job-name>coverjob</job-name>
+        <job-group>covergroup</job-group>
+        <cron-expression>30 0/10 * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <job>
+    <job-detail>
+      <name>hotwordjob</name>
+      <group>hotwordgroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.HotSearchWordJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>hotwordcronName</name>
+        <group>hotwordcronGroup</group>
+        <job-name>hotwordjob</job-name>
+        <job-group>hotwordgroup</job-group>
+        <cron-expression>30 0/30 * * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  
+</quartz >

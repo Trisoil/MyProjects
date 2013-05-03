@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <service name="Synacast.BoxManage.List.Impl.Details.Details,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Lists.List,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Tags.Tags,Synacast.BoxManage.List.Impl"></service>
+  <service name="Synacast.BoxManage.List.Impl.Update.Update,Synacast.BoxManage.List.Impl"></service>
+</Services>

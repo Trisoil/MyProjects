@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF5AD6D2-13A5-4B9D-8ABC-FD386781C1A2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Synacast.BoxManage.List</RootNamespace>
+    <AssemblyName>Synacast.BoxManage.List</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cover\CoverFilter.cs" />
+    <Compile Include="Cover\ICover.cs" />
+    <Compile Include="Feedback\FeedbackFilter.cs" />
+    <Compile Include="Feedback\IFeedback.cs" />
+    <Compile Include="Live\Nav\ILiveNav.cs" />
+    <Compile Include="Live\Nav\LiveNavFilter.cs" />
+    <Compile Include="Live\Search\ILiveSearch.cs" />
+    <Compile Include="Live\Search\LiveSearchFilter.cs" />
+    <Compile Include="Vod\Details\DetailFilter.cs" />
+    <Compile Include="Vod\Details\IDetails.cs" />
+    <Compile Include="ExFilterBase.cs" />
+    <Compile Include="Vod\Lists\IList.cs" />
+    <Compile Include="Vod\Lists\IListByTags.cs" />
+    <Compile Include="Vod\Lists\ListFilter.cs" />
+    <Compile Include="Live\Lists\ILive.cs" />
+    <Compile Include="Live\Lists\LiveFilter.cs" />
+    <Compile Include="Vod\Nav\INav.cs" />
+    <Compile Include="Vod\Nav\NavFilter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vod\Relevance\IRelevance.cs" />
+    <Compile Include="Vod\Relevance\RelevanceFilter.cs" />
+    <Compile Include="Vod\Serach\ISearch.cs" />
+    <Compile Include="Vod\Serach\ITagSearch.cs" />
+    <Compile Include="Vod\Serach\SimpleSearchFilter.cs" />
+    <Compile Include="Vod\Serach\TagSearchFilter.cs" />
+    <Compile Include="Vod\Tags\ITags.cs" />
+    <Compile Include="Vod\Tags\TagsFilter.cs" />
+    <Compile Include="Vod\Treeleft\ITreeleft.cs" />
+    <Compile Include="Vod\Treeleft\TreeleftFilter.cs" />
+    <Compile Include="Vod\Update\IUpdate.cs" />
+    <Compile Include="Vod\Update\UpdateFilter.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

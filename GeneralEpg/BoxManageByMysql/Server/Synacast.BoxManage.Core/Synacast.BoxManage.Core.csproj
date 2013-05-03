@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{12F2CF01-52EB-4765-8682-DA4B3944004E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Synacast.BoxManage.Core</RootNamespace>
+    <AssemblyName>Synacast.BoxManage.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Castle.ActiveRecord, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Synacast.ServicesFramework\DllImport\Castle.ActiveRecord.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.85.5.452, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Synacast.ServicesFramework\DllImport\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Synacast.ServicesFramework\DllImport\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Lucene.Net, Version=2.9.2.2, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Synacast.ServicesFramework\DllImport\Lucene.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NHibernate, Version=2.1.2.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Synacast.ServicesFramework\DllImport\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=1.0.2.3, Culture=neutral, PublicKeyToken=f6b8c98a402cc8a4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Synacast.ServicesFramework\DllImport\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cache\BoxTypeCache.cs" />
+    <Compile Include="Cache\ConverImageCache.cs" />
+    <Compile Include="Cache\CoverImageCache.cs" />
+    <Compile Include="Cache\CoverNavCache.cs" />
+    <Compile Include="Cache\Custom\TagNodeKey.cs" />
+    <Compile Include="Cache\Custom\VideoNodeKeyArray.cs" />
+    <Compile Include="Cache\Entity\ChannelLiveItemsNode.cs" />
+    <Compile Include="Cache\Entity\ConverImageNode.cs" />
+    <Compile Include="Cache\Entity\CoverImageNode.cs" />
+    <Compile Include="Cache\Entity\CoverNavNode.cs" />
+    <Compile Include="Cache\Entity\RecommandNode.cs" />
+    <Compile Include="Cache\Entity\TagNode.cs" />
+    <Compile Include="Cache\Entity\TreeNode.cs" />
+    <Compile Include="Cache\Entity\VodContent.cs" />
+    <Compile Include="Cache\ForbiddenAreaCache.cs" />
+    <Compile Include="Cache\Internal\BoxTypeInfoCache.cs" />
+    <Compile Include="Cache\Internal\Container\VodContainer.cs" />
+    <Compile Include="Cache\Internal\TreeNodeChannelRelCache.cs" />
+    <Compile Include="Cache\Internal\TreeNodeInfoCache.cs" />
+    <Compile Include="Cache\Internal\ViceChnanelCache.cs" />
+    <Compile Include="Cache\Language\DoubleLanguageNode.cs" />
+    <Compile Include="Cache\Language\LanguageNodeBase.cs" />
+    <Compile Include="Cache\Language\LanguagePack.cs" />
+    <Compile Include="Cache\Language\LiveChannelHandler.cs" />
+    <Compile Include="Cache\Language\LiveChannelLanguageNode.cs" />
+    <Compile Include="Cache\Language\SimpleLanguageHandler.cs" />
+    <Compile Include="Cache\LiveTypeDicCache.cs" />
+    <Compile Include="Cache\RecommandCache.cs" />
+    <Compile Include="Cache\SplashScreenCache.cs" />
+    <Compile Include="Cache\TagCache.cs" />
+    <Compile Include="Cache\TreeNodeCache.cs" />
+    <Compile Include="ConsoleCommand\AddHotWordCommand.cs" />
+    <Compile Include="ConsoleCommand\ForbiddenAreaCommand.cs" />
+    <Compile Include="ConsoleCommand\HotWordCommand.cs" />
+    <Compile Include="Deleted\BoxTypeCache.cs" />
+    <Compile Include="Cache\CacheBase.cs" />
+    <Compile Include="Cache\CustomerCache.cs" />
+    <Compile Include="Cache\Custom\AuthKey.cs" />
+    <Compile Include="Cache\Custom\CustomArray.cs" />
+    <Compile Include="Cache\Custom\RecommandKey.cs" />
+    <Compile Include="Cache\Custom\SplitArray.cs" />
+    <Compile Include="Deleted\TagNodeKey2.cs" />
+    <Compile Include="Cache\Entity\AuthNode.cs" />
+    <Compile Include="Cache\Entity\BoxTypeNode.cs" />
+    <Compile Include="Cache\Language\ChannelLanguageHandler.cs" />
+    <Compile Include="Cache\Language\ChannelLanguageNode.cs" />
+    <Compile Include="Cache\Entity\LiveRecommandNode.cs" />
+    <Compile Include="Cache\Entity\LiveTypeNode.cs" />
+    <Compile Include="Cache\Entity\LiveVideoNode.cs" />
+    <Compile Include="Deleted\RecommandNode.cs" />
+    <Compile Include="Cache\Entity\VideoBase.cs" />
+    <Compile Include="Cache\Entity\VideoNode.cs" />
+    <Compile Include="Cache\Entity\YesterdayVideoNode.cs" />
+    <Compile Include="Cache\Internal\AppSettingCache.cs" />
+    <Compile Include="Cache\AuthenticationCache.cs" />
+    <Compile Include="Cache\Internal\BoxTagCache.cs" />
+    <Compile Include="Cache\ChannelLiveItemsCache.cs" />
+    <Compile Include="Cache\Internal\ChannelLiveCustomerRelCache.cs" />
+    <Compile Include="Cache\Internal\ChannelLiveRecomRelCache.cs" />
+    <Compile Include="Cache\Internal\ChannelLiveRelCache.cs" />
+    <Compile Include="Cache\Internal\ChannelRecomRelCache.cs" />
+    <Compile Include="Cache\Internal\ChannelTagRelCache.cs" />
+    <Compile Include="Cache\Internal\Container\ContainerBase.cs" />
+    <Compile Include="Cache\Internal\Container\LiveVideoContanier.cs" />
+    <Compile Include="Deleted\VideoNodeContainer2.cs" />
+    <Compile Include="Cache\Custom\VideoNodeKey.cs" />
+    <Compile Include="Deleted\TagNode2.cs" />
+    <Compile Include="Cache\Entity\ViceNode.cs" />
+    <Compile Include="Cache\Internal\LiveChannelCache.cs" />
+    <Compile Include="Cache\Internal\TagTypeCache.cs" />
+    <Compile Include="Cache\Language\SimpleLanguageNode.cs" />
+    <Compile Include="Cache\PlatFormInfoCache.cs" />
+    <Compile Include="Cache\Key\YesterdayModifyCompare.cs" />
+    <Compile Include="Cache\Key\YesterdayVidCompare.cs" />
+    <Compile Include="Cache\LiveListCache.cs" />
+    <Compile Include="Cache\LiveRecommandCache.cs" />
+    <Compile Include="Cache\LiveTypeCache.cs" />
+    <Compile Include="Deleted\LiveTypeDicCache.cs" />
+    <Compile Include="Cache\PlatFormCache.cs" />
+    <Compile Include="Deleted\RecommandCache.cs" />
+    <Compile Include="ConsoleCommand\ListExtensionCommand.cs" />
+    <Compile Include="ConsoleCommand\NetNodeCommand.cs" />
+    <Compile Include="Deleted\TagCache.cs" />
+    <Compile Include="Deleted\VideoNode.cs" />
+    <Compile Include="Cache\Key\BoxTagKey.cs" />
+    <Compile Include="Cache\Key\ModifyEquailityCompare.cs" />
+    <Compile Include="Cache\Key\TagNameEquality.cs" />
+    <Compile Include="Cache\Key\VidEquailityCompare.cs" />
+    <Compile Include="Cache\ListCache.cs" />
+    <Compile Include="Deleted\ListCache.cs" />
+    <Compile Include="Cache\MutexLock.cs" />
+    <Compile Include="Cache\Internal\BKInfoCache.cs" />
+    <Compile Include="Deleted\BKTagCache.cs" />
+    <Compile Include="Cache\Internal\BKTypeCache.cs" />
+    <Compile Include="Deleted\BoxTagCache.cs" />
+    <Compile Include="Cache\Internal\ChannelCache.cs" />
+    <Compile Include="Cache\Internal\Key\BKInfoComparer.cs" />
+    <Compile Include="Cache\Internal\Key\BoxTagCacheKey.cs" />
+    <Compile Include="Deleted\PlatFormCache.cs" />
+    <Compile Include="Cache\Internal\SubCacheBase.cs" />
+    <Compile Include="Deleted\TagCache2.cs" />
+    <Compile Include="Cache\YesterdayListCache.cs" />
+    <Compile Include="ConsoleCommand\AllListCommand.cs" />
+    <Compile Include="ConsoleCommand\LuceneCommand.cs" />
+    <Compile Include="ConsoleCommand\LuceneSettingCommand.cs" />
+    <Compile Include="ConsoleCommand\PlatFormCommand.cs" />
+    <Compile Include="ConsoleCommand\RefreshCommand.cs" />
+    <Compile Include="ConsoleCommand\SettingCommand.cs" />
+    <Compile Include="ConsoleCommand\UpdateListCommand.cs" />
+    <Compile Include="Deleted\VideoNodeContainer.cs" />
+    <Compile Include="Entity\AuthenticationInfo.cs" />
+    <Compile Include="Entity\BKInfo.cs" />
+    <Compile Include="Deleted\BKTagInfo.cs" />
+    <Compile Include="Entity\BKTypeInfo.cs" />
+    <Compile Include="Entity\BoxTagInfo.cs" />
+    <Compile Include="Entity\BoxTypeInfo.cs" />
+    <Compile Include="Entity\ChannelInfo.cs" />
+    <Compile Include="Entity\ChannelLiveCustomerRelInfo.cs" />
+    <Compile Include="Entity\ChannelLiveItemsInfo.cs" />
+    <Compile Include="Entity\ChannelLiveRecomRelInfo.cs" />
+    <Compile Include="Entity\ChannelLiveRelInfo.cs" />
+    <Compile Include="Entity\ChannelRecomRelInfo.cs" />
+    <Compile Include="Entity\ChannelTagRelInfo.cs" />
+    <Compile Include="Entity\ConverImageInfo.cs" />
+    <Compile Include="Entity\CoverNavInfo.cs" />
+    <Compile Include="Entity\CustomerInfo.cs" />
+    <Compile Include="Entity\ForbiddenAreaInfo.cs" />
+    <Compile Include="Entity\LiveRecommandInfo.cs" />
+    <Compile Include="Entity\LiveTypeInfo.cs" />
+    <Compile Include="Entity\PlatFormInfo.cs" />
+    <Compile Include="Entity\RecommandInfo.cs" />
+    <Compile Include="Entity\SplashScreenInfo.cs" />
+    <Compile Include="Entity\TagTypeInfo.cs" />
+    <Compile Include="Entity\TreeNodeChannelRelInfo.cs" />
+    <Compile Include="Entity\TreeNodeInfo.cs" />
+    <Compile Include="Entity\ViceChannelInfo.cs" />
+    <Compile Include="ExtensionClass.cs" />
+    <Compile Include="Extensions\DataBaseAfterExtension.cs" />
+    <Compile Include="Extensions\SeriAfterExtension.cs" />
+    <Compile Include="Extensions\SeriFrontExtension.cs" />
+    <Compile Include="Job\AllListJob.cs" />
+    <Compile Include="Job\CoverJob.cs" />
+    <Compile Include="Job\HotSearchWordJob.cs" />
+    <Compile Include="Job\ListCacheJob.cs" />
+    <Compile Include="Job\ListExtensionJob.cs" />
+    <Compile Include="Job\LiveListCacheJob.cs" />
+    <Compile Include="Job\MonitorListJob.cs" />
+    <Compile Include="Job\UpdateListJob.cs" />
+    <Compile Include="LuceneNet\Live\LiveEpgLuceneNet.cs" />
+    <Compile Include="LuceneNet\Live\LiveEpgNode.cs" />
+    <Compile Include="LuceneNet\NewLuceneNetBase.cs" />
+    <Compile Include="LuceneNet\Tag\TagIndex.cs" />
+    <Compile Include="LuceneNet\Tag\TagLuceneNet.cs" />
+    <Compile Include="LuceneNet\Vod\EpgIndex.cs" />
+    <Compile Include="LuceneNet\Vod\EpgIndexNode.cs" />
+    <Compile Include="LuceneNet\Vod\EpgLuceneNet.cs" />
+    <Compile Include="LuceneNet\Live\LiveEpgIndex.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceInvoke.cs" />
+    <Compile Include="Sync\NetInfo.cs" />
+    <Compile Include="Sync\NetNode.cs" />
+    <Compile Include="Sync\NetNodeService.cs" />
+    <Compile Include="Sync\SyncService.cs" />
+    <Compile Include="Utils\BoxUtils.cs" />
+    <Compile Include="Utils\GZipStressUtils.cs" />
+    <Compile Include="Utils\LanguageUtils.cs" />
+    <Compile Include="Utils\ListUtils.cs" />
+    <Compile Include="Utils\PageUtils.cs" />
+    <Compile Include="Utils\PlatformUtils.cs" />
+    <Compile Include="Utils\PlayLinkUtils.cs" />
+    <Compile Include="Utils\ResponseUtils.cs" />
+    <Compile Include="Utils\SpellUtils.cs" />
+    <Compile Include="Utils\VideoUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Synacast.NhibernateActiverecord\Synacast.NhibernateActiveRecord.csproj">
+      <Project>{5A0801EC-1084-4A55-A860-0E269ECCAFF3}</Project>
+      <Name>Synacast.NhibernateActiveRecord</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Synacast.ServicesFramework\Synacast.ServicesFramework.csproj">
+      <Project>{1DFC8B0C-F7EF-4F58-89D7-927422DE022B}</Project>
+      <Name>Synacast.ServicesFramework</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Synacast.LuceneNetSearcher\Synacast.LuceneNetSearcher.csproj">
+      <Project>{BDA502B2-6D11-4F81-B5B1-D069A6FB5853}</Project>
+      <Name>Synacast.LuceneNetSearcher</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

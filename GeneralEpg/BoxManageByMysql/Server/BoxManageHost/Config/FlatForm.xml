@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlatForms>
+  <!--
+    名称为空代表机顶盒，ContainsNames现代表视频名称最后包含字符，NotContainsNames代表视频名称不包含字符。
+    ContainsNames和NotContainsNames不能同时输入。
+    FormateName代表最后输出名称去掉字符，FromateImage代表视频图片输出大小格式化。
+    NotContainsNames的优先级大于ContainsNames。
+  -->
+  <FlatForm Name="" ContainsNames="" NotContainsNames="_mobile,pptv" FormateName="" ReplaceName="" FormateImage="230X306" IsVisable="true" TagIsVisable="true" SearchTypeIndex="1,2,3,4,5,7"></FlatForm>
+  <FlatForm Name="silverlight" ContainsNames="" NotContainsNames="_mobile" FormateName=""  ReplaceName="" FormateImage="230X306" IsVisable="true" TagIsVisable="true" SearchTypeIndex="1,2,3,4,5,7">
+    <Auth Licence="0e73f5bb912bf1cca8896fa539b2fa16,7745129264797b6177a5a9150a6bcdff" AuthKey="0e73f5bb912bf1cca8896fa539b2fa16" IsVisable="false"></Auth>
+  </FlatForm>
+  <FlatForm Name="iphone123" ContainsNames="_mobile,_mobile_1" NotContainsNames="" FormateName="_mobile" ReplaceName="" FormateImage="" IsVisable="false" TagIsVisable="true" SearchTypeIndex="1,2,3,4,5,6,7"></FlatForm>
+  <FlatForm Name="android" ContainsNames="_mobile,_mobile_2" NotContainsNames="" FormateName="_mobile" ReplaceName="" FormateImage="" IsVisable="false" TagIsVisable="true" SearchTypeIndex="1,2,3,4,5,6,7"></FlatForm>
+  <FlatForm Name="iphone4" ContainsNames="_mobile,_mobile_3" NotContainsNames="" FormateName="_mobile" ReplaceName="" FormateImage="" IsVisable="false" TagIsVisable="true" SearchTypeIndex="1,2,3,4,5,6,7"></FlatForm>
+</FlatForms>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Services>
+  <SyncServices>
+    <Service Type="Synacast.ServicesFramework.Communication.CommunicationFactory,Synacast.ServicesFramework">
+      <Extensions>
+        <FrontExtensions>
+          <Extension Type="Synacast.BoxManage.Core.Extensions.SeriFrontExtension,Synacast.BoxManage.Core"></Extension>
+        </FrontExtensions>
+        <AfterExtensions>
+          <Extension Type="Synacast.BoxManage.Core.Extensions.SeriAfterExtension,Synacast.BoxManage.Core"></Extension>
+        </AfterExtensions>
+      </Extensions>
+    </Service>
+  </SyncServices>
+  <AsyncServices>
+    <Service Type="Synacast.ServicesFramework.Log4net.Log4netFactory,Synacast.ServicesFramework"></Service>
+    <Service Type="Synacast.ServicesFramework.ActiveRecord.ActiveRecordFactory,Synacast.ServicesFramework"></Service>
+    <Service Type="Synacast.ServicesFramework.NHibernate.NHibernateFactory,Synacast.ServicesFramework"></Service>
+    <Service Type="Synacast.ServicesFramework.QuartzNet.QuartzFactory,Synacast.ServicesFramework">
+      <Extensions>
+        <AfterExtensions>
+          <Extension Type="Synacast.BoxManage.Core.Extensions.DataBaseAfterExtension,Synacast.BoxManage.Core"></Extension>
+        </AfterExtensions>
+      </Extensions>
+    </Service>
+  </AsyncServices>
+  <SyncServices>
+    <Service Type="Synacast.ServicesFramework.ConsoleCommand.ConsoleCommandFactory,Synacast.ServicesFramework"></Service>
+  </SyncServices>
+</Services>

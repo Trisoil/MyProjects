@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quartz xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+				version="1.0"
+				overwrite-existing-jobs="false">
+  <job>
+    <job-detail>
+      <name>alllistjob</name>
+      <group>alllistgroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.AllListJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>alllistcronName</name>
+        <group>alllistcronGroup</group>
+        <job-name>alllistjob</job-name>
+        <job-group>alllistgroup</job-group>
+        <cron-expression>0 15 0 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+
+  <job>
+    <job-detail>
+      <name>updatelistjob</name>
+      <group>updategroup</group>
+      <job-type>Synacast.BoxManage.Core.Job.UpdateListJob, Synacast.BoxManage.Core</job-type>
+    </job-detail>
+    <trigger>
+      <cron>
+        <name>updatelistcronName</name>
+        <group>updatelistcronGroup</group>
+        <job-name>updatelistjob</job-name>
+        <job-group>updategroup</job-group>
+        <cron-expression>0 05 0 * * ?</cron-expression>
+      </cron>
+    </trigger>
+  </job>
+  
+</quartz >

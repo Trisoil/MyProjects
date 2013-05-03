@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NetNode>
+  <Node url="net.tcp://192.168.21.103:7070/SyncService" parenturl="">
+    <Children>
+      <Child url="net.tcp://172.16.1.1:7070/SyncService"></Child>
+    </Children>
+  </Node>
+</NetNode>

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Synacast.BoxManage.Tests" namespace="Synacast.BoxManage.Tests">
+  <class name ="Synacast.BoxManage.Tests.BoxTagsInfo,Synacast.BoxManage.Tests" table="boxtypes">
+    <id name="ID" column="ID" type="Int32" unsaved-value="0">
+      <generator class ="native"></generator>
+    </id>
+    <property name="Name" column ="TypeName" type="string" length="255" not-null="false"/>
+    <property name="TypeId" column ="TypeID" type="Int32" not-null="false"/>
+    <property name="BKTypes" column ="BKTypes" type="string" length="255" not-null="false"/>
+    <property name="Rank" column ="TypeRank" type="Int32" not-null="false"/>
+  </class>
+</hibernate-mapping>
+

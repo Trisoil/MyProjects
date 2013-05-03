@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <!-- 后台静态文件生成绝对目录-->
+  <Setting Name="StaticFilePath" Value="D:/Test"></Setting>
+  
+  <!-- 是否加载昨天的节目单数据-->
+  <Setting Name="BackJobAct" Value="true"></Setting>
+
+  <!-- 是否在序列化后重置平台的IsVisable属性-->
+  <!--<Setting Name="silverlight" Value="IsVisable"></Setting>-->
+
+  <!-- 是否放弃刷新到为空的缓存-->
+  <Setting Name="AbandonZero" Value="true"></Setting>
+
+  <!-- 屏蔽平台HQL（0代表不限平台）-->
+  <Setting Name="ForbiddenPlatformHql" Value="0"></Setting>
+
+  <!-- 支持屏蔽地区码的HQL（0代表所有地区都屏蔽）-->
+  <Setting Name="SupportFbArea" Value=" where f.ForbiddenAreaName='H' or f.ForbiddenAreaName='M' or f.ForbiddenAreaName='O' or f.ForbiddenAreaName='P' or f.ForbiddenAreaName='E' "></Setting>
+
+  <!-- 是否启动点播-->
+  <Setting Name="VodAct" Value="true"></Setting>
+
+  <!-- 是否启动点播搜索-->
+  <Setting Name="VodSearchAct" Value="true"></Setting>
+
+  <!-- 是否启动直播-->
+  <Setting Name="LiveAct" Value="true"></Setting>
+
+  <!-- 是否启动直播搜索-->
+  <Setting Name="LiveSearchAct" Value="true"></Setting>
+
+  <!-- 是否启动Tag搜索-->
+  <Setting Name="TagSearchAct" Value="true"></Setting>
+
+  <!-- 是否启动导演演员Tag-->
+  <Setting Name="ActDirectorTag" Value="true"></Setting>
+
+  <!-- 点播频道主集过滤SQL-->
+  <Setting Name="VodChannelCache" Value="from ChannelInfo c where c.IsOnline=1 and c.IsPublish=1 and c.ChannelType=3 and c.ParentChannelID=0 and c.BKType!=-1"></Setting>
+
+  <!-- 点播频道子集过滤SQL-->
+  <Setting Name="ViceChannelCache" Value="from ViceChannelInfo c where c.IsOnline=1 and c.IsPublish=1 and c.ChannelType=3 and c.ParentChannelID!=0"></Setting>
+
+  <!-- 直播频道过滤SQL-->
+  <Setting Name="LiveChannelCache" Value="from ChannelInfo c where c.IsOnline=1 and c.IsPublish=1 and c.IsVisible=1 and c.ChannelType=0"></Setting>
+
+  <!-- BKInfo信息过滤SQL-->
+  <Setting Name="BKInfoCache" Value="select distinct BKTypeId,ID,Episode,Directors,Actors,CoverPic,left(Introduction,1000) Introduction,Score,left(Introduction,1000) IntroductionEng,DirectorsEng,ActorsEng from bkinfos"></Setting>
+  
+  <!-- PV每小时基数-->
+  <Setting Name="PVHourNum" Value="1000"></Setting>
+
+  <!-- 外部调取刷新时间间隔（分钟）-->
+  <Setting Name="RefreshInterval" Value="15"></Setting>
+
+  <!-- 外部调取分布式刷新时间间隔（分钟）-->
+  <Setting Name="RefreshExtensionInterval" Value="10"></Setting>
+
+  <!-- 点播根据集数过滤频道（大于等于）-->
+  <Setting Name="VodFilterState" Value="0,1,1,0,0,0,0"></Setting>
+
+  <!-- 点播根据时长过滤频道（大于等于）-->
+  <Setting Name="VodFilterDuration" Value="10,0,0,0,0,0,0"></Setting>
+
+  <!-- 直播下线个数最大阀值-->
+  <Setting Name="LiveHiddenMaxCount" Value="10"></Setting>
+
+  <!-- 支持的语言数-->
+  <Setting Name="LanauageNum" Value="2"></Setting>
+  
+  <!-- 是否支持中文繁体,1表示支持，其他不支持-->
+  <Setting Name="LanauageTW" Value="1"></Setting>
+
+  <!-- 是否支持英文,2表示支持，其他不支持-->
+  <Setting Name="LanauageEN" Value="0"></Setting>
+  
+  <!-- 需更新子节点的文件个数-->
+  <Setting Name="SyncFileNum" Value="16"></Setting>
+  <!-- 需要更新子节点的文件名称-->
+  <Setting Name="1" Value="ChannelLiveItemsCache.boxcache"></Setting>
+  <Setting Name="2" Value="LiveListCache.boxcache"></Setting>
+  <Setting Name="3" Value="LiveRecommandCache.boxcache"></Setting>
+  <Setting Name="4" Value="LiveTypeCache.boxcache"></Setting>
+  <Setting Name="5" Value="LiveTypeDicCache.boxcache"></Setting>
+  <Setting Name="6" Value="Synacast.BoxManage.Core.Cache.Custom.RecommandKey.boxcache"></Setting>
+  <Setting Name="7" Value="Synacast.BoxManage.Core.Cache.Custom.TagNodeKey.boxcache"></Setting>
+  <Setting Name="8" Value="ListCacheBuffer1.boxcache"></Setting>
+  <Setting Name="9" Value="ListCacheBuffer2.boxcache"></Setting>
+  <Setting Name="10" Value="ListCacheBuffer3.boxcache"></Setting>
+  <Setting Name="11" Value="ListCacheBuffer4.boxcache"></Setting>
+  <Setting Name="12" Value="ListCacheBuffer5.boxcache"></Setting>
+  <Setting Name="13" Value="Synacast.BoxManage.Core.Entity.BoxTypeInfo.boxcache"></Setting>
+  <Setting Name="14" Value="Synacast.BoxManage.Core.Entity.CustomerInfo.boxcache"></Setting>
+  <Setting Name="15" Value="Synacast.BoxManage.Core.Entity.AuthenticationInfo.boxcache"></Setting>
+  <Setting Name="16" Value="Synacast.BoxManage.Core.Entity.PlatFormInfo.boxcache"></Setting>
+  
+</Settings>

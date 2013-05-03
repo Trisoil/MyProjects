@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+  <Setting Name="LuceneMaxIndex" Value="20"></Setting>      <!-- 自定义分词最大单词数-->
+  <Setting Name="LuceneBoost" Value="10"></Setting>         <!-- 搜索分词字段权重基值-->
+  <Setting Name="LuceneMaxHit" Value="500"></Setting>       <!-- 搜索最大命中个数 -->
+  <Setting Name="LuceneStatAct" Value="true"></Setting>     <!-- 是否进行搜索命中统计 -->
+  <Setting Name="LuceneQueueCount" Value="10000"></Setting> <!-- 搜索统计中等待统计队列默认个数 -->
+  <Setting Name="LuceneQueueSleep" Value="10"></Setting>    <!-- 搜索统计队列线程等待秒数-->
+  <Setting Name="LuceneDictCount" Value="10000"></Setting>  <!-- 搜索统计字典中默认个数-->
+</Settings>
