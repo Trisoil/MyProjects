@@ -1,0 +1,18 @@
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.dll.config
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.pdb
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.ProviderServices\obj\Debug\ResolveAssemblyReference.cache
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.ProviderServices\obj\Debug\Synacast.ProviderServices.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.ProviderServices\obj\Debug\Synacast.ProviderServices.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.dll.config
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.ProviderServices\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.ProviderServices\obj\Debug\Synacast.ProviderServices.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.ProviderServices\obj\Debug\Synacast.ProviderServices.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.dll.config
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.ProviderServices\bin\Debug\Synacast.ProviderServices.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.ProviderServices\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.ProviderServices\obj\Debug\Synacast.ProviderServices.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.ProviderServices\obj\Debug\Synacast.ProviderServices.pdb

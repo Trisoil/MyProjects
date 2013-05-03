@@ -1,0 +1,51 @@
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.PPInstall.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.PPInstall.pdb
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Castle.ActiveRecord.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\NHibernate.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.NHibernateActiveRecord.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Iesi.Collections.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Castle.Model.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\log4net.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\HashCodeProvider.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Nullables.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Castle.DynamicProxy.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.NHibernateActiveRecord.pdb
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\ResolveAssemblyReference.cache
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.Error.Error.resources
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.csproj.GenerateResource.Cache
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.dll
+D:\WEB2007\_PPLSystem V1.8\NewWorkFlowSys.root\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.PPInstall.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.PPInstall.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Castle.ActiveRecord.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\NHibernate.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.NHibernateActiveRecord.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Iesi.Collections.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Castle.Model.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\log4net.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\HashCodeProvider.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Nullables.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Castle.DynamicProxy.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\bin\Debug\Synacast.NHibernateActiveRecord.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.Error.Error.resources
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.csproj.GenerateResource.Cache
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\NewWorkFlowSys\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Synacast.PPInstall.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Synacast.PPInstall.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Castle.ActiveRecord.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\NHibernate.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Synacast.NHibernateActiveRecord.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Iesi.Collections.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Castle.Model.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\log4net.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\HashCodeProvider.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Nullables.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Castle.DynamicProxy.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\bin\Debug\Synacast.NHibernateActiveRecord.pdb
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\obj\Debug\ResolveAssemblyReference.cache
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.Error.Error.resources
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.csproj.GenerateResource.Cache
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.dll
+D:\SVNRoot\InternalTool\trunk\products\ClientBind\BindManage\Synacast.PPInstall\obj\Debug\Synacast.PPInstall.pdb

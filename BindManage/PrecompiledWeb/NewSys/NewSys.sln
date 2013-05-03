@@ -1,0 +1,100 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "D:\...\NewSys\", ".", "{54AD69BA-C351-46F5-80B2-7E1691AF461C}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = ""
+		SccAuxPath = ""
+		SccLocalPath = ""
+		SccProvider = ""
+		ProjectReferences = "{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}|Synacast.NHibernateActiveRecord.dll;{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}|Synacast.PPInstall.dll;{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}|Synacast.ProviderServices.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/NewSys"
+		Debug.AspNetCompiler.PhysicalPath = "..\NewSys\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\NewSys\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/NewSys"
+		Release.AspNetCompiler.PhysicalPath = "..\NewSys\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\NewSys\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "16029"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synacast.PPInstall", "..\Synacast.PPInstall\Synacast.PPInstall.csproj", "{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synacast.ProviderServices", "..\Synacast.ProviderServices\Synacast.ProviderServices.csproj", "{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synacast.NHibernateActiveRecord", "..\Synacast.NHibernateActiveRecord\Synacast.NHibernateActiveRecord.csproj", "{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Debug|.NET.ActiveCfg = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Debug|.NET.Build.0 = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Release|.NET.ActiveCfg = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Release|.NET.Build.0 = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{54AD69BA-C351-46F5-80B2-7E1691AF461C}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Release|.NET.ActiveCfg = Release|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{2DDDBA6C-D86D-4E89-91A0-8FDF04336047}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Release|.NET.ActiveCfg = Release|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{C5DB7693-9FA3-40D9-A1C7-363F6622D4C6}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Release|.NET.ActiveCfg = Release|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{DA74AF10-98DD-4540-BC88-0B3E8EF608E0}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

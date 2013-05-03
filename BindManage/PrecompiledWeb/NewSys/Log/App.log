@@ -1,0 +1,211 @@
+2011-11-16 17:44:08,183 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 17:44:08,339 INFO - Mapping class: Synacast.PPInstall.TemplateInfo -> Template
+2011-11-16 17:44:08,355 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 17:44:08,355 INFO - Mapping class: Synacast.PPInstall.ChannelInfo -> Channel
+2011-11-16 17:44:08,355 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 17:44:08,355 INFO - Mapping class: Synacast.PPInstall.VersionUninstallInfo -> Relation_Version_UninstallSoft
+2011-11-16 17:44:08,574 INFO - processing one-to-many association mappings
+2011-11-16 17:44:08,574 INFO - processing one-to-one association property references
+2011-11-16 17:44:08,574 INFO - processing foreign key constraints
+2011-11-16 17:44:08,574 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 17:44:08,574 INFO - use outer join fetching: True
+2011-11-16 17:44:08,574 INFO - Intitializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2011-11-16 17:44:08,589 INFO - Configuring ConnectionProvider
+2011-11-16 17:44:08,605 INFO - Optimize cache for minimal puts: False
+2011-11-16 17:44:08,605 INFO - Query language substitutions: {}
+2011-11-16 17:44:08,605 INFO - cache provider: NHibernate.Cache.HashtableCacheProvider
+2011-11-16 17:44:08,621 INFO - instantiating and configuring caches
+2011-11-16 17:44:08,621 INFO - building session factory
+2011-11-16 17:44:08,761 INFO - no name configured
+2011-11-16 17:44:08,902 INFO - SELECT this.ID as ID0_, this.Province as Province0_, this.City as City0_, this.Country as Country0_ FROM IPAreaTable this WHERE 1=1
+2011-11-16 17:53:31,868 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:53:45,322 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:53:45,338 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:53:45,338 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:53:45,353 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:54:35,653 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:54:35,653 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:54:35,684 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:54:35,700 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:54:35,700 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:05,779 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:05,842 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:05,857 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:05,857 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:50,750 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:50,766 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:50,782 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:50,813 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:55:50,828 INFO - SELECT pagesoftin0_.ID as ID0_, pagesoftin0_.PageID as PageID0_, pagesoftin0_.Rank as Rank0_, pagesoftin0_.CPDOfChannel as CPDOfCha4_0_, pagesoftin0_.ForceName as ForceName0_, pagesoftin0_.SoftID as SoftID0_, pagesoftin0_.ForceDescription as ForceDes6_0_ FROM Relation_Page_Soft pagesoftin0_ WHERE pagesoftin0_.ID=@p0
+2011-11-16 17:58:48,634 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 17:59:43,434 INFO - SELECT this.ID as ID0_, this.AreaGroupName as AreaGrou2_0_, this.AreaIDList as AreaIDList0_ FROM IPAreaGroup this WHERE 1=1
+2011-11-16 18:08:47,478 INFO - NHibernate 1.0.2
+2011-11-16 18:08:47,509 INFO - nhibernate section not found in application configuration file
+2011-11-16 18:08:47,712 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,743 INFO - Mapping class: Synacast.PPInstall.CustomInfo -> Custom
+2011-11-16 18:08:47,790 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,790 INFO - Mapping class: Synacast.PPInstall.ProductInfo -> Product
+2011-11-16 18:08:47,790 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,790 INFO - Mapping class: Synacast.PPInstall.UninstallDirInfo -> Relation_UninstallSoft_Dir
+2011-11-16 18:08:47,790 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,790 INFO - Mapping class: Synacast.PPInstall.CityCodeInfo -> CityCode
+2011-11-16 18:08:47,790 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,790 INFO - Mapping class: Synacast.PPInstall.SoftInfo -> Soft
+2011-11-16 18:08:47,790 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,790 INFO - Mapping class: Synacast.PPInstall.IPAreaTableInfo -> IPAreaTable
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.PageInfo -> Page
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.ChannelInfo -> Channel
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.TemplateInfo -> Template
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.StatisticInfo -> Stat
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.VersionUninstallInfo -> Relation_Version_UninstallSoft
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.UninstallRegInfo -> Relation_UninstallSoft_Reg
+2011-11-16 18:08:47,806 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,806 INFO - Mapping class: Synacast.PPInstall.UninstallSoftInfo -> UninstallSoftware
+2011-11-16 18:08:47,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,821 INFO - Mapping class: Synacast.PPInstall.BindInfo -> Bind
+2011-11-16 18:08:47,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,821 INFO - Mapping class: Synacast.PPInstall.VersionInfo -> Version
+2011-11-16 18:08:47,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,821 INFO - Mapping class: Synacast.PPInstall.IPAreaGroupInfo -> IPAreaGroup
+2011-11-16 18:08:47,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,821 INFO - Mapping class: Synacast.PPInstall.GuideInfo -> Guide
+2011-11-16 18:08:47,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,821 INFO - Mapping class: Synacast.PPInstall.PageSoftInfo -> Relation_Page_Soft
+2011-11-16 18:08:47,868 INFO - processing one-to-many association mappings
+2011-11-16 18:08:47,868 INFO - processing one-to-one association property references
+2011-11-16 18:08:47,868 INFO - processing foreign key constraints
+2011-11-16 18:08:47,884 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:08:47,884 INFO - use outer join fetching: True
+2011-11-16 18:08:47,884 INFO - Intitializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2011-11-16 18:08:47,884 INFO - Configuring ConnectionProvider
+2011-11-16 18:08:47,884 INFO - Optimize cache for minimal puts: False
+2011-11-16 18:08:47,884 INFO - Query language substitutions: {}
+2011-11-16 18:08:47,899 INFO - cache provider: NHibernate.Cache.HashtableCacheProvider
+2011-11-16 18:08:47,899 INFO - instantiating and configuring caches
+2011-11-16 18:08:47,899 INFO - building session factory
+2011-11-16 18:08:48,056 INFO - no name configured
+2011-11-16 18:08:48,149 INFO - SELECT this.ID as ID0_, this.Province as Province0_, this.City as City0_, this.Country as Country0_ FROM IPAreaTable this WHERE 1=1
+2011-11-16 18:23:49,555 INFO - NHibernate 1.0.2
+2011-11-16 18:23:49,571 INFO - nhibernate section not found in application configuration file
+2011-11-16 18:23:49,743 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,789 INFO - Mapping class: Synacast.PPInstall.TemplateInfo -> Template
+2011-11-16 18:23:49,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,821 INFO - Mapping class: Synacast.PPInstall.StatisticInfo -> Stat
+2011-11-16 18:23:49,821 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,836 INFO - Mapping class: Synacast.PPInstall.UninstallRegInfo -> Relation_UninstallSoft_Reg
+2011-11-16 18:23:49,836 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,836 INFO - Mapping class: Synacast.PPInstall.VersionUninstallInfo -> Relation_Version_UninstallSoft
+2011-11-16 18:23:49,836 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,836 INFO - Mapping class: Synacast.PPInstall.UninstallSoftInfo -> UninstallSoftware
+2011-11-16 18:23:49,836 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,836 INFO - Mapping class: Synacast.PPInstall.ChannelInfo -> Channel
+2011-11-16 18:23:49,836 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,836 INFO - Mapping class: Synacast.PPInstall.BindInfo -> Bind
+2011-11-16 18:23:49,836 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,836 INFO - Mapping class: Synacast.PPInstall.VersionInfo -> Version
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.IPAreaGroupInfo -> IPAreaGroup
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.PageSoftInfo -> Relation_Page_Soft
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.CustomInfo -> Custom
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.ProductInfo -> Product
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.UninstallDirInfo -> Relation_UninstallSoft_Dir
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.CityCodeInfo -> CityCode
+2011-11-16 18:23:49,852 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,852 INFO - Mapping class: Synacast.PPInstall.SoftInfo -> Soft
+2011-11-16 18:23:49,868 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,868 INFO - Mapping class: Synacast.PPInstall.GuideInfo -> Guide
+2011-11-16 18:23:49,868 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,868 INFO - Mapping class: Synacast.PPInstall.IPAreaTableInfo -> IPAreaTable
+2011-11-16 18:23:49,868 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,868 INFO - Mapping class: Synacast.PPInstall.PageInfo -> Page
+2011-11-16 18:23:49,914 INFO - processing one-to-many association mappings
+2011-11-16 18:23:49,914 INFO - processing one-to-one association property references
+2011-11-16 18:23:49,914 INFO - processing foreign key constraints
+2011-11-16 18:23:49,930 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2011-11-16 18:23:49,930 INFO - use outer join fetching: True
+2011-11-16 18:23:49,930 INFO - Intitializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2011-11-16 18:23:49,930 INFO - Configuring ConnectionProvider
+2011-11-16 18:23:49,930 INFO - Optimize cache for minimal puts: False
+2011-11-16 18:23:49,930 INFO - Query language substitutions: {}
+2011-11-16 18:23:49,930 INFO - cache provider: NHibernate.Cache.HashtableCacheProvider
+2011-11-16 18:23:49,930 INFO - instantiating and configuring caches
+2011-11-16 18:23:49,946 INFO - building session factory
+2011-11-16 18:23:50,118 INFO - no name configured
+2011-11-16 18:23:50,211 INFO - SELECT this.ID as ID0_, this.Province as Province0_, this.City as City0_, this.Country as Country0_ FROM IPAreaTable this WHERE 1=1
+2011-11-16 18:25:13,778 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:25:18,310 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:25:59,124 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:26:01,015 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:26:54,939 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:26:56,721 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:27:26,160 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:27:28,301 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:35:09,684 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:35:30,013 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2011-11-16 18:35:33,622 INFO - SELECT softinfo0_.SoftID as SoftID0_, softinfo0_.IconDownloadUrl as IconDow13_0_, softinfo0_.EnName as EnName0_, softinfo0_.CnDescription as CnDescri5_0_, softinfo0_.CountPerDay as CountPe19_0_, softinfo0_.EnDescription as EnDescri6_0_, softinfo0_.BlackCityCodes as BlackCi22_0_, softinfo0_.AllCPDOfChannel as AllCPDO20_0_, softinfo0_.Type as Type0_, softinfo0_.BindEnable as BindEnable0_, softinfo0_.IsChecked as IsChecked0_, softinfo0_.AreaControlType as AreaCon24_0_, softinfo0_.DesktopName as Desktop16_0_, softinfo0_.Parameter as Parameter0_, softinfo0_.DesktopEnName as Desktop17_0_, softinfo0_.CnName as CnName0_, softinfo0_.WhiteCityCodes as WhiteCi23_0_, softinfo0_.IconLinkUrl as IconLin14_0_, softinfo0_.ExcludePage as Exclude12_0_, softinfo0_.MainPage as MainPage0_, softinfo0_.ForcePage as ForcePage0_, softinfo0_.Url as Url0_, softinfo0_.ImageUrl as ImageUrl0_, softinfo0_.IconName as IconName0_ FROM Soft softinfo0_ WHERE softinfo0_.SoftID=@p0
+2012-02-23 10:10:48,602 INFO - NHibernate 1.0.2
+2012-02-23 10:10:48,648 INFO - nhibernate section not found in application configuration file
+2012-02-23 10:10:48,805 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,852 INFO - Mapping class: Synacast.PPInstall.VersionUninstallInfo -> Relation_Version_UninstallSoft
+2012-02-23 10:10:48,914 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,914 INFO - Mapping class: Synacast.PPInstall.TemplateInfo -> Template
+2012-02-23 10:10:48,914 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,914 INFO - Mapping class: Synacast.PPInstall.StatisticInfo -> Stat
+2012-02-23 10:10:48,914 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,914 INFO - Mapping class: Synacast.PPInstall.UninstallRegInfo -> Relation_UninstallSoft_Reg
+2012-02-23 10:10:48,914 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,914 INFO - Mapping class: Synacast.PPInstall.UninstallSoftInfo -> UninstallSoftware
+2012-02-23 10:10:48,914 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,930 INFO - Mapping class: Synacast.PPInstall.BindInfo -> Bind
+2012-02-23 10:10:48,930 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,930 INFO - Mapping class: Synacast.PPInstall.VersionInfo -> Version
+2012-02-23 10:10:48,930 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,930 INFO - Mapping class: Synacast.PPInstall.ChannelInfo -> Channel
+2012-02-23 10:10:48,930 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,930 INFO - Mapping class: Synacast.PPInstall.IPAreaGroupInfo -> IPAreaGroup
+2012-02-23 10:10:48,930 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,930 INFO - Mapping class: Synacast.PPInstall.PageSoftInfo -> Relation_Page_Soft
+2012-02-23 10:10:48,930 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,930 INFO - Mapping class: Synacast.PPInstall.CustomInfo -> Custom
+2012-02-23 10:10:48,945 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,945 INFO - Mapping class: Synacast.PPInstall.ProductInfo -> Product
+2012-02-23 10:10:48,945 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,945 INFO - Mapping class: Synacast.PPInstall.UninstallDirInfo -> Relation_UninstallSoft_Dir
+2012-02-23 10:10:48,945 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,945 INFO - Mapping class: Synacast.PPInstall.CityCodeInfo -> CityCode
+2012-02-23 10:10:48,945 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,945 INFO - Mapping class: Synacast.PPInstall.SoftInfo -> Soft
+2012-02-23 10:10:48,945 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,945 INFO - Mapping class: Synacast.PPInstall.IPAreaTableInfo -> IPAreaTable
+2012-02-23 10:10:48,961 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,961 INFO - Mapping class: Synacast.PPInstall.GuideInfo -> Guide
+2012-02-23 10:10:48,961 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:48,961 INFO - Mapping class: Synacast.PPInstall.PageInfo -> Page
+2012-02-23 10:10:48,977 INFO - processing one-to-many association mappings
+2012-02-23 10:10:48,977 INFO - processing one-to-one association property references
+2012-02-23 10:10:48,992 INFO - processing foreign key constraints
+2012-02-23 10:10:49,008 INFO - Using dialect: NHibernate.Dialect.MsSql2000Dialect
+2012-02-23 10:10:49,008 INFO - use outer join fetching: True
+2012-02-23 10:10:49,008 INFO - Intitializing connection provider: NHibernate.Connection.DriverConnectionProvider
+2012-02-23 10:10:49,008 INFO - Configuring ConnectionProvider
+2012-02-23 10:10:49,023 INFO - Optimize cache for minimal puts: False
+2012-02-23 10:10:49,023 INFO - Query language substitutions: {}
+2012-02-23 10:10:49,023 INFO - cache provider: NHibernate.Cache.HashtableCacheProvider
+2012-02-23 10:10:49,023 INFO - instantiating and configuring caches
+2012-02-23 10:10:49,039 INFO - building session factory
+2012-02-23 10:10:49,180 INFO - no name configured
+2012-02-23 10:10:49,242 INFO - SELECT this.ID as ID0_, this.Province as Province0_, this.City as City0_, this.Country as Country0_ FROM IPAreaTable this WHERE 1=1
+2012-02-23 10:11:10,618 INFO - SELECT this.ProductID as ProductID0_, this.CnName as CnName0_, this.EnDescription as EnDescri5_0_, this.EnName as EnName0_, this.CnDescription as CnDescri4_0_ FROM Product this WHERE 1=1
+2012-02-23 10:11:10,633 INFO - SELECT this.ChannelID as ChannelID0_, this.CnName as CnName0_, this.EnName as EnName0_, this.Type as Type0_, this.Description as Descript4_0_ FROM Channel this WHERE 1=1
+2012-02-23 10:11:10,899 INFO - SELECT this.SoftID as SoftID0_, this.IconDownloadUrl as IconDow13_0_, this.EnName as EnName0_, this.CnDescription as CnDescri5_0_, this.CountPerDay as CountPe19_0_, this.EnDescription as EnDescri6_0_, this.BlackCityCodes as BlackCi22_0_, this.AllCPDOfChannel as AllCPDO20_0_, this.Type as Type0_, this.BindEnable as BindEnable0_, this.IsChecked as IsChecked0_, this.AreaControlType as AreaCon24_0_, this.DesktopName as Desktop16_0_, this.Parameter as Parameter0_, this.DesktopEnName as Desktop17_0_, this.CnName as CnName0_, this.WhiteCityCodes as WhiteCi23_0_, this.IconLinkUrl as IconLin14_0_, this.ExcludePage as Exclude12_0_, this.MainPage as MainPage0_, this.ForcePage as ForcePage0_, this.Url as Url0_, this.ImageUrl as ImageUrl0_, this.IconName as IconName0_ FROM Soft this WHERE 1=1

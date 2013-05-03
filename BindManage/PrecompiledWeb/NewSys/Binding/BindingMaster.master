@@ -1,0 +1,35 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="Binding_BindingMaster, App_Web_bindingmaster.master.e1b12084" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>捆绑母页</title>
+    <link rel="Stylesheet" type="text/css" href="../Ext/resources/css/ext-all.css" />
+    <link rel="Stylesheet" type="text/css" />
+    <link type="text/css" rel="Stylesheet" href="../Css/Main.css" />
+    <script type="text/javascript" src="../Ext/adapter/ext/ext-base.js"></script>
+    <%--<script type="text/javascript" src="../Ext/ext-all-debug.js"></script>--%>
+    <script type="text/javascript" src="../Ext/ext-all.js"></script>
+    <script type="text/javascript" src="../Ext/source/locale/ext-lang-zh_CN.js"></script>
+    <script type="text/javascript" src="../Js/EditBase.js"></script>
+    <script type="text/javascript" src="../Js/Main.js"></script>
+    <script type="text/javascript" src="../Ext/filter/ux/menu/EditableItem.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/menu/RangeMenu.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/GridFilters.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/filter/Filter.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/filter/StringFilter.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/filter/DateFilter.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/filter/ListFilter.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/filter/NumericFilter.js"></script>
+	<script type="text/javascript" src="../Ext/filter/ux/grid/filter/BooleanFilter.js"></script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:contentplaceholder id="ContentPlaceHolder1" runat="server">
+        </asp:contentplaceholder>
+    </div>
+    </form>
+</body>
+</html>

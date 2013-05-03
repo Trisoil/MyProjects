@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<activerecord>
+  <config>
+    <add key="hibernate.connection.driver_class" value="NHibernate.Driver.SqlClientDriver" />
+    <add key="hibernate.dialect" value="NHibernate.Dialect.MsSql2000Dialect" />
+    <add key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider" />
+    <add key="hibernate.connection.connection_string" value="server=192.168.31.156,2433;initial catalog=PPInstall;User ID=sa;Password=pplive;" />
+    <!--<add key="hibernate.connection.provider" value="NHibernate.Connection.DriverConnectionProvider" />
+    <add key="hibernate.dialect" value="NHibernate.JetDriver.JetDialect, NHibernate.JetDriver" />
+    <add key="hibernate.connection.driver_class" value="NHibernate.JetDriver.JetDriver, NHibernate.JetDriver" />
+    <add key="hibernate.connection.connection_string" value="Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\user.mdb" />-->
+  </config>
+</activerecord>

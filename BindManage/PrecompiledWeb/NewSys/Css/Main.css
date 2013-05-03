@@ -1,0 +1,225 @@
+﻿
+/*通用样式*/
+body,html,div,li,ul,form,span{margin:0 ; padding:0}
+body,html,div,li,ul,form,span,table,tr,td{font-family: "宋体";font-size: 12px;}
+strong{font-weight:bold ;}  
+button,em {
+	font-family: "宋体";
+	font-size: 12px;
+}
+
+.daycolumn{
+	display:inline;
+}
+
+
+/*引用图片*/
+.add {background-image:url(../Ext/resources/images/extension/add.gif) !important;}
+.remove{ background-image:url(../Ext/resources/images/extension/remove.gif) !important;}
+.edit{ background-image:url(../Ext/resources/images/extension/edit.gif) !important}
+.refresh{background-image:url(../Ext/resources/images/extension/refresh.gif) !important}
+.bindPage{background-image:url(../Ext/resources/images/extension/new_page.png) !important}  
+.find{background-image:url(../Ext/resources/images/extension/find.png) !important}
+.channelid{background-image:url(../Ext/resources/images/extension/open.gif) !important}
+.pageup{background-image:url(../Ext/resources/images/extension/page_up.gif) !important}
+.pagecomponent{background-image:url(../Ext/resources/images/extension/page_component.gif) !important}
+.pagedown{background-image:url(../Ext/resources/images/extension/page_down.gif) !important}
+.deathhead{background-image:url(../Ext/resources/images/extension/favicon.png) !important}
+.pageuser{background-image:url(../Ext/resources/images/extension/page_user.gif) !important}
+.pagecross{background-image:url(../Ext/resources/images/extension/page_cross.gif) !important}
+.pagenew{background-image:url(../Ext/resources/images/extension/page_new.gif) !important}
+.pagedelete{background-image:url(../Ext/resources/images/extension/page_delete.gif) !important}
+.arrowup{background-image:url(../Ext/resources/images/extension/arrow_up.gif) !important}
+.arrowdown{background-image:url(../Ext/resources/images/extension/arrow_down.gif) !important}
+.copy{background-image:url(../Ext/resources/images/extension/copy.gif) !important}
+.start{background-image:url(../Ext/resources/images/extension/start.gif) !important}
+
+/*GridFilters find 图标*/
+.x-menu-item-icon-filters
+{
+    border: 0 none;
+    height: 16px;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+    margin: 0 8px 0 0;
+    background-position: center;
+}
+
+ /*修改Google浏览器中横向分割线太粗的BUG*/       
+.x-menu-sep{
+	height:1px;
+}
+
+
+/* --------------- Filter样式 -------------- */  
+
+.x-grid3-hd-row .ux-filtered-column {
+	border-left:  1px solid #C7E3B4;
+	border-right: 1px solid #C7E3B4;
+}
+
+.x-grid3-hd-row .ux-filtered-column .x-grid3-hd-inner {
+	background-image: url(../Ext/filter/resources/header_bg.gif);
+}
+
+.ux-filtered-column .x-grid3-hd-btn {
+	background-image: url(../Ext/filter/resources/hd-btn.gif);
+}
+
+.ux-filtered-column.sort-asc .x-grid3-sort-icon {
+	background-image: url(../Ext/filter/resources/sort_filtered_asc.gif);
+}
+
+.ux-filtered-column.sort-desc .x-grid3-sort-icon {
+	background-image: url(../Ext/filter/resources/sort_filtered_desc.gif);
+}
+
+.ux-gridfilter-text-icon {
+	background-image: url(../Ext/filter/resources/find.png);
+}
+
+/**
+ * RangeMenu.js Styles
+ **/
+.ux-rangemenu-gt {
+	background-image: url(../Ext/filter/resources/greater_then.png);
+}
+
+.ux-rangemenu-lt {
+	background-image: url(../Ext/filter/resources/less_then.png);
+}
+
+.ux-rangemenu-eq {
+	background-image: url(../Ext/filter/resources/equals.png);
+}
+
+
+
+/*
+ * FileUploadField component styles
+ */
+.x-form-file-wrap {
+    position: relative;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file {
+	position: absolute;
+	right: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity: 0);
+	opacity: 0;
+	z-index: 2;
+    height: 22px;
+}
+.x-form-file-wrap .x-form-file-btn {
+	position: absolute;
+	right: 0;
+	z-index: 1;
+}
+.x-form-file-wrap .x-form-file-text {
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    color: #777;
+}
+
+
+
+
+/* --------------- 修改 Ext CSS 支持火狐 -------------- */  
+
+.x-window-footer {   
+    position: relative;   
+    top: 0;   
+    right: 0;   
+}   
+.x-tab-strip SPAN.x-tab-strip-text  {   
+    font-size: 12px;   
+}   
+.x-panel-header {   
+    font-size: 12px;   
+}   
+.x-tree-node {   
+    font-size: 12px;   
+}   
+.x-grid3-hd-row TD {   
+    font-size: 12px;   
+}   
+
+/*.x-grid3-row TD {    GridPanel字体
+    font-size: 12px;   
+    LINE-HEIGHT: 18px;   
+} */
+
+.x-tip .x-tip-bd {   
+    font-size: 12px;   
+}   
+.x-tip h3{   
+    font-size: 12px;   
+}   
+.x-tip .x-tip-bd-inner{   
+    font-size:12px;   
+}   
+.x-panel-tl .x-panel-header {   
+    FONT: bold 12px tahoma,arial,verdana,sans-serif;   
+}   
+
+.x_panel_mc{
+	font-size:12px;
+}
+.x-form-field {   
+    FONT: 12px tahoma,arial,helvetica,sans-serif       
+}   
+
+.x-small-editor .x-form-field {   
+    FONT: 12px tahoma,arial,helvetica,sans-serif       
+}   
+.x-combo-list-item {   
+    FONT: 12px tahoma,arial,helvetica,sans-serif;      
+}      
+.x-menu-list-item {   
+    FONT: 12px tahoma,arial,sans-serif;   
+}   
+.x-window-tl .x-window-header {   
+    FONT: bold 12px tahoma,arial,verdana,sans-serif;       
+}   
+.x-layout-split-west .x-layout-mini {      
+    BACKGROUND-IMAGE: url(../images/mini-left.jpg);    
+}   
+.ext-ie .x-form-text {   
+    margin-top:1px;   
+} /* the textField missing bottom line */  
+.x-form-item {     
+    FONT: 12px tahoma,arial,helvetica,sans-serif   
+}   
+.x-grid-group-hd DIV {     
+    FONT: bold 12px tahoma,arial,helvetica,sans-serif;   
+}   
+
+.x-btn-text{   
+    font: 12px tahoma,arial,helvetica,sans-serif;   
+}   
+
+.x-btn-text-icon .x-btn-center .x-btn-text {
+	background-position:0pt 2px;
+	background-repeat:no-repeat;
+	padding:3px 0pt 2px 18px;
+}
+
+.ext-gecko .x-btn button {
+	padding-left:0pt;
+	padding-right:0pt;
+}
+
+.x-btn button{
+	font-size:12px;
+	margin-top:-1px;
+}
+
+.x-toolbar td,.x-toolbar span,.x-toolbar input,.x-toolbar div,.x-toolbar select, .x-toolbar label{
+	font-size:12px;	
+}
+.x-tip .x-tip-body  {
+	font-size:12px;
+}
