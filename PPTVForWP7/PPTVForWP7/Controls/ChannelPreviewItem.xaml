@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.ChannelPreviewItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:PPTVForWP7" 
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="170" d:DesignWidth="130">
+    
+    <UserControl.Resources>
+        <local:ChannelTitleConverter x:Name="xChannelTitleConverter" />
+    </UserControl.Resources>
+    
+    <Grid x:Name="LayoutRoot">
+        <Border Width="130" Height="170" CornerRadius="0" Background="#16181A" BorderThickness="1.5" Margin="5.0 0 4.49 12" Tap="xItemBorder_Tap">
+            <Border.BorderBrush>
+                <LinearGradientBrush EndPoint="0.021,0.984" StartPoint="0.985,0.018">
+                    <GradientStop Color="#FF707070" Offset="0"/>
+                    <GradientStop Color="#FF262626" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Grid>
+                <Image x:Name="xChannelImage" Width="145" Height="180" Stretch="Fill">
+                    <Image.Clip>
+                        <RectangleGeometry Rect="0,0,145,180"/>
+                    </Image.Clip>
+                </Image>
+                <!--{Binding ImgUrl} http://img21.pplive.cn/2011/05/29/18104100089_230X306.jpg-->
+                <Rectangle Height="28" VerticalAlignment="Bottom" Fill="#D8000000"/>
+                <TextBlock x:Name="xTitleTextBlock" Text="{Binding Title,Converter={StaticResource xChannelTitleConverter}}" Foreground="White" VerticalAlignment="Bottom" d:LayoutOverrides="Width" HorizontalAlignment="Center"/>
+                <Rectangle Fill="#56FF0000" Width="145" Height="180" RadiusX="5" RadiusY="5" Visibility="Collapsed"/>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

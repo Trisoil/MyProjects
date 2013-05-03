@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.SearchHistoryItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="40" d:DesignWidth="430">
+    
+    <Grid x:Name="LayoutRoot" Height="40"  Width="420" Margin="0,0,0,0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.60*"/>
+            <ColumnDefinition Width="0.40*"/>
+        </Grid.ColumnDefinitions>
+        <ScrollViewer VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Hidden">
+            <TextBlock x:Name="Title" Foreground="White" FontSize="22.667" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </ScrollViewer>
+        <TextBlock x:Name="Date" Margin="0,0,10,0" Foreground="White" FontSize="22.667" Grid.Column="1" HorizontalAlignment="Right" VerticalAlignment="Center"/>
+    </Grid>
+</UserControl>

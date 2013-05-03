@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{B16CAA83-5121-4D23-998B-090EF7B8C443}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PPTVForWP7</RootNamespace>
+    <AssemblyName>PPTVForWP7</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PPTVForWP7.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PPTVForWP7.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>Library\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Newtonsoft.Json, Version=4.0.3.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="SinaBase, Version=1.0.0.803, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Library\SinaBase.dll</HintPath>
+    </Reference>
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="TencentWeiboSDK, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Library\TencentWeiboSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="WeiboSdk, Version=1.0.0.803, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Library\WeiboSdk.dll</HintPath>
+    </Reference>
+    <Reference Include="WeiboService, Version=1.0.0.803, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>Library\WeiboService.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MultiProgramItem.xaml.cs">
+      <DependentUpon>MultiProgramItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\RecommandTitle.xaml.cs">
+      <DependentUpon>RecommandTitle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\ChannelTitleConverter.cs" />
+    <Compile Include="Controls\ChannelItem.xaml.cs">
+      <DependentUpon>ChannelItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChannelPreviewItem.xaml.cs">
+      <DependentUpon>ChannelPreviewItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CoversBar.xaml.cs">
+      <DependentUpon>CoversBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FavoriteItem.xaml.cs">
+      <DependentUpon>FavoriteItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\HotSearchBar.xaml.cs">
+      <DependentUpon>HotSearchBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LongChannelItem.xaml.cs">
+      <DependentUpon>LongChannelItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MainNavMenu.xaml.cs">
+      <DependentUpon>MainNavMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\MarkImageItem.xaml.cs">
+      <DependentUpon>MarkImageItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\NavMenuItem.xaml.cs">
+      <DependentUpon>NavMenuItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Notify\PursuitItem.xaml.cs">
+      <DependentUpon>PursuitItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\OrderBar.xaml.cs">
+      <DependentUpon>OrderBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlayerControlBar.xaml.cs">
+      <DependentUpon>PlayerControlBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoadingWait.xaml.cs">
+      <DependentUpon>LoadingWait.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlayHistoryItem.xaml.cs">
+      <DependentUpon>PlayHistoryItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PopDialogControl.xaml.cs">
+      <DependentUpon>PopDialogControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchBar.xaml.cs">
+      <DependentUpon>SearchBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchHistoryItem.xaml.cs">
+      <DependentUpon>SearchHistoryItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SearchResultItem.xaml.cs">
+      <DependentUpon>SearchResultItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SmallChannelItem.xaml.cs">
+      <DependentUpon>SmallChannelItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SmallProgramItem.xaml.cs">
+      <DependentUpon>SmallProgramItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Social\RenrenSocial.xaml.cs">
+      <DependentUpon>RenrenSocial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Social\ShareItem.xaml.cs">
+      <DependentUpon>ShareItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Social\ShareItemGroup.xaml.cs">
+      <DependentUpon>ShareItemGroup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Social\ShareSettingItem.xaml.cs">
+      <DependentUpon>ShareSettingItem.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TagsBar.xaml.cs">
+      <DependentUpon>TagsBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\DateConverter.cs" />
+    <Compile Include="Converter\DownLoadConvert.cs" />
+    <Compile Include="Converter\ToggleSwitchContentConvert.cs" />
+    <Compile Include="DetailPage.xaml.cs">
+      <DependentUpon>DetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DownPage.xaml.cs">
+      <DependentUpon>DownPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FavPage.xaml.cs">
+      <DependentUpon>FavPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GB2312Encoding.cs" />
+    <Compile Include="HistoryPage.xaml.cs">
+      <DependentUpon>HistoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\LongChannelTitleConverter.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Notify\PursuitPage.xaml.cs">
+      <DependentUpon>PursuitPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Social\RenRenSocial.xaml.cs">
+      <DependentUpon>RenRenSocial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Social\SharePage.xaml.cs">
+      <DependentUpon>SharePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Social\SinaSocial.xaml.cs">
+      <DependentUpon>SinaSocial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Social\TencentSocial.xaml.cs">
+      <DependentUpon>TencentSocial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PersonalInfo.xaml.cs">
+      <DependentUpon>PersonalInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PlayPage.xaml.cs">
+      <DependentUpon>PlayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegisterPage.xaml.cs">
+      <DependentUpon>RegisterPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="RelativeAnimatingContentControl.cs" />
+    <Compile Include="SearchResultPage.xaml.cs">
+      <DependentUpon>SearchResultPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.xaml.cs">
+      <DependentUpon>SplashScreen.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SystemSetting.xaml.cs">
+      <DependentUpon>SystemSetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="TiltEffect.cs" />
+    <Compile Include="Converter\TimeConverter.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="Utils\CommonUtils.cs" />
+    <Compile Include="Utils\PursuitUtils.cs" />
+    <Compile Include="Utils\SocialUtils.cs" />
+    <Compile Include="VODPage.xaml.cs">
+      <DependentUpon>VODPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ChannelItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\ChannelPreviewItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\CoversBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\FavoriteItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\HotSearchBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LongChannelItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MainNavMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MarkImageItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\MultiProgramItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\NavMenuItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Notify\PursuitItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\OrderBar.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PlayerControlBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LoadingWait.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PlayHistoryItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\PopDialogControl.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\RecommandTitle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SearchBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SearchHistoryItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SearchResultItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SmallChannelItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\SmallProgramItem.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\Social\RenrenSocial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Social\ShareItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Social\ShareItemGroup.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\Social\ShareSettingItem.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\TagsBar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DownPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FavPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HistoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Notify\PursuitPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Social\RenRenSocial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Social\SharePage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Social\SinaSocial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Pages\Social\TencentSocial.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PersonalInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="PlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RegisterPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SearchResultPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SplashScreen.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SystemSetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VODPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="gb2312.bin" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\appbar.check.rest.png" />
+    <Content Include="Images\appbar.down.png" />
+    <Content Include="Images\appbar.favs.addto.rest.png" />
+    <Content Include="Images\appbar.favs.rest.png" />
+    <Content Include="Images\appbar.logoff.png" />
+    <Content Include="Images\appbar.edit.png" />
+    <Content Include="Images\appbar.logon.png" />
+    <Content Include="Images\appbar.refresh.rest.png" />
+    <Content Include="Images\appbar.reg.png" />
+    <Content Include="Images\BACK_TILE_LOGO.png" />
+    <Resource Include="Images\SplashScreenImage.jpg" />
+    <Resource Include="Images\Detilorder.png" />
+    <Resource Include="Images\left.png" />
+    <Resource Include="Images\right.png" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Resource Include="Images\history.center.png" />
+    <Resource Include="Images\order.png" />
+    <Resource Include="Images\education.png" />
+    <Resource Include="Images\joke.png" />
+    <Resource Include="Images\military.png" />
+    <Resource Include="Images\SplitLines.png" />
+    <Resource Include="Images\trend.png" />
+    <Resource Include="Images\VIP.png" />
+    <Resource Include="Images\renren.png" />
+    <Resource Include="Images\share.png" />
+    <Resource Include="Images\sina.png" />
+    <Resource Include="Images\tencent.png" />
+    <Resource Include="Images\download.center.png" />
+    <Resource Include="Images\fav.center.png" />
+    <Resource Include="Images\personalinfo.center.png" />
+    <Resource Include="Images\pursuit.center.png" />
+    <Resource Include="Images\share.center.png" />
+    <Resource Include="Images\system.center.png" />
+    <Content Include="Images\appbar.pursuited.png" />
+    <Content Include="Images\appbar.pursuit.png" />
+    <Resource Include="Images\border.png" />
+    <Resource Include="Images\bitrate_bottom.png" />
+    <Resource Include="Images\hide_bitrates.png" />
+    <Resource Include="Images\show_bitrates.png" />
+    <Resource Include="Images\download.png" />
+    <Resource Include="Images\pause.png" />
+    <Resource Include="Images\waiting.png" />
+    <Resource Include="Images\TILE_LOGO.png" />
+    <Resource Include="Images\star_unlighted.png" />
+    <Resource Include="Images\star_lighted.png" />
+    <Resource Include="Images\sports.png" />
+    <Resource Include="Images\tvopera.png" />
+    <Resource Include="Images\variety.png" />
+    <Resource Include="Images\tip.png" />
+    <Resource Include="Images\fast_normal.png" />
+    <Resource Include="Images\fast_selected.png" />
+    <Resource Include="Images\next_normal.png" />
+    <Resource Include="Images\next_selected.png" />
+    <Resource Include="Images\pause_normal.png" />
+    <Resource Include="Images\pause_selected.png" />
+    <Resource Include="Images\play_normal.png" />
+    <Resource Include="Images\play_selected.png" />
+    <Resource Include="Images\previous_normal.png" />
+    <Resource Include="Images\previous_selected.png" />
+    <Resource Include="Images\rewind_normal.png" />
+    <Resource Include="Images\volume_mute.png" />
+    <Resource Include="Images\volume_normal.png" />
+    <Resource Include="Images\appbar.basecircle.rest.png" />
+    <Content Include="Images\appbar.delete.rest.png" />
+    <Resource Include="Images\appbar.new.rest.png" />
+    <Resource Include="Images\rewind_selected.png" />
+    <Resource Include="Images\bg2.png" />
+    <Resource Include="Images\load_bg.png" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="Images\cartoon.png" />
+    <Resource Include="Images\games.png" />
+    <Resource Include="Images\movie.png" />
+    <Resource Include="Images\news.png" />
+    <Resource Include="Images\appbar.minus.rest.png" />
+    <Content Include="Images\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PhonePerformance\PhonePerformance.csproj">
+      <Project>{FCF263CD-388B-44E4-8A92-A4C5F670394F}</Project>
+      <Name>PhonePerformance</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PPTVData\PPTVData.csproj">
+      <Project>{E1A03F5B-3E3E-49E7-A792-5ED43CD01086}</Project>
+      <Name>PPTVData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PPTVWP7MediaPlayer\PPTVWP7MediaPlayer.csproj">
+      <Project>{F7069C02-C215-492C-B47C-D166A61B79B1}</Project>
+      <Name>PPTVWP7MediaPlayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

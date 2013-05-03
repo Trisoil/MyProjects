@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.RecommendTitle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="50" d:DesignWidth="431">
+    
+    <Grid x:Name="LayoutRoot" Margin="0,0,0,10">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="RecommendTitleLogo" Height="25" VerticalAlignment="Center" HorizontalAlignment="Center"  Grid.Column="0" Source="/PPTVForWP7;component/Images/tip.png"/>
+        <TextBlock x:Name="RecommendTitleText" FontSize="25"   Foreground="#FFFF8400" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" />
+    </Grid>
+</UserControl>

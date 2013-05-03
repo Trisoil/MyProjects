@@ -1,0 +1,145 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.PlayerControlBar"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+    <UserControl.Resources>
+        <ControlTemplate x:Key="PhoneSimpleRepeatButton" TargetType="RepeatButton">
+            <Rectangle Fill="Transparent"/>
+        </ControlTemplate>
+        <Style x:Key="SliderStyle1" TargetType="Slider">
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Maximum" Value="10"/>
+            <Setter Property="Minimum" Value="0"/>
+            <Setter Property="Value" Value="0"/>
+            <Setter Property="Background" Value="{StaticResource PhoneContrastBackgroundBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneAccentBrush}"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Slider">
+                        <Grid Background="Transparent">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <DoubleAnimation Duration="0" To="0.1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="HorizontalTrack"/>
+                                            <DoubleAnimation Duration="0" To="0.1" Storyboard.TargetProperty="Opacity" Storyboard.TargetName="VerticalTrack"/>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="HorizontalFill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Fill" Storyboard.TargetName="VerticalFill">
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PhoneDisabledBrush}"/>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid x:Name="HorizontalTemplate" Margin="{StaticResource PhoneHorizontalMargin}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="12"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Rectangle x:Name="HorizontalFill" Fill="{TemplateBinding Foreground}" Height="12" IsHitTestVisible="False" Margin="0,22,0,50"/>
+                                <Rectangle x:Name="HorizontalTrack" Grid.Column="2" Fill="{TemplateBinding Background}" Height="12" IsHitTestVisible="False" Margin="0,22,0,50" Opacity="0.2"/>
+                                <RepeatButton x:Name="HorizontalTrackLargeChangeDecreaseRepeatButton" IsTabStop="False" Template="{StaticResource PhoneSimpleRepeatButton}"/>
+                                <RepeatButton x:Name="HorizontalTrackLargeChangeIncreaseRepeatButton" Grid.Column="2" IsTabStop="False" Template="{StaticResource PhoneSimpleRepeatButton}"/>
+                                <Thumb x:Name="HorizontalThumb" Grid.Column="1" Height="12" Margin="0,22,0,50" Width="12">
+                                    <Thumb.Template>
+                                        <ControlTemplate>
+                                            <Canvas Background="{StaticResource PhoneForegroundBrush}" Height="12" Width="12">
+                                                <Rectangle Fill="Transparent" Height="84" IsHitTestVisible="True" Canvas.Left="-24" Canvas.Top="-22" Width="60"/>
+                                            </Canvas>
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                            </Grid>
+                            <Grid x:Name="VerticalTemplate" Margin="{StaticResource PhoneVerticalMargin}">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="30"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Rectangle x:Name="VerticalFill" Fill="{TemplateBinding Foreground}" IsHitTestVisible="False" Margin="18,0,18,0" Grid.Row="2" Width="12" RadiusX="1" RadiusY="1"/>
+                                <Rectangle x:Name="VerticalTrack" Grid.RowSpan="3" Fill="{TemplateBinding Background}" IsHitTestVisible="False" Margin="18,0,18,0" Opacity="0.2" Width="14" RadiusX="2" RadiusY="2"/>
+                                <RepeatButton x:Name="VerticalTrackLargeChangeIncreaseRepeatButton" IsTabStop="False" Grid.Row="2" Template="{StaticResource PhoneSimpleRepeatButton}"/>
+                                <RepeatButton x:Name="VerticalTrackLargeChangeDecreaseRepeatButton" IsTabStop="False" Template="{StaticResource PhoneSimpleRepeatButton}"/>
+                                <Thumb x:Name="VerticalThumb" Height="30" Grid.Row="1" Width="Auto" HorizontalAlignment="Center">
+                                    <Thumb.Template>
+                                        <ControlTemplate>
+                                            <Canvas Background="White" Height="31" Width="16">
+                                                <Rectangle Fill="Transparent" Height="72" IsHitTestVisible="True" Canvas.Left="-18" Canvas.Top="-30" Width="48"/>
+                                            </Canvas>
+                                        </ControlTemplate>
+                                    </Thumb.Template>
+                                </Thumb>
+                            </Grid>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </UserControl.Resources>
+
+    <Canvas x:Name="LayoutRoot" Background="#BF000000" Height="160" Width="Auto" >
+        <Grid Height="160" Width="800" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="15"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.7*"/>
+                <RowDefinition Height="0.3*"/>
+            </Grid.RowDefinitions>
+            <Grid x:Name="xSliderGrid" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" Height="15">
+                <Rectangle x:Name="xBufferRectangle" Fill="#33FFFFFF" StrokeThickness="2" Height="15" RadiusX="4" RadiusY="4" Width="0" HorizontalAlignment="Left"/>
+                <Canvas Background="Transparent" Height="50" Margin="0,-8,0,-7" MouseLeftButtonDown="xTotalRectangle_MouseLeftButtonDown">
+                    <Rectangle x:Name="xTotalRectangle" Fill="Transparent" Stroke="#E54B4A4A" Height="15" StrokeThickness="2" RadiusX="2" RadiusY="2" d:LayoutOverrides="VerticalMargin"  Canvas.Top="8" Width="770"/>
+                </Canvas>
+                <Rectangle x:Name="xPlayingRectangle" StrokeThickness="2" RadiusX="1" RadiusY="1" Width="0" HorizontalAlignment="Left" Fill="#FF4991D4" Margin="2,2,0,2" Height="11" MouseLeftButtonDown="xTotalRectangle_MouseLeftButtonDown"/>
+                <Canvas x:Name="xThumbRectangle" Height="50" Width="45" HorizontalAlignment="Left" Margin="0,-8,0,-7" Background="Transparent" MouseLeftButtonDown="xThumbRectangle_MouseLeftButtonDown" MouseMove="xThumbRectangle_MouseMove" MouseLeave="xThumbRectangle_MouseLeave">
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <TranslateTransform X="0"/>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Rectangle   Height="18" RadiusX="2" RadiusY="2" HorizontalAlignment="Left" Width="35" Fill="White" Canvas.Top="6.2">
+
+                    </Rectangle>
+                </Canvas>
+            </Grid>
+            <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="-30,0,0,0">
+                <Button x:Name="xPreviousButton" Tap="xPreviousButton_Tap" Margin="90,0,0,0" Grid.Column="1" HorizontalAlignment="Left" Width="68" Style="{StaticResource PreviousButtonStyle}"/>
+                <Button x:Name="xRewindButton" Tap="xRewindButton_Tap" Grid.Column="1" HorizontalAlignment="Left" Width="68" Style="{StaticResource RewindButtonStyle}"/>
+                <Button x:Name="xPlayButton" Tap="xPlayButton_Tap" Grid.Column="1" HorizontalAlignment="Left" Width="84" Style="{StaticResource PlayButtonStyle}" Visibility="Collapsed"/>
+                <Button x:Name="xPauseButton" Tap="xPauseButton_Tap" Grid.Column="1" HorizontalAlignment="Left" Width="84" Style="{StaticResource PauseButtonStyle}"/>
+                <Button x:Name="xFastButton" Tap="xFastButton_Tap" Grid.Column="1" HorizontalAlignment="Left" Width="68" Style="{StaticResource FastButtonStyle}"/>
+                <Button x:Name="xNextButton" Tap="xNextButton_Tap" Grid.Column="1" HorizontalAlignment="Left" Width="68" Style="{StaticResource NextButtonStyle}"/>
+                <Button x:Name="xShareButton" Margin="30,0,0,0" Tap="xShareButton_Tap" Grid.Column="1" HorizontalAlignment="Left" Width="68" Style="{StaticResource ShareButtonStyle}"/>
+            </StackPanel>
+            <TextBlock x:Name="xLogTextBlock" Foreground="White" Grid.Row="1" Grid.Column="1" Height="30" HorizontalAlignment="Right" Text="00:00:00 / 00:00:00" VerticalAlignment="Bottom"/>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" d:LayoutOverrides="Height" Margin="0,6,0,0" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <TextBlock x:Name="xChannelTitleTextBlock" Foreground="#FFFF8400" VerticalAlignment="Top" Text="" FontSize="{StaticResource SecondTitleSize}" FontFamily="Segoe Print"/>
+                <TextBlock x:Name="xProgramNameTextBlock" Foreground="#FFFF8400" Margin="15,0,0,0" Text="" FontSize="{StaticResource SecondTitleSize}" FontFamily="Microsoft JhengHei" VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <Grid Grid.Column="1" HorizontalAlignment="Right" Margin="0,-211,32,8" Width="68">
+                <Button x:Name="xVolumeMuteButton" MouseLeave="xVolumeMuteButton_MouseLeave" Style="{StaticResource VolumeMuteButtonStyle}" Visibility="Collapsed" Height="68" VerticalAlignment="Bottom"/>
+                <Button x:Name="xVolumeNormalButton" MouseLeave="xVolumeNormalButton_MouseLeave" Style="{StaticResource VolumeNormalButtonStyle}" Height="68" VerticalAlignment="Bottom"/>
+                <Slider x:Name="xVolumeSlider" Tap="xVolumeSlider_Tap"  MouseLeave="xVolumeSlider_MouseLeave" MouseEnter="xVolumeSlider_ValueChanged" SmallChange="0.2" LargeChange="0.2" MouseMove="xVolumeSlider_ValueChanged" HorizontalAlignment="Center" Orientation="Vertical" Width="68" Margin="0,0,0,55" Style="{StaticResource SliderStyle1}" Value="0.85" Foreground="#FFFF8400" Maximum="1" Minimum="0" />
+            </Grid>
+        </Grid>
+    </Canvas>
+</UserControl>

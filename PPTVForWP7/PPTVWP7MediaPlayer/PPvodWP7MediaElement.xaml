@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="PPTVWP7MediaPlayer.PPvodWP7MediaElement"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"                 
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480">
+
+    <Grid x:Name="LayoutRoot">
+        <!--AutoPlay=False时， 在 MediaOpened 事件中，CanSeek 返回 False -->
+        <MediaElement x:Name="xMedia" Width="Auto" Height="Auto" Visibility="Visible"
+                          BufferingTime="00:00:03" AutoPlay="True"
+                          BufferingProgressChanged="xMedia_BufferingProgressChanged" 
+                          DownloadProgressChanged="xMedia_DownloadProgressChanged"
+                          CurrentStateChanged="xMedia_CurrentStateChanged"
+                          MediaEnded="xMedia_MediaEnded" MediaFailed="xMedia_MediaFailed" MediaOpened="xMedia_MediaOpened">
+            <MediaElement.CacheMode>
+                <BitmapCache RenderAtScale="4"/>
+            </MediaElement.CacheMode>            
+        </MediaElement>
+        <!--透明度调节-->
+        <Rectangle x:Name="xBrightnessRect" Fill="Black" Opacity="0.0" />
+
+        <StackPanel x:Name="xPlayInfoPanel" Orientation="Vertical" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Visibility="Collapsed">
+            <!--显示的 MediaElement 的信息-->
+            <TextBlock Text="主播放器状态" Foreground="White" />
+            <TextBlock x:Name="xMediaStatusTextBlockA" Foreground="White" />
+            <TextBlock x:Name="xMediaDownloadTextBlockA" Foreground="White" Text="暂无" />
+            <TextBlock x:Name="xMediaBufferTextBlockA" Foreground="White" Text="暂无" />
+            <TextBlock x:Name="xMediaMarkerdTextBlockA" Foreground="White" Text="暂无" />
+            <TextBlock x:Name="xMediaCurrentStatusTextBlockA" Foreground="White" Text="暂无" />
+            <TextBlock x:Name="xMediaProgressTextBlockA" Foreground="White" Text="暂无" />
+        </StackPanel>
+    </Grid>
+</UserControl>

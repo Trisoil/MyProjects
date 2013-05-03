@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2009/deployment" AppPlatformVersion="7.1">
+  <App xmlns="" ProductID="{403e0a2d-0468-4fa4-8123-d14cad25347f}" Title="PPTV 网络电视" RuntimeType="Silverlight" Version="1.2.0.7" Genre="apps.normal" Author="PPLive Corporation" Description="PPTV网络电视是一款全球安装量最大的视频播放客户端，拥有大量欧美大片、热门影视、热门电视剧、娱乐、体育、资讯、游戏等视频内容。拥有会员等级积分系统，随着经验值增长，享受的特权服务将逐渐变多，是推荐给你的winmob装机必备的视频软件。" Publisher="PPLive Corporation">
+    <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_GAMERSERVICES" />
+      <Capability Name="ID_CAP_IDENTITY_DEVICE" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_MEDIALIB" />
+      <Capability Name="ID_CAP_MICROPHONE" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_ISV_CAMERA" />
+      <Capability Name="ID_CAP_CONTACTS" />
+      <Capability Name="ID_CAP_APPOINTMENTS" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="SplashScreen.xaml" />
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="PPTVForWP7Token" TaskName="_default">
+        <TemplateType5>
+          <BackgroundImageURI IsRelative="true" IsResource="false">Images\TILE_LOGO.png</BackgroundImageURI>
+          <Count>0</Count>
+          <Title>PPTV 网络电视</Title>
+          <BackBackgroundImageUri>Images\BACK_TILE_LOGO.png</BackBackgroundImageUri>
+          <BackTitle>PPTV</BackTitle>
+          <BackContent>每个人的网络电视</BackContent>
+        </TemplateType5>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="Photos_Extra_Hub" ConsumerID="{5B04B775-356B-4AA0-AAF8-6491FFEA5632}" TaskID="_default" />
+    </Extensions>
+  </App>
+</Deployment>

@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.MainNavMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    Width="408">
+
+    <StackPanel x:Name="LayoutRoot">
+        <Grid Height="40">
+            <TextBlock Text="推荐" Foreground ="White" FontSize="30" Margin="0,0,0,-30"/>
+            <Grid x:Name="xSwitchGrid" HorizontalAlignment="Right" Width="113" Height="30" Tap="xSwitchGrid_Tap">
+                <Rectangle HorizontalAlignment="Stretch" Fill="#00AEFF" Margin="0,0,0,-5" />
+                <TextBlock x:Name="xSelectedTextBlock" Text="热播电影 ..." Foreground="White"  VerticalAlignment="Top" FontSize="{StaticResource SecondTitleSize}" HorizontalAlignment="Left" Margin="2,0,0,0"/>
+            </Grid>
+            <Rectangle Width="434" Height="3" Fill="#00AEFF" VerticalAlignment="Bottom"/>
+        </Grid>
+        <StackPanel x:Name="xNavMenuStackPanel" Height="80" VerticalAlignment="Center" Orientation="Horizontal" Visibility="Collapsed" >
+            <!--<Grid Width="69" Height="69" HorizontalAlignment="Left">
+                <Rectangle Fill="#00AEFF"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="热 门" FontSize="22" />
+                    <TextBlock Text="电 影" FontSize="22" />
+                </StackPanel>
+            </Grid>
+            <Grid Width="69" Height="69" HorizontalAlignment="Left" Margin="18.75 0 0 0">
+                <Rectangle Fill="#00AEFF"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="热 门" FontSize="22" />
+                    <TextBlock Text="电 影" FontSize="22" />
+                </StackPanel>
+            </Grid>
+            <Grid Width="69" Height="69" HorizontalAlignment="Left" Margin="18.75 0 0 0">
+                <Rectangle Fill="#00AEFF"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="热 门" FontSize="22" />
+                    <TextBlock Text="电 影" FontSize="22" />
+                </StackPanel>
+            </Grid>
+            <Grid Width="69" Height="69" HorizontalAlignment="Left" Margin="18.75 0 0 0">
+                <Rectangle Fill="#00AEFF"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="热 门" FontSize="22" />
+                    <TextBlock Text="电 影" FontSize="22" />
+                </StackPanel>
+            </Grid>
+            <Grid Width="69" Height="69" HorizontalAlignment="Right" Margin="18.75 0 0 0">
+                <Rectangle Fill="#00AEFF"/>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <TextBlock Text="热 门" FontSize="22" />
+                    <TextBlock Text="电 影" FontSize="22" />
+                </StackPanel>
+            </Grid>-->
+        </StackPanel>
+    </StackPanel>
+</UserControl>

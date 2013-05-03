@@ -1,0 +1,59 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.MultiProgramItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480" Height="70" Loaded="UserControl_Loaded">
+
+    <UserControl.Resources>
+        <Style x:Key="ProgramsButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Background="Transparent">
+                            <Rectangle RadiusX="5" RadiusY="5" Fill="#FF17323A" Visibility="Collapsed"/>
+                            <Rectangle RadiusX="5" RadiusY="5" Visibility="Collapsed">
+                                <Rectangle.Fill>
+                                    <RadialGradientBrush RadiusY="0.629" RadiusX="0.629">
+                                        <GradientStop Color="#FF136E87" Offset="0"/>
+                                        <GradientStop Color="#0017323A" Offset="1"/>
+                                    </RadialGradientBrush>
+                                </Rectangle.Fill>
+                            </Rectangle>
+                            <TextBlock HorizontalAlignment="Left" Margin="2.5,5" VerticalAlignment="Center" Text="{TemplateBinding Content}" Foreground="{TemplateBinding Foreground}"/>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="FontSize" Value="24"/>
+            <Setter Property="Foreground" Value="White"/>
+        </Style>
+    </UserControl.Resources>
+    <StackPanel x:Name="LayoutRoot" Orientation="Horizontal">
+        <Grid  Margin="0,12,5,12">
+            <Button x:Name="xButton1" Tap="Button_Tap" Visibility="Collapsed" Content="1"   Height="30" Width="81" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource ProgramsButtonStyle}"/>
+            <!--<Rectangle Width="6" Fill="Orange" HorizontalAlignment="Left" Visibility="Collapsed"/>-->
+        </Grid>
+        <Grid   Margin="5,12,5,12">
+            <Button x:Name="xButton2" Tap="Button_Tap" Visibility="Collapsed" Content="1"   Height="30" Width="81" VerticalAlignment="Center" HorizontalAlignment="Left"  Style="{StaticResource ProgramsButtonStyle}"/>
+            <!--<Rectangle Width="6" Fill="Orange" HorizontalAlignment="Left" Visibility="Collapsed"/>-->
+        </Grid>
+        <Grid  Margin="5,12,5,12">
+            <Button x:Name="xButton3" Tap="Button_Tap" Visibility="Collapsed" Content="1"   Height="30" Width="81" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource ProgramsButtonStyle}"/>
+            <!--<Rectangle Width="6" Fill="Orange" HorizontalAlignment="Left" Visibility="Collapsed"/>-->
+        </Grid>
+        <Grid   Margin="5,12,5,12">
+            <Button x:Name="xButton4" Tap="Button_Tap" Visibility="Collapsed" Content="1"   Height="30" Width="81" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource ProgramsButtonStyle}"/>
+            <!--<Rectangle Width="6" Fill="Orange" HorizontalAlignment="Left" Visibility="Collapsed"/>-->
+        </Grid>
+        <Grid   Margin="5,12,5,12">
+            <Button x:Name="xButton5" Tap="Button_Tap" Visibility="Collapsed" Content="1"   Height="30" Width="81" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource ProgramsButtonStyle}"/>
+            <!--<Rectangle Width="6" Fill="Orange" HorizontalAlignment="Left" Visibility="Collapsed"/>-->
+        </Grid>
+     
+    </StackPanel>
+</UserControl>

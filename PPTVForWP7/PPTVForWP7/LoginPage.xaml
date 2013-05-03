@@ -1,0 +1,215 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PPTVForWP7.LoginPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:Controls="clr-namespace:PPTVForWP7.Controls"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded">
+    <phone:PhoneApplicationPage.Resources>
+        <Style x:Key="TextBoxStyle1" TargetType="TextBox">
+            <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="Height" Value="55"/>
+            <Setter Property="Width" Value="440"/>
+            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMediumLarge}"/>
+            <Setter Property="Background" Value="{StaticResource PhoneTextBoxBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneTextBoxForegroundBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PhoneTextBoxBrush}"/>
+            <Setter Property="SelectionBackground" Value="{StaticResource PhoneAccentBrush}"/>
+            <Setter Property="SelectionForeground" Value="{StaticResource PhoneTextBoxSelectionForegroundBrush}"/>
+            <Setter Property="BorderThickness" Value="{StaticResource PhoneBorderThickness}"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid Background="Transparent">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="EnabledBorder">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Collapsed</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="ReadOnly">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="EnabledBorder">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Collapsed</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition GeneratedDuration="0" To="Focused">
+                                            <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image">
+                                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                                        <DiscreteObjectKeyFrame.Value>
+                                                            <Visibility>Visible</Visibility>
+                                                        </DiscreteObjectKeyFrame.Value>
+                                                    </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                                <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+                                                    <DiscreteObjectKeyFrame KeyTime="0">
+                                                        <DiscreteObjectKeyFrame.Value>
+                                                            <Visibility>Collapsed</Visibility>
+                                                        </DiscreteObjectKeyFrame.Value>
+                                                    </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                            </Storyboard>
+                                        </VisualTransition>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Focused"/>
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Rectangle x:Name="rectangle" Fill="#32FFFFFF" />
+                                <Image x:Name="image" Source="Images/border.png" Stretch="Fill" Visibility="Collapsed"/>
+                            </Grid>
+                            <Border x:Name="EnabledBorder" Margin="{StaticResource PhoneTouchTargetOverhang}">
+                                <ContentControl x:Name="ContentElement" BorderThickness="0" HorizontalContentAlignment="Stretch" Padding="{TemplateBinding Padding}" VerticalContentAlignment="Stretch" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <ControlTemplate x:Key="PhoneDisabledPasswordBoxTemplate" TargetType="PasswordBox">
+            <Border x:Name="ContentElement" BorderThickness="0" Margin="{StaticResource PhonePasswordBoxInnerMargin}" Padding="{TemplateBinding Padding}"/>
+        </ControlTemplate>
+        <Style x:Key="PasswordBoxStyle1" TargetType="PasswordBox">
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="Height" Value="55"/>
+            <Setter Property="Width" Value="440"/>
+            <Setter Property="FontFamily" Value="{StaticResource PhoneFontFamilyNormal}"/>
+            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMediumLarge}"/>
+            <Setter Property="Background" Value="{StaticResource PhoneTextBoxBrush}"/>
+            <Setter Property="Foreground" Value="{StaticResource PhoneTextBoxForegroundBrush}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PhoneTextBoxBrush}"/>
+            <Setter Property="BorderThickness" Value="{StaticResource PhoneBorderThickness}"/>
+            <Setter Property="SelectionBackground" Value="{StaticResource PhoneAccentBrush}"/>
+            <Setter Property="SelectionForeground" Value="{StaticResource PhoneContrastBackgroundBrush}"/>
+            <Setter Property="Padding" Value="2"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="PasswordBox">
+                        <Grid Background="Transparent">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal"/>
+                                    <VisualState x:Name="MouseOver"/>
+                                    <VisualState x:Name="Disabled">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="Visibility" Storyboard.TargetName="EnabledBorder">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Collapsed</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                                <VisualStateGroup x:Name="FocusStates">
+                                    <VisualStateGroup.Transitions>
+                                        <VisualTransition GeneratedDuration="0" To="Focused"/>
+                                    </VisualStateGroup.Transitions>
+                                    <VisualState x:Name="Focused">
+                                        <Storyboard>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="rectangle">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Collapsed</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.Visibility)" Storyboard.TargetName="image">
+                                                <DiscreteObjectKeyFrame KeyTime="0">
+                                                    <DiscreteObjectKeyFrame.Value>
+                                                        <Visibility>Visible</Visibility>
+                                                    </DiscreteObjectKeyFrame.Value>
+                                                </DiscreteObjectKeyFrame>
+                                            </ObjectAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                    <VisualState x:Name="Unfocused"/>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Grid>
+                                <Rectangle x:Name="rectangle" Fill="#32FFFFFF" />
+                                <Image x:Name="image" Source="Images/border.png" Stretch="Fill" Visibility="Collapsed"/>
+                            </Grid>
+                            <Border x:Name="EnabledBorder" HorizontalAlignment="Left" VerticalAlignment="Center">
+                                <Border x:Name="ContentElement" BorderThickness="0" Margin="{StaticResource PhonePasswordBoxInnerMargin}" Padding="{TemplateBinding Padding}"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </phone:PhoneApplicationPage.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" >
+        <Grid.Background>
+            <ImageBrush ImageSource="/PPTVForWP7;component/Images/bg2.png"/>
+        </Grid.Background>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <TextBlock Text="登录" FontSize="50" Foreground="#FF00AEFF" Margin="24,0,0,0"/>
+        <Grid Grid.Row="1" Margin="24,80,24,0">
+            <ScrollViewer HorizontalAlignment="Stretch" VerticalScrollBarVisibility="Auto" Margin="0,0,0,70">
+                <StackPanel >
+                    <StackPanel>
+                        <TextBlock Text="用户名:" FontSize="{StaticResource SecondTitleSize}" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="White"/>
+                        <TextBox x:Name="xTbUserId" Text="" FontSize="{StaticResource SecondTitleSize}" Style="{StaticResource TextBoxStyle1}" Foreground="#FF898989" BorderThickness="3" Margin="0,3,0,0" LostFocus="xTbUserId_LostFocus" GotFocus="xTbUserId_GotFocus" KeyDown="xTbUserId_KeyDown" Width="432"/>
+                        <Grid x:Name="xUserNameGrid" Height="60" Width="432" Margin="0 5 0 0" Visibility="Collapsed">
+                            <Rectangle Fill="#FF525252"/>
+                            <TextBlock x:Name="xUserNameTextBlock" Text="不可为空" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel>
+                        <TextBlock Text="密   码:" FontSize="{StaticResource SecondTitleSize}" HorizontalAlignment="Left" Margin="0,0,0,10" Foreground="White"/>
+                        <PasswordBox x:Name="xTbPassword" FontSize="{StaticResource SecondTitleSize}" Foreground="#FF898989" BorderThickness="3" Margin="0,3,0,0" GotFocus="xTbPassword_GotFocus" LostFocus="xTbPassword_LostFocus" Style="{StaticResource PasswordBoxStyle1}" Background="Transparent" BorderBrush="Transparent" KeyDown="xTbPassword_KeyDown" Width="432"/>
+                        <Grid x:Name="xPasswordGrid" Height="60" Width="432" Margin="0 5 0 0" Visibility="Collapsed">
+                            <Rectangle Fill="#FF525252"/>
+                            <TextBlock x:Name="xPassword1TextBlock" Text="不可为空" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="20,0,0,0"/>
+                        </Grid>
+                    </StackPanel>
+                    <toolkit:ToggleSwitch x:Name="xRembPass" Header="记住用户名密码"  ContentTemplate="{StaticResource SwitchContentTemplate}"   FontSize="{StaticResource SecondTitleSize}" Margin="-10,20,0,0"  Unchecked="xRembPass_Unchecked"  HeaderTemplate="{StaticResource SwitchHeaderTemplate}" Width="478"/>
+                    <toolkit:ToggleSwitch x:Name="xAutoLogon" Header="下次自动登录" ContentTemplate="{StaticResource SwitchContentTemplate}" FontSize="{StaticResource SecondTitleSize}" Margin="-10,20,0,0" Checked="xAutoLogon_Checked"  HeaderTemplate="{StaticResource SwitchHeaderTemplate}" Width="478"/>
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        <Controls:LoadingWait x:Name="LoadingWait" Grid.Row="1" Margin="0,0,0,70" VerticalAlignment="Bottom" Visibility="Collapsed"/>
+    </Grid>
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="False" IsMenuEnabled="False" BackgroundColor="#FF000000"  ForegroundColor="White" Opacity="0.75">
+            <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar.logon.png" Text="登陆" Click="OnxLoginButtonClick"/>-->
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.reg.png" Text="注册" Click="OnOpenRegPageClick"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

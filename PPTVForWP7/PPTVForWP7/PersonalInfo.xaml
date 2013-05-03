@@ -1,0 +1,61 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PPTVForWP7.PersonalInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush ImageSource="Images/bg2.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        
+        <TextBlock x:Name="xPersonalInfoTitle" Grid.Row="0" Text="个人信息" FontSize="50" Foreground="Orange" Margin="10"/>            
+        <Image x:Name="xPersonalHeadPic" Grid.Row="1" Width="170" Height="152" HorizontalAlignment="Left" Margin="20"/>
+        
+        <StackPanel Grid.Row="2" Margin="0,0,0,70">
+            <Grid>
+            <TextBlock x:Name="xID" Foreground="White"  FontSize="{StaticResource SecondTitleSize}" Margin="20,0,0,0" HorizontalAlignment="Left"/>
+                <Grid x:Name="xVipLogo"  Width="70" Height="30" HorizontalAlignment="Right" Margin="0,0,20,0" Visibility="Collapsed">
+                    <TextBlock Foreground="Orange" Text="VIP" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                </Grid>
+            </Grid>
+
+            <TextBlock x:Name="xStatus" Foreground="White"  FontSize="{StaticResource describeSize}" Margin="20,10,0,0"/>
+            <TextBlock x:Name="xLevel" Foreground="White"  FontSize="{StaticResource describeSize}" Margin="20,10,0,0"/>
+            <TextBlock x:Name="xExp" Foreground="White"  FontSize="{StaticResource describeSize}" Margin="20,10,0,0"/>
+        </StackPanel>
+
+        
+        
+    </Grid>
+ 
+    <!--Sample code showing usage of ApplicationBar-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True" BackgroundColor="#FF000000"  ForegroundColor="White" Opacity="0.75">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar.logoff.png" Text="注销" Click="ApplicationBarIconButton_Click"/>
+            <!--<shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="Button 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
+            </shell:ApplicationBar.MenuItems>-->
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

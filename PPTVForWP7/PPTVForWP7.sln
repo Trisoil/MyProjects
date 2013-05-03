@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTVForWP7", "PPTVForWP7\PPTVForWP7.csproj", "{B16CAA83-5121-4D23-998B-090EF7B8C443}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTVWP7MediaPlayer", "PPTVWP7MediaPlayer\PPTVWP7MediaPlayer.csproj", "{F7069C02-C215-492C-B47C-D166A61B79B1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPTVData", "PPTVData\PPTVData.csproj", "{E1A03F5B-3E3E-49E7-A792-5ED43CD01086}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhonePerformance", "PhonePerformance\PhonePerformance.csproj", "{FCF263CD-388B-44E4-8A92-A4C5F670394F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B16CAA83-5121-4D23-998B-090EF7B8C443}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16CAA83-5121-4D23-998B-090EF7B8C443}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16CAA83-5121-4D23-998B-090EF7B8C443}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B16CAA83-5121-4D23-998B-090EF7B8C443}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16CAA83-5121-4D23-998B-090EF7B8C443}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16CAA83-5121-4D23-998B-090EF7B8C443}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F7069C02-C215-492C-B47C-D166A61B79B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7069C02-C215-492C-B47C-D166A61B79B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7069C02-C215-492C-B47C-D166A61B79B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7069C02-C215-492C-B47C-D166A61B79B1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E1A03F5B-3E3E-49E7-A792-5ED43CD01086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1A03F5B-3E3E-49E7-A792-5ED43CD01086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1A03F5B-3E3E-49E7-A792-5ED43CD01086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1A03F5B-3E3E-49E7-A792-5ED43CD01086}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF263CD-388B-44E4-8A92-A4C5F670394F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF263CD-388B-44E4-8A92-A4C5F670394F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF263CD-388B-44E4-8A92-A4C5F670394F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF263CD-388B-44E4-8A92-A4C5F670394F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

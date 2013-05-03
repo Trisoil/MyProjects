@@ -1,0 +1,17 @@
+﻿<UserControl x:Class="PPTVForWP7.Controls.NavMenuItem"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"  Width="69" Height="69" Visibility="Collapsed" Tap="UserControl_Tap">
+    <Grid>
+        <Rectangle x:Name="xBackgroundRectangle" Fill="#00AEFF"/>
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <TextBlock x:Name="xTextBlock1" Foreground="White" Text="热 门" FontSize="22" />
+            <TextBlock x:Name="xTextBlock2" Foreground="White"  Text="电 影" FontSize="22" />
+        </StackPanel>
+    </Grid>
+</UserControl>
