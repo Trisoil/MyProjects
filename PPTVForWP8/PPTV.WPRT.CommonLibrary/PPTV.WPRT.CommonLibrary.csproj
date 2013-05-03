@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D05F6FE9-3691-45D5-A28C-B90961EB073C}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PPTV.WPRT.CommonLibrary</RootNamespace>
+    <AssemblyName>PPTV.WPRT.CommonLibrary</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="BindableBase.cs" />
+    <Compile Include="DataModel\ChannelCoverGroup.cs" />
+    <Compile Include="DataModel\ChannelCoverItem.cs" />
+    <Compile Include="DataModel\ChannelListGroup.cs" />
+    <Compile Include="DataModel\ChannelListItem.cs" />
+    <Compile Include="DataModel\ChannelRecommendGroup.cs" />
+    <Compile Include="DataModel\ChannelRecommendListItem.cs" />
+    <Compile Include="DataModel\ChannelTypeGroup.cs" />
+    <Compile Include="DataModel\ChannelTypeItem.cs" />
+    <Compile Include="DataModel\Download\DownloadInfo.cs" />
+    <Compile Include="DataModel\Download\DownloadState.cs" />
+    <Compile Include="DataModel\Play\PlayMessageInfo.cs" />
+    <Compile Include="DataModel\Play\PlayShareInfo.cs" />
+    <Compile Include="DataModel\Social\SocialDataInfo.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Templater\ChanenlRecommendSelector.cs" />
+    <Compile Include="Templater\ChannelDetailSelector.cs" />
+    <Compile Include="Templater\ChannelDownloadSelector.cs" />
+    <Compile Include="Templater\ChannelTypeSelector.cs" />
+    <Compile Include="Templater\DataTemplateSelector.cs" />
+    <Compile Include="Templater\DownloadedSelector.cs" />
+    <Compile Include="Templater\DownloadingSelector.cs" />
+    <Compile Include="Templater\FavoritenSelector.cs" />
+    <Compile Include="Templater\HistorySelector.cs" />
+    <Compile Include="Utils\ChannelUtils.cs" />
+    <Compile Include="Utils\DataStoreUtils.cs" />
+    <Compile Include="Utils\HttpAsyncUtils.cs" />
+    <Compile Include="Utils\HttpUtils.cs" />
+    <Compile Include="Utils\TileUtils.cs" />
+    <Compile Include="ViewModel\ChannelCoverViewModel.cs" />
+    <Compile Include="ViewModel\ChannelListViewModel.cs" />
+    <Compile Include="ViewModel\ChannelRecommendViewModel.cs" />
+    <Compile Include="ViewModel\ChannelTypeViewModel.cs" />
+    <Compile Include="ViewModel\Channel\ChannelTypeFactory.cs" />
+    <Compile Include="ViewModel\Download\DownloadBase.cs" />
+    <Compile Include="ViewModel\Download\DownloadedViewModel.cs" />
+    <Compile Include="ViewModel\Download\DownloadingViewModel.cs" />
+    <Compile Include="ViewModel\Download\DownloadViewModel.cs" />
+    <Compile Include="ViewModel\Play\IPlayFactory.cs" />
+    <Compile Include="ViewModel\Play\PlayAdapter.cs" />
+    <Compile Include="ViewModel\Play\PlayDownloadFactory.cs" />
+    <Compile Include="ViewModel\Play\PlayFactoryBase.cs" />
+    <Compile Include="ViewModel\Play\PlayType.cs" />
+    <Compile Include="ViewModel\Play\PlayVodFactory.cs" />
+    <Compile Include="ViewModel\Social\RenrenApiClient.cs" />
+    <Compile Include="ViewModel\Social\RenrenSocialFactory.cs" />
+    <Compile Include="ViewModel\Social\SinaSocialFactory.cs" />
+    <Compile Include="ViewModel\Social\SocialBase.cs" />
+    <Compile Include="ViewModel\Social\SocialViewModel.cs" />
+    <Compile Include="ViewModel\Social\TencentSocialFactory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PPTVData\PPTVData.csproj">
+      <Project>{DC2C0427-3FC4-4371-BB65-6A672740C326}</Project>
+      <Name>PPTVData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>..\PPTVForWP8\Library\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls.Toolkit">
+      <HintPath>..\PPTVForWP8\Library\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\PPTVForWP8\Library\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="TencentWeiboSDK">
+      <HintPath>..\PPTVForWP8\Library\TencentWeiboSDK.dll</HintPath>
+    </Reference>
+    <Reference Include="WeiboSdk">
+      <HintPath>..\PPTVForWP8\Library\WeiboSdk.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

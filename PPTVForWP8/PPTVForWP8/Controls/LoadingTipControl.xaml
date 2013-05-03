@@ -1,0 +1,18 @@
+﻿<UserControl x:Class="PPTVForWP8.Controls.LoadingTipControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="50" d:DesignWidth="480">
+    
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock x:Name="WaitText" Foreground="White" Text="请稍候" FontSize="20" HorizontalAlignment="Center"/>
+            <ProgressBar IsIndeterminate="True" Margin="0 0 0 6"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

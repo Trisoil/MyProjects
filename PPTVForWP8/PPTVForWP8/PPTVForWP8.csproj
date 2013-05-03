@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0C74F6D4-6AF0-4B77-8829-820FFD94571D}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PPTVForWP8</RootNamespace>
+    <AssemblyName>PPTVForWP8</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PPTVForWP8_$(Configuration)_$(Platform).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PPTVForWP8.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\PivotCallbacks.cs" />
+    <Compile Include="Controls\LoginControl.xaml.cs">
+      <DependentUpon>LoginControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\PlayerController.xaml.cs">
+      <DependentUpon>PlayerController.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\BooleanToVisibilityConverter.cs" />
+    <Compile Include="Controls\ChannelOrderControl.xaml.cs">
+      <DependentUpon>ChannelOrderControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChannelTagControl.xaml.cs">
+      <DependentUpon>ChannelTagControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChannelTagSelectedControl.xaml.cs">
+      <DependentUpon>ChannelTagSelectedControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\LoadingTipControl.xaml.cs">
+      <DependentUpon>LoadingTipControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SlidesShowControl.xaml.cs">
+      <DependentUpon>SlidesShowControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converter\ChannelDurationConverter.cs" />
+    <Compile Include="Converter\ChannelMarkConvert.cs" />
+    <Compile Include="Converter\ChannelWatchPositionConvert.cs" />
+    <Compile Include="Converter\CloudDeviceConverter.cs" />
+    <Compile Include="Converter\DownloadProgressConverter.cs" />
+    <Compile Include="Converter\DownloadStateConverter.cs" />
+    <Compile Include="Converter\IntToVisibilityConverter.cs" />
+    <Compile Include="Converter\RecommendMoreConverter.cs" />
+    <Compile Include="Converter\RecommendTileHeightConverter.cs" />
+    <Compile Include="Converter\RecommendTileWidthConverter.cs" />
+    <Compile Include="Converter\SecondsDurationConverter.cs" />
+    <Compile Include="Converter\ToggleSwitchContentConvert.cs" />
+    <Compile Include="Converter\UserStateConvert.cs" />
+    <Compile Include="LocalizedStrings.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AboutPage.xaml.cs">
+      <DependentUpon>AboutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChannelPage.xaml.cs">
+      <DependentUpon>ChannelPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChannelRecommendPage.xaml.cs">
+      <DependentUpon>ChannelRecommendPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\ChannelTypePage.xaml.cs">
+      <DependentUpon>ChannelTypePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DetailPage.xaml.cs">
+      <DependentUpon>DetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\DownloadPage.xaml.cs">
+      <DependentUpon>DownloadPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FavoritenPage.xaml.cs">
+      <DependentUpon>FavoritenPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FirstPage.xaml.cs">
+      <DependentUpon>FirstPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HistoryPage.xaml.cs">
+      <DependentUpon>HistoryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\PlayPage.xaml.cs">
+      <DependentUpon>PlayPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\CloudUtils.cs" />
+    <Compile Include="Utils\CommonUtils.cs" />
+    <Compile Include="Utils\Constants.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="Controls\ChannelOrderControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ChannelTagControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\ChannelTagSelectedControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LoadingTipControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\LoginControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Controls\PlayerController.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Controls\SlidesShowControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AboutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ChannelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ChannelRecommendPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\ChannelTypePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\DownloadPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FavoritenPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FirstPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HistoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\PlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\PPTVStyles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\PPTVTemplates.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\AlignmentGrid.png" />
+    <Content Include="Assets\ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileMedium.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Tiles\IconicTileSmall.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\AppBar\check.png" />
+    <Content Include="Images\AppBar\delete.png" />
+    <Content Include="Images\AppBar\download.png" />
+    <Content Include="Images\AppBar\like.png" />
+    <Content Include="Images\AppBar\unpin.png" />
+    <Content Include="Images\AppBar\select.png" />
+    <Content Include="Images\AppBar\pin.png" />
+    <Content Include="Images\AppBar\refresh.png" />
+    <Content Include="Images\background.png" />
+    <Content Include="Images\border.png" />
+    <Content Include="Images\Channels\default.png" />
+    <Content Include="Images\Channels\vip.png" />
+    <Content Include="Images\Channels\sports.png" />
+    <Content Include="Images\Channels\cartoon.png" />
+    <Content Include="Images\Channels\flower.png" />
+    <Content Include="Images\Channels\travel.png" />
+    <Content Include="Images\Channels\game.png" />
+    <Content Include="Images\Channels\hot.png" />
+    <Content Include="Images\Channels\movie.png" />
+    <Content Include="Images\Channels\teleplay.png" />
+    <Content Include="Images\Channels\show.png" />
+    <Content Include="Images\Channels\music.png" />
+    <Content Include="Images\Channels\downloaded.png" />
+    <Content Include="Images\Channels\favoriten.png" />
+    <Content Include="Images\Channels\history.png" />
+    <Content Include="Images\logo.png" />
+    <Content Include="Images\Play\play.png" />
+    <Content Include="Images\Play\play_selected.png" />
+    <Content Include="Images\Play\forward.png" />
+    <Content Include="Images\Play\forward_selected.png" />
+    <Content Include="Images\Play\next.png" />
+    <Content Include="Images\Play\next_selected.png" />
+    <Content Include="Images\Play\rewind.png" />
+    <Content Include="Images\Play\rewind_selected.png" />
+    <Content Include="Images\Play\previous.png" />
+    <Content Include="Images\Play\previous_selected.png" />
+    <Content Include="Images\Play\pause.png" />
+    <Content Include="Images\Play\pause_selected.png" />
+    <Content Include="Images\Play\bitexpansion.png" />
+    <Content Include="Images\Play\bitexpansion_selected.png" />
+    <Content Include="Images\Play\bitback.png" />
+    <Content Include="Images\Play\bitback_selected.png" />
+    <Content Include="Images\Play\mute.png" />
+    <Content Include="Images\Play\mute_selected.png" />
+    <Content Include="Images\Play\volume.png" />
+    <Content Include="Images\Play\volume_selected.png" />
+    <Content Include="Images\smalllogo.png" />
+    <Content Include="Images\channelsort.png" />
+    <Content Include="Images\channeltag.png" />
+    <Content Include="Images\channelbackground.png" />
+    <Content Include="Images\channelselectedtag.png" />
+    <Content Include="Images\channelselectedclose.png" />
+    <Content Include="Images\channeltagtip.png" />
+    <Content Include="Images\channelselected.png" />
+    <Content Include="Images\titletip.png" />
+    <Content Include="Images\channelorderbackground.png" />
+    <Content Include="Images\play.png" />
+    <Content Include="Images\desc.png" />
+    <Content Include="Images\asc.png" />
+    <Content Include="Images\downloading.png" />
+    <Content Include="Images\selected.png" />
+    <Content Include="Images\loginadd.png" />
+    <Content Include="Images\login.png" />
+    <Content Include="Images\downing.png" />
+    <Content Include="Images\downpause.png" />
+    <Content Include="Images\downawait.png" />
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PPTV.WPRT.CommonLibrary\PPTV.WPRT.CommonLibrary.csproj">
+      <Project>{D05F6FE9-3691-45D5-A28C-B90961EB073C}</Project>
+      <Name>PPTV.WPRT.CommonLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PPTVData\PPTVData.csproj">
+      <Project>{DC2C0427-3FC4-4371-BB65-6A672740C326}</Project>
+      <Name>PPTVData</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>Library\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Library\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

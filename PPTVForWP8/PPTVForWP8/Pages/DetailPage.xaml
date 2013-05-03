@@ -1,0 +1,182 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PPTVForWP8.Pages.DetailPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:localContols="clr-namespace:PPTVForWP8.Controls"
+    xmlns:localTemplater="clr-namespace:PPTV.WPRT.CommonLibrary.Templater;assembly=PPTV.WPRT.CommonLibrary"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.Opacity="0.4">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource BackgroundImage}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl Tag="详情" Template="{StaticResource SmallLogoTemplate}" />
+
+        <Border x:Name="orderBorder" HorizontalAlignment="Right" Width="80" Height="32" Margin="0 35 18 0" Tap="orderBorder_Tap" BorderThickness="1"  Background="{StaticResource PPTVMasterColor}" BorderBrush="{StaticResource PPTVBorderColor}" Visibility="Collapsed" Canvas.ZIndex="10">
+            <StackPanel Orientation="Horizontal">
+                <Image x:Name="orderImage" Margin="10 0 0 0" Width="16.875" Height="10" Source="/Images/asc.png"/>
+                <TextBlock x:Name="orderText" Margin="6 0 0 3" Text="正序" FontSize="17.5" VerticalAlignment="Center" Foreground="White"/>
+            </StackPanel>
+        </Border>
+
+        <!--<Border HorizontalAlignment="Right" Width="80" Height="36" Margin=" 0 35 17.5 0" Tap="Order_Tap" BorderThickness="1" Background="{StaticResource PPTVMasterColor}" BorderBrush="{StaticResource PPTVBorderColor}">
+            <StackPanel Orientation="Horizontal">
+                <Image Margin="10 0 0 0" Width="16.875" Height="10" Source="/Images/desc.png"/>
+                <TextBlock Margin="6 0 0 0" Text="倒序" FontSize="17.5"  VerticalAlignment="Center"/>
+            </StackPanel>
+        </Border>-->
+
+        <phone:Pivot x:Name="detailPivot" Grid.Row="2" Margin="-8 -28 0 0" SelectionChanged="detailPivot_SelectionChanged">
+            
+            <phone:PivotItem>
+                <phone:PivotItem.Header>
+                    <TextBlock Text="剧情介绍" Style="{StaticResource PivotMasterTitleStyle}"/>
+                </phone:PivotItem.Header>
+                <Grid Margin="12 0 0 0">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="255"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="192"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid Background="{StaticResource PPTVMasterColor}">
+                            <Image Style="{StaticResource PicWallStyle}"/>
+                            <Image Source="{Binding ImageUri}"/>
+                        </Grid>
+                        <Grid Grid.Column="1" Margin="12 0 0 0">
+                            <TextBlock Text="{Binding Title}" FontSize="20" Foreground="White" Height="80" Margin="0 2 0 0" VerticalAlignment="Top" TextWrapping="Wrap"/>
+                            
+                            <TextBlock FontSize="20" VerticalAlignment="Bottom" Margin="0 0 0 110" TextWrapping="Wrap" Height="50">
+                                <Run Text="演员：" Foreground="#7FFFFFFF"/>
+        		                <Run Text="{Binding Act}" Foreground="White"/>
+                            </TextBlock>
+
+                            <TextBlock FontSize="20" VerticalAlignment="Bottom" Margin="0 0 0 70">
+                                <Run Text="评分：" Foreground="#7FFFFFFF"/>
+        		                <Run Text="{Binding Mark, Converter={StaticResource markConvert}}" Foreground="White"/>
+                            </TextBlock>
+
+                            <Border VerticalAlignment="Bottom" HorizontalAlignment="Left" Width="150" Height="50" Tap="Play_Tap" BorderThickness="1" Background="{StaticResource PPTVMasterColor}" BorderBrush="{StaticResource PPTVBorderColor}">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Margin="36 0 0 0" Width="20.625" Height="23.75" Source="/Images/play.png"/>
+                                    <TextBlock Margin="18 2 0 0" Text="播放" FontSize="20" Height="30" Foreground="White"/>
+                                </StackPanel>
+                            </Border>
+                        </Grid>
+                    </Grid>
+                    
+                    <Grid Grid.Row="1">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="60"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <TextBlock FontSize="20" VerticalAlignment="Top" Margin="0 27.5 2 0">
+                                <Run Text="年代：" Foreground="#7FFFFFFF"/>
+        		                <Run Text="{Binding Year}" Foreground="White"/>
+                        </TextBlock>
+
+                        <ScrollViewer Grid.Row="1">
+                            <StackPanel Orientation="Vertical">
+                                <TextBlock FontSize="20" Foreground="White" TextWrapping="Wrap" LineHeight="30">
+                                    <Run Text="简介：" Foreground="#7FFFFFFF"/>
+        		                    <Run Text="{Binding Content}"/>
+                                </TextBlock>
+                                <Grid Height="68" VerticalAlignment="Bottom"/>
+                            </StackPanel>
+                        </ScrollViewer>
+                        
+                    </Grid>
+                </Grid>
+            </phone:PivotItem>
+
+            <phone:PivotItem>
+                <phone:PivotItem.Header>
+                    <TextBlock Text="选集" Style="{StaticResource PivotMasterTitleStyle}"/>
+                </phone:PivotItem.Header>
+                <phone:LongListSelector
+                    x:Name="channelList"
+                    IsGroupingEnabled="False"
+                    LayoutMode="Grid"
+                    toolkit:TiltEffect.IsTiltEnabled="True" 
+                    Style="{StaticResource PivotListStyle}"
+                    SelectionChanged="channelList_SelectionChanged"
+                    >
+                    <phone:LongListSelector.ItemTemplate>
+                        <DataTemplate>
+                            <localTemplater:ChannelDetailSelector/>
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+                </phone:LongListSelector>
+            </phone:PivotItem>
+
+            <phone:PivotItem>
+                <phone:PivotItem.Header>
+                    <TextBlock Text="下载" Style="{StaticResource PivotMasterTitleStyle}"/>
+                </phone:PivotItem.Header>
+                <phone:LongListSelector
+                    x:Name="downloadList"
+                    IsGroupingEnabled="False"
+                    LayoutMode="Grid"
+                    GridCellSize="{Binding GridCellSize, ElementName=channelList}"
+                    toolkit:TiltEffect.IsTiltEnabled="True" 
+                    Style="{StaticResource PivotListStyle}"
+                    SelectionChanged="downloadList_SelectionChanged"
+                    >
+                    <phone:LongListSelector.ItemTemplate>
+                        <DataTemplate>
+                            <localTemplater:ChannelDownloadSelector/>
+                        </DataTemplate>
+                    </phone:LongListSelector.ItemTemplate>
+                </phone:LongListSelector>
+            </phone:PivotItem>
+            
+        </phone:Pivot>
+
+        <localContols:LoadingTipControl x:Name="loadingTip" Grid.Row="2" Margin="0 0 0 70" VerticalAlignment="Bottom"/>
+        
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" Mode="Default" BackgroundColor="{StaticResource PPTVAppBarColor}" ForegroundColor="White">
+            <shell:ApplicationBarIconButton IconUri="/Images/AppBar/refresh.png" Click="ApplicationBarRefresh_Click" Text="刷新"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>

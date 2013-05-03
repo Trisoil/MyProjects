@@ -1,0 +1,303 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    >
+    
+    <!--空样式-->
+    <DataTemplate x:Key="EmptyTemplate">
+        <Grid/>
+    </DataTemplate>
+
+    <!--开发控件内容样式-->
+    <DataTemplate x:Key="SwitchContentTemplate">
+        <ContentControl HorizontalAlignment="Left" Content="{Binding Converter={StaticResource switchConverter}}" Foreground="#DEFFFFFF"/>
+    </DataTemplate>
+
+    <!--推荐更多样式-->
+    <DataTemplate x:Key="ChannelRecommendMoreTemplate">
+        <toolkit:HubTile
+            Width="141"
+            Height="182"
+            Source="{Binding ImageUri}"
+            Message="{Binding GroupCount, Converter={StaticResource RecommendMoreConverter}}"
+            Title="{Binding GruopName}"
+            Foreground="White"
+            Style="{StaticResource RecommendHubTileStyle}"
+            />
+    </DataTemplate>
+    
+    <!--推荐样式-->
+    <DataTemplate x:Key="ChannelRecommendTemplate">
+        <Grid Width="141" Height="182" Margin="6.5" Background="{StaticResource PPTVMasterColor}">
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill" />
+            <Grid Style="{StaticResource ChannelTitleGridStyle}"/>
+            <TextBlock Text="{Binding Title}" Style="{StaticResource ChannelTitleTextStyle}" />
+        </Grid>
+    </DataTemplate>
+    
+    <!--频道Tile样式-->
+    <DataTemplate x:Key="ChannelTypeTemplate">
+        <Border Width="138" Height="138" Margin="0" Background="#2aa2ff" BorderBrush="#0C000000" BorderThickness="1">
+            <Grid>
+                <Image Width="77.5" Height="77.5" Source="{Binding ImageUri}" Margin="0 18.75 0 0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBlock Text="{Binding TypeName}" Foreground="White" VerticalAlignment="Bottom" Margin="0 0 0 13" FontSize="17.5" HorizontalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <!--本地频道Tile样式-->
+    <DataTemplate x:Key="ChannelLocalTypeTemplate">
+        <Border Width="138" Height="138" Margin="0" Background="#ffae00" BorderBrush="#0C000000" BorderThickness="1">
+            <Grid>
+                <Image Width="77.5" Height="77.5" Source="{Binding ImageUri}" Margin="0 18.75 0 0" HorizontalAlignment="Center" VerticalAlignment="Top"/>
+                <TextBlock Text="{Binding TypeName}" Foreground="White" VerticalAlignment="Bottom" Margin="0 0 0 13" FontSize="17.5" HorizontalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <!--Cover样式-->
+    <DataTemplate x:Key="ChannelCoverTemplate">
+        <Grid Height="202.5" Margin="8" Background="{StaticResource PPTVMasterColor}">
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill" />
+            <Grid Style="{StaticResource ChannelTitleGridStyle}"/>
+            <TextBlock Text="{Binding Title}" Style="{StaticResource ChannelTitleTextStyle}" />
+        </Grid>
+    </DataTemplate>
+
+    <!--个人中心Tile样式-->
+    <DataTemplate x:Key="PersonalTileTemplate">
+        <Border Width="138" Height="138" Margin="8" Background="{StaticResource PPTVMasterColor}" BorderBrush="{StaticResource PPTVBorderColor}" BorderThickness="1">
+            <Grid>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top">
+                    <Image Width="77.5" Height="77.5" Source="{Binding ImageUri}" Margin="0 18.75 0 0"/>
+                    <TextBox Text="{Binding Count}" FontSize="36" Margin="-20 20 0 0" Foreground="White" Background="Transparent" BorderThickness="0" Visibility="{Binding Count, Converter={StaticResource intToVisibilityConverter}}"/>
+                </StackPanel>
+                <TextBlock Text="{Binding TypeName}" Foreground="White" VerticalAlignment="Bottom" Margin="0 0 0 13" FontSize="17.5" HorizontalAlignment="Center"/>
+            </Grid>
+        </Border>
+    </DataTemplate>
+
+    <!--推荐详细样式-->
+    <DataTemplate x:Key="CoverRecommendTemplate">
+        <Grid Margin="8" Height="195" Background="{StaticResource PPTVMasterColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="155"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill"/>
+            <TextBlock Grid.Column="1" Text="{Binding Title}" Style="{StaticResource ChannelMasterTitleStyle}" Height="80" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="1" Style="{StaticResource ChannelSubTitleStyle}">
+                <Run Text="评分 ：" Foreground="#7FFFFFFF"/>
+        		<Run Text="{Binding Mark, Converter={StaticResource markConvert}}"/>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Style="{StaticResource ChannelLastTitleStyle}">
+                <Run Text="时长 ：" Foreground="#7FFFFFFF"/>
+        		<Run Text="{Binding Duration, Converter={StaticResource durationConverter}}"/>
+            </TextBlock>
+        </Grid>
+    </DataTemplate>
+
+    <!--频道列表样式-->
+    <DataTemplate x:Key="ChannelListTemplate">
+        <Grid Margin="8" Background="{StaticResource PPTVMasterColor}">
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill" />
+            <Grid Style="{StaticResource ChannelTitleGridStyle}"/>
+            <TextBlock Text="{Binding Title}" Style="{StaticResource ChannelTitleTextStyle}" />
+        </Grid>
+    </DataTemplate>
+    
+    <!--频道列表横图样式-->
+    <DataTemplate x:Key="ChannelSortListTemplate">
+        <Grid Margin="8" Height="131.25" Background="{StaticResource PPTVMasterColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="175"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill"/>
+            <TextBlock Grid.Column="1" Text="{Binding Title}" Style="{StaticResource ChannelMasterTitleStyle}" Margin="12 3 2 0" Height="90" TextWrapping="Wrap"/>
+            <!--<TextBlock Grid.Column="1" Style="{StaticResource ChannelSubTitleStyle}" Margin="12 0 2 35">
+                <Run Text="评分 ：" Foreground="#7FFFFFFF"/>
+        		<Run Text="{Binding Mark, Converter={StaticResource markConvert}}"/>
+            </TextBlock>-->
+            <TextBlock Grid.Column="1" Style="{StaticResource ChannelLastTitleStyle}" Margin="12 0 2 3">
+                <Run Text="时长 ：" Foreground="#7FFFFFFF"/>
+        		<Run Text="{Binding Duration, Converter={StaticResource durationConverter}}"/>
+            </TextBlock>
+        </Grid>
+    </DataTemplate>
+    
+    <!--频道过滤TAG样式-->
+    <DataTemplate x:Key="ChannelTagTemplate">
+        <TextBlock Text="{Binding Name}" FontSize="22.5" Margin="10 15 10 0"/>
+    </DataTemplate>
+    
+    <!--频道排序样式-->
+    <DataTemplate x:Key="ChannelOrderTemplate">
+        <TextBlock Text="{Binding Name}" FontSize="22.5" Margin="23 15 23 0"/>
+    </DataTemplate>
+    
+    <!--详情分集样式-->
+    <DataTemplate x:Key="ChannelDetailTemplate">
+        <Grid Margin="8 8 8 0" Height="135">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="106.25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Width="154" Height="106.25" Background="{StaticResource PPTVMasterColor}">
+                <Image Style="{StaticResource PicWallStyle}"/>
+                <Image Source="{Binding SlotUri}" Stretch="Fill"/>
+            </Grid>
+            <TextBlock Grid.Row="1" Foreground="White" Height="25" FontSize="20" HorizontalAlignment="Center">
+                <Run Text="第" />
+                <Run Text="{Binding Title}" />
+                <Run Text="集" />
+            </TextBlock>
+        </Grid>
+    </DataTemplate>
+
+    <!--详情页娱乐等非数字集数分集列表样式-->
+    <DataTemplate x:Key="ChannelDetailAmuseTemplate">
+        <Grid Margin="8 8 8 0" Height="195">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="106.25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Width="154" Height="106.25" Background="{StaticResource PPTVMasterColor}">
+                <Image Style="{StaticResource PicWallStyle}"/>
+                <Image Source="{Binding SlotUri}" Stretch="Fill"/>
+            </Grid>
+            <TextBlock Grid.Row="1" Text="{Binding Title}" Foreground="White" Height="78" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        </Grid>
+    </DataTemplate>
+    
+    <!--详情分集下载样式-->
+    <DataTemplate x:Key="DownloadTemplate">
+        <Grid Margin="8 8 8 0" Height="135">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="106.25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Width="154" Height="106.25" Background="{StaticResource PPTVMasterColor}">
+                <Image Style="{StaticResource PicWallStyle}"/>
+                <Image Source="{Binding SlotUri}" Stretch="Fill"/>
+            </Grid>
+            <TextBlock Grid.Row="1" Foreground="White" Height="25" FontSize="20" HorizontalAlignment="Center">
+                <Run Text="第" />
+                <Run Text="{Binding Title}" />
+                <Run Text="集" />
+            </TextBlock>
+            <Border Width="138" Height="106.25" BorderThickness="2" BorderBrush="#fe9b00" Visibility="{Binding IsSelected, Converter={StaticResource boolToVisibilityConverter}}">
+                <Image Width="24.375" Height="24.375" Source="/Images/selected.png" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            </Border>
+            <Border Width="138" Height="106.25" BorderThickness="2" BorderBrush="#00a7ff" Visibility="{Binding IsDownloading, Converter={StaticResource boolToVisibilityConverter}}">
+                <Image Width="24.375" Height="24.375" Source="/Images/downloading.png" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            </Border>
+        </Grid>
+    </DataTemplate>
+    
+    <!--详情非数字分集下载样式-->
+    <DataTemplate x:Key="DownloadAmuseTemplate">
+        <Grid Margin="8 8 8 0" Height="195">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="106.25"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid Width="154" Height="106.25" Background="{StaticResource PPTVMasterColor}">
+                <Image Style="{StaticResource PicWallStyle}"/>
+                <Image Source="{Binding SlotUri}" Stretch="Fill"/>
+            </Grid>
+            <Border Width="138" Height="106.25" BorderThickness="2" BorderBrush="#fe9b00" Visibility="{Binding IsSelected, Converter={StaticResource boolToVisibilityConverter}}">
+                <Image Width="24.375" Height="24.375" Source="/Images/selected.png" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            </Border>
+            <Border Width="138" Height="106.25" BorderThickness="2" BorderBrush="#00a7ff" Visibility="{Binding IsDownloading, Converter={StaticResource boolToVisibilityConverter}}">
+                <Image Width="24.375" Height="24.375" Source="/Images/downloading.png" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+            </Border>
+            <TextBlock Grid.Row="1" Text="{Binding Title}" Foreground="White" Height="78" FontSize="20" TextWrapping="Wrap" VerticalAlignment="Top"/>
+        </Grid>
+    </DataTemplate>
+
+    <!--正在下载样式-->
+    <DataTemplate x:Key="DownloadingListTemplate">
+        <Grid Margin="0 0 13 13" Width="475" Height="137.5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="68"/>
+                </Grid.ColumnDefinitions>
+                <Grid Background="{StaticResource PPTVMasterColor}">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="103.125"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image Style="{StaticResource PicWallStyle}"/>
+                    <Image Source="{Binding ImageUri}" Stretch="Fill" />
+                    <TextBlock Grid.Column="1" Text="{Binding Title}" Style="{StaticResource ChannelMasterTitleStyle}" Foreground="White"/>
+                    <ProgressBar Grid.Column="1" Width="303" Margin="0,75,0,0" Value="{Binding DownloadPercent}" Background="Black" Foreground="{StaticResource PPTVBlueColor}" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBlock Grid.Column="2" Width="300" Margin="12,110,0,0" FontSize="16.25" Text="{Binding DownloadTipInfo, Converter={StaticResource downloadProgressConverter}}" Foreground="White" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </Grid>
+                <Border Grid.Column="1" Width="43.75" Height="43.75" BorderThickness="1" VerticalAlignment="Top" HorizontalAlignment="Left" Background="{StaticResource PPTVMasterColor}" BorderBrush="{StaticResource PPTVBorderColor}">
+                    <Image Width="26.875" Height="27.5" Source="{Binding DownloadTipInfo, Converter={StaticResource downloadStateConverter}}"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </DataTemplate>
+
+    <!--已下载样式-->
+    <DataTemplate x:Key="DownloadedListTemplate">
+        <Grid Margin="-13 0 15 13" Width="446" Height="137.5" Background="{StaticResource PPTVMasterColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="103.125"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill" />
+            <TextBlock Grid.Column="1" Text="{Binding Title}" Style="{StaticResource ChannelMasterTitleStyle}" Height="90" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="1" Style="{StaticResource ChannelLastTitleStyle}">
+                <Run Text="大小 ："/>
+                <Run Text="{Binding DownloadTipInfo, Converter={StaticResource downloadProgressConverter}}" />
+            </TextBlock>
+        </Grid>
+    </DataTemplate>
+
+    <!--观看历史列表样式-->
+    <DataTemplate x:Key="HistoryListTemplate">
+        <Grid Width="480" Height="195" Margin="0 0 0 12" Background="{StaticResource PPTVMasterColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="155"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill"/>
+            <TextBlock Grid.Column="1" Text="{Binding Name}"  Style="{StaticResource ChannelMasterTitleStyle}" Height="80" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="1" Text="{Binding DurationInfo, Converter={StaticResource positionConvert}}" Style="{StaticResource ChannelSubTitleStyle}"/>
+            <TextBlock Grid.Column="1" Text="{Binding Device, Converter={StaticResource cloudDeviceConvert}}" Style="{StaticResource ChannelLastTitleStyle}" Foreground="{StaticResource PPTVBlueColor}"/>
+        </Grid>
+    </DataTemplate>
+
+    <!--我的收藏样式-->
+    <DataTemplate x:Key="FavoritenTemplate">
+        <Grid Width="480" Height="195" Margin="0 0 0 12" Background="{StaticResource PPTVMasterColor}">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="155"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Image Style="{StaticResource PicWallStyle}"/>
+            <Image Source="{Binding ImageUri}" Stretch="Fill"/>
+            <TextBlock Grid.Column="1" Text="{Binding Name}" Style="{StaticResource ChannelMasterTitleStyle}" Height="80" TextWrapping="Wrap"/>
+            <TextBlock Grid.Column="1" Style="{StaticResource ChannelSubTitleStyle}" >
+        			<Run Text="时长 ：" Foreground="#7FFFFFFF"/>
+        			<Run Text="{Binding Duration, Converter={StaticResource secondsConverter}}"/>
+            </TextBlock>
+            <TextBlock Grid.Column="1" Text="{Binding Device, Converter={StaticResource cloudDeviceConvert}}" Style="{StaticResource ChannelLastTitleStyle}" Foreground="{StaticResource PPTVBlueColor}"/>
+        </Grid>
+    </DataTemplate>
+
+</ResourceDictionary>

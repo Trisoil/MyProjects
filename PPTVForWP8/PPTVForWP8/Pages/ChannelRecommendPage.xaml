@@ -1,0 +1,74 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PPTVForWP8.Pages.ChannelRecommendPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:localContols="clr-namespace:PPTVForWP8.Controls"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.Opacity="0.4">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource BackgroundImage}">
+
+        <phone:Pivot x:Name="recommendPivot" Style="{StaticResource MasterPivotStyle}">
+            <phone:Pivot.Title>
+                <ContentControl Tag="推荐" Template="{StaticResource PivotSmallLogoTemplate}" />
+            </phone:Pivot.Title>
+            
+            <phone:PivotItem>
+                <phone:PivotItem.Header>
+                    <TextBlock Text="热门推荐" Style="{StaticResource PivotMasterTitleStyle}"/>
+                </phone:PivotItem.Header>
+                
+                <phone:LongListSelector
+                    x:Name="coverList"
+                    IsGroupingEnabled="True"
+                    HideEmptyGroups="True"
+                    toolkit:TiltEffect.IsTiltEnabled="True" 
+                    Style="{StaticResource PivotListStyle}"
+                    ItemTemplate="{StaticResource ChannelCoverTemplate}"
+                    SelectionChanged="coverList_SelectionChanged"
+                    />
+            </phone:PivotItem>
+
+        </phone:Pivot>
+
+        <localContols:LoadingTipControl x:Name="loadingTip" Margin="0 0 0 23" VerticalAlignment="Bottom" />
+        
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" Mode="Minimized" BackgroundColor="{StaticResource PPTVAppBarColor}" ForegroundColor="White">
+            <shell:ApplicationBarIconButton IconUri="/Images/AppBar/refresh.png" Click="ApplicationBarRefresh_Click" Text="刷新"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+</phone:PhoneApplicationPage>

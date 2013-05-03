@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DC2C0427-3FC4-4371-BB65-6A672740C326}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PPTVData</RootNamespace>
+    <AssemblyName>PPTVData</AssemblyName>
+    <TargetFrameworkIdentifier>WindowsPhone</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>false</SilverlightApplication>
+    <ValidateXaml>true</ValidateXaml>
+    <MinimumVisualStudioVersion>11.0</MinimumVisualStudioVersion>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|ARM' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\ARM\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|ARM' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\ARM\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Entity\Cloud\CloudDataInfo.cs" />
+    <Compile Include="Entity\Information\DACPageType.cs" />
+    <Compile Include="Entity\Information\DACPlayInfo.cs" />
+    <Compile Include="Entity\Information\DeviceInfo.cs" />
+    <Compile Include="Entity\Live\LiveArgs.cs" />
+    <Compile Include="Entity\Live\LiveChannelInfo.cs" />
+    <Compile Include="Entity\Live\LiveParadeInfo.cs" />
+    <Compile Include="Entity\Live\LiveType.cs" />
+    <Compile Include="Entity\Personal\PersonalInfo.cs" />
+    <Compile Include="Entity\Personal\RegisterInfo.cs" />
+    <Compile Include="Entity\Personal\UserStateInfo.cs" />
+    <Compile Include="Entity\Player\PlayDragInfo.cs" />
+    <Compile Include="Entity\Player\PlayInfo.cs" />
+    <Compile Include="Entity\Player\PlayInfoHelp.cs" />
+    <Compile Include="Entity\Player\PlayJumpInfo.cs" />
+    <Compile Include="Entity\Player\PlaySegmentInfo.cs" />
+    <Compile Include="Entity\Vod\ChannelDetailInfo.cs" />
+    <Compile Include="Entity\Vod\ChannelInfo.cs" />
+    <Compile Include="Entity\Vod\ChannelSearchInfo.cs" />
+    <Compile Include="Entity\Vod\CoverInfo.cs" />
+    <Compile Include="Entity\Vod\HotSearchInfo.cs" />
+    <Compile Include="Entity\Vod\ProgramInfo.cs" />
+    <Compile Include="Entity\Vod\RecommandNav.cs" />
+    <Compile Include="Entity\Vod\TagInfo.cs" />
+    <Compile Include="Entity\Vod\TypeInfo.cs" />
+    <Compile Include="Entity\WAY\WAYGetInfo.cs" />
+    <Compile Include="Entity\WAY\WAYPostInfo.cs" />
+    <Compile Include="ExtensionClass.cs" />
+    <Compile Include="Factory\Cloud\CloudFactoryBase.cs" />
+    <Compile Include="Factory\Cloud\CloudGetFactory.cs" />
+    <Compile Include="Factory\Cloud\CloudPostFactory.cs" />
+    <Compile Include="Factory\Cloud\CloudType.cs" />
+    <Compile Include="Factory\Cloud\LocalBaseFactory.cs" />
+    <Compile Include="Factory\Cloud\LocalFavoritesFactory.cs" />
+    <Compile Include="Factory\Cloud\LocalRecentFactory.cs" />
+    <Compile Include="Factory\FileFactoryBase.cs" />
+    <Compile Include="Factory\HttpFactoryArgs.cs" />
+    <Compile Include="Factory\HttpFactoryBase.cs" />
+    <Compile Include="Factory\HttpMethod.cs" />
+    <Compile Include="Factory\Information\DACFactory.cs" />
+    <Compile Include="Factory\Information\DeviceInfoFactory.cs" />
+    <Compile Include="Factory\Live\LiveCenterFactoryBase.cs" />
+    <Compile Include="Factory\Live\LiveCenterGameFacotry.cs" />
+    <Compile Include="Factory\Live\LiveCenterSportsFactory.cs" />
+    <Compile Include="Factory\Live\LiveCMSListFactory.cs" />
+    <Compile Include="Factory\Live\LiveListFactory.cs" />
+    <Compile Include="Factory\Live\LiveParadeFactory.cs" />
+    <Compile Include="Factory\Personal\LoginFactory.cs" />
+    <Compile Include="Factory\Personal\PersonalFactory.cs" />
+    <Compile Include="Factory\Player\Play2InfoFactory.cs" />
+    <Compile Include="Factory\Player\PlayDragFactory.cs" />
+    <Compile Include="Factory\Player\PlayInfoFactory.cs" />
+    <Compile Include="Factory\Player\PlayJumpFactory.cs" />
+    <Compile Include="Factory\Player\PlaySegmentManage.cs" />
+    <Compile Include="Factory\Vod\ChannelDetailFactory.cs" />
+    <Compile Include="Factory\Vod\ChannelListFactory.cs" />
+    <Compile Include="Factory\Vod\ChannelSearchFactory.cs" />
+    <Compile Include="Factory\Vod\CoverListFactory.cs" />
+    <Compile Include="Factory\Vod\CoverNavFactory.cs" />
+    <Compile Include="Factory\Vod\HotSearchFactory.cs" />
+    <Compile Include="Factory\Vod\HttpVodFactoryBase.cs" />
+    <Compile Include="Factory\Vod\RecommendListFactory.cs" />
+    <Compile Include="Factory\Vod\RecommendNavFactory.cs" />
+    <Compile Include="Factory\Vod\TagFactory.cs" />
+    <Compile Include="Factory\Vod\TypeFactory.cs" />
+    <Compile Include="Factory\WAY\WAYAddWhiteFactory.cs" />
+    <Compile Include="Factory\WAY\WAYFactoryBase.cs" />
+    <Compile Include="Factory\WAY\WAYGetFactory.cs" />
+    <Compile Include="Factory\WAY\WAYLocalFactory.cs" />
+    <Compile Include="Factory\WAY\WAYPostFactory.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\Cryptography\DESCryptography.cs" />
+    <Compile Include="Utils\Cryptography\KeyGenerator.cs" />
+    <Compile Include="Utils\DataCommonUtils.cs" />
+    <Compile Include="Utils\EpgUtils.cs" />
+    <Compile Include="Utils\HttpAsyncUtils.cs" />
+    <Compile Include="Utils\HttpUtils.cs" />
+    <Compile Include="Utils\MD5Helper.cs" />
+    <Compile Include="WebClient.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
+  <ProjectExtensions />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

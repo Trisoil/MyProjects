@@ -1,0 +1,76 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PPTVForWP8.Pages.HistoryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:localContols="clr-namespace:PPTVForWP8.Controls"
+    xmlns:localTemplater="clr-namespace:PPTV.WPRT.CommonLibrary.Templater;assembly=PPTV.WPRT.CommonLibrary"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True" shell:SystemTray.Opacity="0.4">
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:TurnstileTransition Mode="BackwardOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:TurnstileTransition Mode="ForwardOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+    <Grid x:Name="LayoutRoot" Background="{StaticResource BackgroundImage}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="85"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <ContentControl Tag="最近观看" Template="{StaticResource SmallLogoTemplate}" />
+
+        <TextBlock Text="最近观看" Grid.Row="1" Style="{StaticResource MasterTitleStyle}" />
+
+        <toolkit:LongListMultiSelector
+            Grid.Row="3" 
+            x:Name="historyList" 
+            Margin="-12 8 0 0"
+            IsGroupingEnabled="False"
+            toolkit:TiltEffect.IsTiltEnabled="True" 
+            SelectionChanged="historyList_SelectionChanged"
+            IsSelectionEnabledChanged="historyList_IsSelectionEnabledChanged"
+            >
+            <toolkit:LongListMultiSelector.ItemTemplate>
+                <DataTemplate>
+                    <localTemplater:HistorySelector/>
+                </DataTemplate>
+            </toolkit:LongListMultiSelector.ItemTemplate>
+        </toolkit:LongListMultiSelector>
+        
+    </Grid>
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" BackgroundColor="{StaticResource PPTVAppBarColor}" ForegroundColor="White">
+            
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+</phone:PhoneApplicationPage>
